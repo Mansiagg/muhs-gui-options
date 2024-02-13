@@ -1,3 +1,6 @@
+
+
+
 // Owlcarousel
 $(document).ready(function(){
   $(".owl-courses").owlCarousel({
@@ -53,4 +56,6 @@ loop:true,
   }
 });
   
+
+
 });

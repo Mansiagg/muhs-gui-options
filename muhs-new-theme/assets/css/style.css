@@ -3959,3 +3959,12 @@ p.award-winning {
  .full-width-mega-dropdown  .col-lg-8{    padding-left: 0;
     padding-right: 8px;
 }
+.menusdesign { cursor: pointer;}
+.menusdesign  h2{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #adacac;
+    font-size: 1rem;
+    color: #303030;  font-weight: 400;;
+}
+.menusdesign .rightarea ul li{ list-style-type: square; }

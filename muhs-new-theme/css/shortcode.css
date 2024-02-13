@@ -2551,7 +2551,7 @@ Header Css
     transform: none;height: 49px; top:-5px
   }
 
-ul li.active::after {
+#primary-menu ul li.active::after {
     content: "";
     color: #fff !important;
     width: 100% !important;

@@ -24,9 +24,16 @@ jQuery.fn.liScroll = function (settings) {
       $strip.animate({ top: "-=" + spazio }, tempo, "linear", function () {
         $strip.css("top", containerHeight);
         scrollnews(totalTravel, defTiming);
+        scrollnews(totalTravel, defTiming);
+        scrollnews(totalTravel, defTiming);
+
+        scrollnews(totalTravel, defTiming);
       });
     }
     scrollnews(totalTravel, defTiming);
+    scrollnews(totalTravel, defTiming);
+    scrollnews(totalTravel, defTiming);
+    
     $strip.hover(
       function () {
         jQuery(this).stop();
