@@ -5,7 +5,7 @@ $('#mainSlider,.mainSlider').nivoSlider({
 	directionNav: true,
 	animSpeed: 500,
 	slices: 18,
-	pauseTime: 5000,
+	pauseTime: 10000,
 	pauseOnHover: false,
 	controlNav: false,
 	prevText: '<i class="fa fa-chevron-left"></i>',
