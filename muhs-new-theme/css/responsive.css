@@ -1,3 +1,16 @@
+@media (min-width:1500px) and (max-width:1900px) { 
+    .header-navigation--header-default .header-navigation__nav nav > ul > li > a {
+        padding: 8px 42px;}
+
+        .header-navigation--header-default .header-navigation__nav nav > ul > li:first-child {
+            border-left: 0;
+            min-width: 182px;
+        }
+        .logo img {
+            position: absolute;
+            top: 1px;}
+
+}
 @media (min-width:1200px) {
 
     .counter-area .col,

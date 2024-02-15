@@ -5,11 +5,11 @@ $('#mainSlider,.mainSlider').nivoSlider({
 	directionNav: true,
 	animSpeed: 500,
 	slices: 18,
-	pauseTime: 750000,
+	pauseTime: 5000,
 	pauseOnHover: false,
 	controlNav: false,
-	prevText: '<i class="bi bi-arrow-left"></i>',
-	nextText: '<i class="bi bi-arrow-right"></i>'
+	prevText: '<i class="fa fa-chevron-left"></i>',
+	nextText: '<i class="fa fa-chevron-right"></i>'
 });
 
 

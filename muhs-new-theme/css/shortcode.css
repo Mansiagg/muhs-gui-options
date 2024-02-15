@@ -52,7 +52,7 @@ a {
     border-radius: 0;
     font-size: 14px;
     padding: 0 15px;
-    height: 30px;
+  
     line-height: 30px
 }
 
@@ -2469,24 +2469,40 @@ Header Css
     width: 45px;
     text-align: center;
     cursor: pointer ;   color: #000;
-    top: -5px;
+    top: -1px;
 }
 
-.search-box .input-box select {
-  background: #f0f0f0;
+.search-box  select {
+    background:rgba(255,255,255,1);
     border: none;
     color: #4e4e4e;
     display: block;
     font-size: 14px;
-    height: 35px;
+    height: 33px;
     outline: 0;
     padding: 0 0 0 15px;
-    width: 186px;
+    width: 132px;
     border-radius: 50px;
     margin-top: 5px;
     -webkit-appearance:none
 
 }
+
+.search-box .input-box input {
+    background:rgba(255,255,255,1);
+      border: none;
+      color: #4e4e4e;
+      display: block;
+      font-size: 14px;
+      height: 33px;
+      outline: 0;
+      padding: 0 0 0 15px;
+      width: 170px;
+      border-radius: 50px;
+      margin-top: 5px;
+      -webkit-appearance:none
+  
+  }
 
 .contact-number {
     font-weight: 500;
