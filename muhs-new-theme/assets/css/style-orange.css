@@ -1834,7 +1834,7 @@ padding: 10px 15px;
 .megamenu--mega > li > ul { padding-left: 0;}
 .megamenu--mega > li  ul  li:after {
   position: absolute;
-  top: 50%;
+  top:21px;
   left: 0;
   width: 5px;
   height: 5px;
@@ -1845,16 +1845,16 @@ padding: 10px 15px;
   background-color: #d8d8d8;
 }
 .megamenu--mega > li > ul > li a {
-  line-height: 2.2;
+  line-height: 1.2;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-  color: #000000;
+  color: #3a3333;
   font-size: 15px;
   font-weight: 400;
 
 }
 .megamenu--mega > li > ul > li a:hover {
-  color: #ffbe39;
+  color: #20458d;
 }
 .megamenu--tab {
   display: -webkit-box;

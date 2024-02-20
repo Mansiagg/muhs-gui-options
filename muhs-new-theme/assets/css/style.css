@@ -178,7 +178,7 @@ body{ margin: 0; overflow-x: hidden;}
 }
 
 .logo {
-    padding: 10px 0 0 76px;
+    padding: 8px 0 0 68px;
     /* font-family: 'Patua One'; */
     color: #000000;
     position: relative;
@@ -186,16 +186,15 @@ body{ margin: 0; overflow-x: hidden;}
 }
 
 .logo h1 {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Patua One' !important;
     margin: 0;
  }
 
 .logo img {
     position: absolute;
-    top: -1px;
+    top: 2px;
     left: 5px;
-    width: 68px;
     z-index: -2;
 }
 
@@ -1707,8 +1706,7 @@ body{ margin: 0; overflow-x: hidden;}
 --------------------------------------------------------------*/
 section {
     padding: 10px 0 0 0;
-    overflow: hidden;
-}
+   }
 
 
 
@@ -4025,4 +4023,36 @@ p.award-winning {
     z-index: 99999999;
   
   }
+  .allmembersdetails  {font-weight: 400;
+    color: #626262; font-size: 14px; text-align: justify;}
+  .allmembersdetails .modal li{ list-style: disc; line-height: 25px;}
+  .page-list-title h1,  .page-list-title ol>li>a{ color:var(--bs-white);}
+  .page-list-title .breadcrumb-item.active {
+    color: #ff6f3a;
+}
+.page-list-title .breadcrumb-item+.breadcrumb-item::before {
+    color: #ffffff;
   
+}
+#important-links nav > ul > li > a {
+    line-height: 1.26;
+    padding: 8px 16px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 48px;
+    margin: 5px 0;
+}
+#important-links nav .submenu { max-height: 500px; overflow-y: scroll; background: #1e387e; z-index: 99; }
+
+
+#important-links nav .submenu li > a {
+    color:var(--bs-white); border-bottom: 1px solid rgba(255,255,255,0.1);font-weight: 300;
+  
+}
+#important-links nav .submenu li > a:hover {color:#d83b01; }
+#important-links nav > ul > li.has-children > a:after {
+    font-family: 'Font Awesome 6 Free'; color: #ffce64;
+    margin-left: 10px; font-size: 13px;
+    content: "\f005";
+ 
+}

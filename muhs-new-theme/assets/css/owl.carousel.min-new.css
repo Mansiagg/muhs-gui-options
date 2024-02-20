@@ -219,6 +219,14 @@
     z-index: 1;
 }
 
+#gallery .owl-nav .owl-prev, #gallery .owl-nav .owl-next{
+   
+    top: -45px; 
+}
+
+#gallery  .owl-gallery .owl-nav {
+    display: block;
+}
 .owl-nav .owl-next {
     position: absolute;
     top: 0;

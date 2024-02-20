@@ -2418,7 +2418,7 @@ Header Css
 .logo p {
     font-size: 19px;
     padding-top: 4px;
-    margin-bottom: 11px;
+    margin-bottom: 6px;
 }
 
 .logo,
@@ -2497,7 +2497,7 @@ Header Css
       height: 33px;
       outline: 0;
       padding: 0 0 0 15px;
-      width: 170px;
+      width: 220px;
       border-radius: 50px;
       margin-top: 5px;
       -webkit-appearance:none
