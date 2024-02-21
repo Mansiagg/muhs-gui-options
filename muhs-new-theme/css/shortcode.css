@@ -545,7 +545,7 @@ a.button.extra-small i {
 
 .social-icon ul li {
     float: left;
-    margin-right: 10px
+  
 }
 
 .mr-0,
@@ -575,28 +575,18 @@ a.btn-def {
     color: #fff
 }
 
-.social-icon.socile-icon-style-1 ul li a {
-    /* background: rgba(0, 0, 0, 0); */
+header .social-icon ul li a {
     border: none;
     border-radius: 5px;
     color: #ffffff;
-    /* height: 45px;
-    line-height: 45px; */
-    margin: 5px 3px;
-    padding: 4px 8px;
-    width: auto;
-    line-height: 45px; font-size: 17px;
+    padding: 5px 11px;
+   font-size: 17px;
 }
 
-.social-icon.socile-icon-style-1 ul li a:hover {
+.social-icon ul li a:hover {
     /* color: #000000 */
 }
 
-.social-icon.socile-icon-style-2 ul li a {
-    color: #fff;
-    background: #323232;
-    border-radius: 0
-}
 
 .social-icon.socile-icon-style-2 ul li a:hover {
     background: #EB3B60

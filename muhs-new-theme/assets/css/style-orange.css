@@ -970,6 +970,7 @@ input::placeholder {
       flex-basis: calc(100% - 260px);
   padding: 0 20px;
 }
+#important-links.header-navigation__nav {    padding: 0 12px 0 0;}
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .header-navigation__nav {
     -ms-flex-preferred-size: 100%;
@@ -1371,7 +1372,7 @@ input::placeholder {
   border-right:0
 }
 .header-navigation--header-default .header-navigation__nav nav > ul > li > a {
-  padding:8px 27px;
+  padding:8px 34px;
     font-weight: 400;
     z-index: 9;
   
@@ -1815,7 +1816,8 @@ input::placeholder {
 }
 .megamenu--mega > li {
   -ms-flex-preferred-size: 49%;
-    flex-basis: 49%;
+  flex-basis: 48%;
+    margin-right: 1%;
 }
 .megamenu--mega > li .page-list-title {
   color: #2a2a2a;
@@ -1938,7 +1940,7 @@ padding: 10px 15px;
 }
 .megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li {
   -ms-flex-preferred-size: 28%;
-      flex-basis: 28%;
+      flex-basis:47%;
 }
 .megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li .page-list-title {
   margin-bottom: 20px;
@@ -1949,20 +1951,19 @@ padding: 10px 15px;
   color: #000000;
 }
 .megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li > ul  { padding-left: 0;}
+
 .megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li > ul > li {
   position: relative;
   padding-left: 15px;
 }
-.megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li > ul > li:after {
+.megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li > ul > li:before {
   position: absolute;
-  top: 50%;
+  top: 15px;
   left: 0;
   width: 5px;
   height: 5px;
   content: "";
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  border-radius: 50%;
+   border-radius: 50%;
   background-color: #d8d8d8;
 }
 .megamenu--tab__content .tab-pane .megamenu-tab-wrapper > li > ul > li a {
@@ -2069,7 +2070,7 @@ padding: 10px 15px;
   left: 0;
   visibility: hidden;
   min-width: 270px;
-  padding: 25px 0;
+  padding:5px 0;
   -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   -webkit-transition-delay: 0.3s;

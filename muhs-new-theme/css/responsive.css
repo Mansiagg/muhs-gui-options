@@ -1,6 +1,6 @@
 @media (min-width:1500px) and (max-width:1900px) { 
     .header-navigation--header-default .header-navigation__nav nav > ul > li > a {
-        padding: 8px 42px;}
+        padding: 7px 37px;}
 
         .header-navigation--header-default .header-navigation__nav nav > ul > li:first-child {
             border-left: 0;

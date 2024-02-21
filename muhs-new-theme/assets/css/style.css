@@ -14,16 +14,16 @@
     src: url(./fonts/Poppins-Regular.woff) format('woff');
 }
 
+
 a {
-    color: #4d3828;
+    color: #535353;
     text-decoration: none;
 }
 
 a:hover {
-    color: #3b8af2;
+    color: #ffc963;
     text-decoration: none;
 }
-
 
 body{ margin: 0; overflow-x: hidden;}
 
@@ -905,6 +905,42 @@ body{ margin: 0; overflow-x: hidden;}
     color: #ffffff
 }
 
+#page .page-title.pdfpage {
+    /* background: url("../img/quotebg.jpg") top no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    background:linear-gradient(to right, #1e357b 0%, #2989d8 50%, #77b7fe 100%);
+    padding: 30px 0;
+    color: #ffffff
+}
+#page .page-title.pdfpage h1{ font-size: 1.5rem; }
+#page span {
+    text-transform: capitalize;
+    font-size: 45px;
+    text-align: left;
+}
+
+#page a.cbutton {
+    float: right;
+    position: relative;
+    width: auto;
+    background: #9f870b;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    line-height: 2;
+    vertical-align: middle;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
 #quotation span {
     text-transform: capitalize;
     font-size: 45px;
@@ -971,7 +1007,7 @@ body{ margin: 0; overflow-x: hidden;}
 }
 
 .footer-copyright {
-    border-top: 1px solid #333434;
+    border-top: 1px solid #b6b6b6;
     padding-top: 15px;
 }
 
@@ -1711,7 +1747,7 @@ section {
 
 
 .section-title h2 {
-    font-size: 26px;
+    font-size: 26px; position: relative;
     font-weight: 700;
     color: #000;
     letter-spacing: 1px;
@@ -1721,21 +1757,21 @@ section {
 
 #about .section-title h2, #about .section-title h3, #about .text p , #about .section-title h4  { color: #ffffff;}
 .section-title h3 {
-    font-size: 15px;
+    font-size: 18px;
     position: relative;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
     display: block;
     line-height: 24px;
    
     font-weight: 300;
 }
 
-.section-title h3:after {
-    background-color: #ffffff;
+#team .section-title h2:after {
+    background-color: #d83b01;
     position: absolute;
     left: 0;
     bottom: -15px;
-    width: 110px;
+    width: 125px;
     height: 2px;
     content: "";
 
@@ -2452,8 +2488,7 @@ section {
 
 .team .member {
     margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 4px;
+       border-radius: 4px;
     background: #fff;
     text-align: center;
     cursor: pointer;
@@ -2541,18 +2576,23 @@ section {
     opacity: 1;
     bottom: 15px;
 }
-.twitter {
+footer .twitter, .social-icon .twitter:hover {
     background-color: #00aced;
 }
-.facebook {
+footer .facebook, .social-icon .facebook:hover {
     background-color: #3b5998;
 }
-.youtube {
+footer .youtube, .social-icon .youtube:hover {
     background-color: #bb0000;
 }
-.linkedin {
+footer .linkedin , .social-icon .linkedin:hover{
     background-color: #007bb6;
 }
+footer .instagram, .social-icon .instagram:hover{  background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );}
 /*--------------------------------------------------------------
 # Pricing
 --------------------------------------------------------------*/
@@ -2969,7 +3009,7 @@ section {
 #footer {
     background: #1c2b6e;
 
-    color: #444444;
+    color: #b6b6b6;
     font-size: 14px;
 
 }
@@ -3025,9 +3065,9 @@ section {
     background: #0d58ba;
 }
 
-#footer .footer-top {
-    padding: 60px 0 30px 0;
-    background: #1c1c1c;
+#footer .footer-top { 
+    padding: 60px 0 30px 0; background-image: url("../img/footer.png"); background-position: top; background-repeat: no-repeat;
+    background-color: #1c1c1c;
 }
 
 #footer .footer-top .footer-contact {
@@ -3039,7 +3079,7 @@ section {
     margin: 0 0 15px 0;
     padding: 2px 0 2px 0;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 700; color: #ffffff;
 }
 
 #footer .footer-top .footer-contact h3 span {
@@ -3050,13 +3090,13 @@ section {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 0;
-    color: #777777;
+    color: #b6b6b6;
 }
 
 #footer .footer-top h4 {
     font-size: 16px;
     font-weight: bold;
-    color: #444444;
+    color: #b4b0b0;
     position: relative;
     padding-bottom: 12px;
 }
@@ -3089,7 +3129,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-    color: #777777;
+    color: #b6b6b6;
     transition: 0.3s;
     display: inline-block;
     line-height: 1;
@@ -3097,13 +3137,12 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
     text-decoration: none;
-    color: #4d3828;
+    color: #ffc963;
 }
 
 #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #4d3828;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
@@ -3116,7 +3155,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #3b8af2;
+
     color: #fff;
     text-decoration: none;
 }
@@ -3130,7 +3169,7 @@ section {
     float: right;
     text-align: center;
     font-size: 13px;
-    color: #444444;
+   
 }
 
 @media (max-width: 768px) {
@@ -4049,9 +4088,11 @@ p.award-winning {
     color:var(--bs-white); border-bottom: 1px solid rgba(255,255,255,0.1);font-weight: 300;
   
 }
-#important-links nav .submenu li > a:hover {color:#d83b01; }
+#important-links nav .submenu li > a:hover {    color: #ffc963;
+    font-weight: 400;
+ }
 #important-links nav > ul > li.has-children > a:after {
-    font-family: 'Font Awesome 6 Free'; color: #ffce64;
+    font-family: 'Font Awesome 6 Free'; color: #ffc963;
     margin-left: 10px; font-size: 13px;
     content: "\f005";
  
