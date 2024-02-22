@@ -900,13 +900,15 @@ body{ margin: 0; overflow-x: hidden;}
 }
 
 #quotation {
-    /* background: url("../img/quotebg.jpg") top no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed; */
-    background:linear-gradient(to right, #1e357b 0%, #2989d8 50%, #77b7fe 100%);
-    padding: 90px 0;
-    color: #ffffff
+     /* background-image: linear-gradient(to right, #1e357b 0%, #2989d8 50%, #77b7fe 100%), url("../img/pagebannerbg.png");  */
+     background-position: right; background-repeat: no-repeat;
+     padding: 90px 0;
+    color: #ffffff;
+    background-image:
+    linear-gradient(45deg,
+        rgba(30, 53, 123, 1),
+        rgba(41, 137, 216, 0.75)), 
+          url('../img/pagebannerbg.png');
 }
 
 #page .page-title.pdfpage {
@@ -964,12 +966,12 @@ body{ margin: 0; overflow-x: hidden;}
     text-transform: uppercase;
     line-height: 2;
     vertical-align: middle;
-    border: none;
+    border: 1px solid #efefef;
     display: inline-block;
     overflow: hidden;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: 48px;
+    -moz-border-radius: 48px;
+    border-radius: 48px;
 }
 
 #latest-section {
