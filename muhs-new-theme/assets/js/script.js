@@ -10,8 +10,8 @@ $(document).ready(function(){
     
    
     navText: [
-	    "<i class='bi bi-chevron-left'></i>",
-	    "<i class='bi bi-chevron-right'></i>"
+	    "<i class='fa fa-chevron-left'></i>",
+	    "<i class='fa fa-chevron-right'></i>"
 	],
     responsive:{
         0:{

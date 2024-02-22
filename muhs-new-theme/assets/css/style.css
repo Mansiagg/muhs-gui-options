@@ -87,16 +87,22 @@ body{ margin: 0; overflow-x: hidden;}
     bottom: 15px;
     z-index: 996;
     background: #e23177;
-    width: 40px;
-    height: 40px;
     border-radius: 4px;
     transition: all 0.4s;
+    padding: 8px 5px;
+    font-size: 12px;
+    width: 51px;
+    height: 55px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #fff;
 }
 
 .back-to-top i {
-    font-size: 28px;
-    color: #fff;
-    line-height: 0;
+    font-size: 18px;
+    display: block;
+    line-height: 25px;
 }
 
 .back-to-top:hover {
@@ -122,9 +128,7 @@ body{ margin: 0; overflow-x: hidden;}
     text-transform: uppercase;
     line-height: 1;
     color: #fff;
-    -webkit-mask-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjYsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAxMDkgMTE5LjIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDEwOSAxMTkuMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEwOSw3OS40VjM5LjhjMC03LjItMy44LTEzLjgtMTAtMTcuM0w2NC41LDIuN2MtNi4yLTMuNi0xMy45LTMuNi0yMC4xLDBMMTAsMjIuNUMzLjgsMjYuMSwwLDMyLjcsMCwzOS44djM5LjYNCgljMCw3LjIsMy44LDEzLjgsMTAsMTcuM2wzNC40LDE5LjhjNi4yLDMuNiwxMy45LDMuNiwyMC4xLDBsMzQuNC0xOS44QzEwNS4yLDkzLjIsMTA5LDg2LjYsMTA5LDc5LjR6Ii8+DQo8L3N2Zz4NCg==);
-
-
+  
 }
 
 .header-links {
@@ -2837,6 +2841,9 @@ footer .instagram, .social-icon .instagram:hover{  background: #f09433;
 
 #faqquestions {
     margin: 0 35px;
+    max-height: 500px;
+    overflow-y: scroll;
+    padding-right: 45px;
 }
 
 #faqquestions h2 {
@@ -2852,8 +2859,8 @@ footer .instagram, .social-icon .instagram:hover{  background: #f09433;
 }
 
 #faq .section-title h2 {
-    font-size: 29px;
-    font-weight: 700;
+    font-size: 69px;
+    font-weight: 600;
     color: #000;
     letter-spacing: 1px;
     margin: 33px 0 9px 0;
