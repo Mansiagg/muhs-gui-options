@@ -202,7 +202,8 @@ font-size: 25px;
 }
 
 .logo .offcanvas {
-    background: rgba(0, 0, 0, 0.8)
+    background: rgba(0, 0, 0, 0.8);
+    width:90%;
 }
 
 .logo h1 {

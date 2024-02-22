@@ -14069,9 +14069,9 @@ a.meanmenu-reveal {
     float: left;
     position: relative;
     width: 100%;
-    border-top: 1px solid#ddd
+    border-bottom: 1px solid#ddd
 }
-
+.mean-container .mean-nav ul li:last-child { border: none;}
 .mean-container .mean-nav ul li a {
     color:rgba(255,255,255,0.6);
     display: block;
