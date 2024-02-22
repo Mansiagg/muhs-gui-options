@@ -2211,10 +2211,6 @@ padding: 10px 15px;
   font-size: 0.875rem;
 }
 
-/* mobile menu */
-.mobile-menu-area {
-  padding: 15px 0;
-}
 
 .mobile-menu-content {
   display: -webkit-box;
