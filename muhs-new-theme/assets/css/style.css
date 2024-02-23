@@ -25,7 +25,7 @@ a:hover {
     text-decoration: none;
 }
 
-body {
+html,body {
     margin: 0;
     overflow-x: hidden;
 }
