@@ -1927,11 +1927,13 @@
         display: none;
     }
 
-
     .logo h1 {
-        font-size: 18px;
+        font-size: 19px;
     }
 
+    .logo .offcanvas {
+          width: 360px;
+    }
 
     .logo p {
         font-size: 16px;

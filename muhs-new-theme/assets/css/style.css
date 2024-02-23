@@ -4258,3 +4258,14 @@ p.award-winning {
 }
 .offcanvas .btn-close:focus {
 box-shadow: none; }
+
+.offcanvas .phone-mail-area i {
+    color: #ffffff; display: block;
+    margin-right: 5px;
+    background: #f7ad3e;
+    width: 36px;
+    padding: 8px 0;
+    border-radius: 2px;
+    text-align: center;
+}
+.ffcanvas .phone-mail-area div{ font-size: 13px;}
