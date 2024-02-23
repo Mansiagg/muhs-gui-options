@@ -203,7 +203,7 @@ font-size: 25px;
 
 .logo .offcanvas {
     background: rgba(0, 0, 0, 0.8);
-    width:440px;
+    width:100%;
 }
 .logo .offcanvas-title {
        color: rgba(255,255,255,0.8);
@@ -4260,9 +4260,9 @@ p.award-winning {
 box-shadow: none; }
 
 .offcanvas .phone-mail-area i {
-    color: #ffffff; display: block;
+    color: #000000; display: block;
     margin-right: 5px;
-    background: #f7ad3e;
+    background: #ffc963;
     width: 36px;
     padding: 8px 0;
     border-radius: 2px;
