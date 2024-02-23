@@ -2001,6 +2001,7 @@ section {
     background-attachment: fixed;
     min-height: 583px;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 #about .tab-pane ol {
@@ -2546,7 +2547,8 @@ section {
     z-index: 9;
 }
 
-.team .member {
+.team .member { 
+    position: relative;
     margin-bottom: 20px;
     border-radius: 4px;
     background: #fff;
