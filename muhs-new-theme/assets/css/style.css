@@ -4144,8 +4144,8 @@ p.award-winning {
 
 .allmembersdetails .close {
     position: absolute;
-    right: 10px;
-    top: 8px;
+    right: -6px ;
+    top: -6px;
 }
 
 .allmembersdetails .content img {
