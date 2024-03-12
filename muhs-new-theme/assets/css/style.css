@@ -4144,7 +4144,7 @@ p.award-winning {
 
 .allmembersdetails .close {
     position: absolute;
-    right: -6px ;
+    right: -6px ;   
     top: -6px;
 }
 
@@ -4184,7 +4184,6 @@ p.award-winning {
     height: 500px;
     opacity: 1;
     z-index: 99999999;
-
 }
 
 .allmembersdetails {
@@ -4248,10 +4247,7 @@ p.award-winning {
     margin-left: 10px;
     font-size: 13px;
     content: "\f005";
-
 }
-
-
 
 .offcanvas .close i.fa-xmark{
     font-size: 27px;
