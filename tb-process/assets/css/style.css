@@ -1,0 +1,652 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,500;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444444;
+  overflow-x: hidden;
+}
+
+a {
+  color: #efefef;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #2557aa;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: rgb(59, 59, 59);
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+  z-index: 999999;
+}
+
+/*--------------------------------------------------------------
+# Back to top End
+--------------------------------------------------------------*/
+.top-right {
+  margin: 0;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  transition: all 0.5s;
+  padding-top: 5px;
+  z-index: 99;
+}
+.sticky {
+  left: 0;  font-weight: 500;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 99999;
+}
+#sticky-header a{ color: #000000; position: relative; font-size: 14px;}
+#sticky-header a:after{ position: absolute; content: ""; left: 0; bottom:-15px; width:100%; height: 1px; background: #afafaf;}
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  position: relative;
+
+}
+#header .text {
+  /* padding: 150px 0 0 0; */
+  color: #ffffff
+}
+
+#header .text h1 {
+  font-size: 32px;
+}
+
+
+#header .text p {
+  font-size: 15px;
+    line-height: 27px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#scroll {
+  height: 17%;
+  z-index: 99;
+
+}
+
+#scroll a span {
+  width: 40px;
+  height: 92px;
+  -webkit-transform: rotate(0deg) translate(0, 0);
+  webkit-animation: sdb04 2s infinite;
+  animation: sdb04 2s infinite;
+  box-sizing: border-box;
+  background: url(../img/scroll.png);
+}
+
+@-webkit-keyframes sdb04 {
+  0% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+  }
+
+  20% {
+    -webkit-transform: rotate(0deg) translate(0px, 10px);
+  }
+
+  40% {
+    -webkit-transform: rotate(0deg) translate(0, 0);
+  }
+}
+
+.scrolled-offset {
+  margin-top: 42px;
+}
+
+
+
+@media (min-width: 769px) and (max-width:1100px) {
+
+  .bannerimage img {max-width: 100%;}
+
+  #detailed-steps .detailing h2 {
+    font-size: 24px !important;
+  }
+
+  #scroll {
+    margin-top: 20px
+  }
+
+  #scroll a {
+    color: #000
+  }
+
+  #detailed-steps .detailing .image img {
+    max-width: 124%;
+
+  }
+
+  #detailed-steps .detailing:nth-child(odd) .text {
+    padding: 00 47px 0 57px !important;
+
+  }
+
+  #detailed-steps .detailing:nth-child(even) .text {
+    padding: 00 15px 0 17px !important;
+  }
+
+  #detailed-steps .detailing:nth-child(even) .image img {
+    margin-left: -134px;
+  }
+
+  #header .text {
+    margin: 27px 0 0 0;
+  }
+
+  #header .text h1 {
+    font-size: 27px;
+  }
+
+
+  #header .text span {
+    font-size: 15px;
+    margin-top: 7px;
+    line-height: 24px;
+
+  }
+
+  #header .text p {
+    font-size: 13px;
+    margin-top: 11px;
+    line-height: 24px;
+    padding-right: 0;
+  }
+
+  #detailed-steps .detailing:nth-child(even) .image img {
+    margin-left: -99px;
+  }
+
+}
+
+@media (min-width: 1100px) and (max-width:1365px) {
+
+  .bannerimage img {max-width: 100%;}
+  #header .text h1 {
+    font-size: 29px;
+  }
+
+  .detailing img {
+    width: 107%;
+  }
+
+  #detailed-steps .detailing:nth-child(even) .text,
+  #detailed-steps .detailing:nth-child(odd) .text {
+    padding: 62px 0 0 50px !important;
+
+  }
+
+  #scroll a {
+    color: #000
+  }
+
+}
+
+@media (max-height: 500px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+/*--------------------------------------------------------------
+# Steps
+--------------------------------------------------------------*/
+
+#detailed-steps {
+  background: url("../img/process-bg.png") top left no-repeat;
+}
+
+
+#detailed-steps .section-title span {
+  font-size: 20px;
+  color: #2556aa;
+  margin-bottom: 21px;
+  font-weight: 500;
+
+}
+
+#detailed-steps .section-title h2 {
+  line-height: 30px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+#detailed-steps .detailing ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+
+#detailed-steps .detailing  ol { 
+  list-style: none; 
+  counter-reset: num; 
+} 
+
+#detailed-steps .detailing  ol li { 
+  counter-increment: num;
+  position: relative;
+  padding-left: 40px;
+  padding-top: 1px;
+  padding-bottom: 20px;
+  margin: 0;
+
+} 
+
+#detailed-steps .detailing  ol li::before { 
+  content: counter(num);  font-size: 14px; position: absolute; left: 0; top: 0; width: 26px; height: 26px; padding:3px 0;
+  color: #ffffff; background:#175cff; border-radius:5px;  text-align: center; 
+} 
+
+
+#detailed-steps .detailing  ol li::after { 
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  left: 12px;
+  height: -webkit-fill-available;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(7, 7, 7, 0.4);
+  background-color: rgba(0, 0, 0, 0);
+  z-index: -1;
+} 
+
+#detailed-steps .detailing  ol li:last-child:after { content: none; }
+
+
+#detailed-steps .detailing li {
+  margin-bottom: 10px;
+  color: #000;
+  font-size: 15px;
+}
+
+#detailed-steps .detailing ol>li {
+  width: 95%;
+}
+
+#detailed-steps:last-child .detailing {
+  margin-bottom: 0;
+}
+
+#detailed-steps .detailing:nth-child(odd) .text {
+    background: url(../img/right-bg-medicine.png) top left no-repeat;
+}
+
+#detailed-steps .detailing:nth-child(even) .text {
+  background: url(../img/left-bg-medicine.png) top right no-repeat;
+
+}
+
+
+#detailed-steps .detailing .text span.number {
+  font-size: 22px;
+  color: #2556aa;
+  font-weight: 500;
+}
+
+#detailed-steps .detailing li span {
+  background: #e4187c;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 400;
+  position: relative;
+  margin-left: 10px;
+  padding-left: 10px;
+  font-size: 13px;
+}
+
+#detailed-steps .detailing li span:after {
+  top: 45%;
+  left: 0;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(242, 154, 50, 0);
+  border-top-color: #e4187c;
+  border-width: 7px;
+  margin-left: -7px;
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+
+
+}
+
+#detailed-steps .detailing h2 {
+  color: #414142;
+  font-size: 22px;
+
+}
+
+#detailed-steps .detailing p {
+  font-size: 15px;
+  color: #000000;
+  margin-top: 15px;
+  text-align: justify;
+  line-height: 26px;
+  background-color: rgba(23, 92, 255, .1);
+ margin-bottom: 20px ; padding:10px; border-radius: 5px;
+}
+
+#detailed-steps .detailing b {
+  color: #163389;
+}
+
+#detailed-steps .process-name{    font-size: 28px;}
+#detailed-steps .process-name span{
+  top: 8%; width: 12%;
+  right: 8%;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+  font-size: 15px; border-radius: 8px;
+  letter-spacing: .2px;
+  font-weight: 500;
+  background-color: rgba(255,107,53,.2)
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer .footer-top {
+  min-height: 387px;
+  padding: 50px 0 30px 0;
+  background: #1c1c1c;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+}
+
+.footer-copyright {
+  border-top: 1px solid #333434;
+  padding: 15px 0 0 20px;
+  padding-top: 11px;
+  margin-top: 32px;
+}
+
+
+.footer-top .gmap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 1000;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.footer-top .container-fluid {
+  display: block;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  min-height: 387px;
+  z-index: 1001;
+  background: rgba(0, 0, 0, .8);
+
+}
+
+.footer-top .detail {
+  margin-top: 50px
+}
+
+#footer .footer-top h3 {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+#footer .footer-top p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#footer .footer-top i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#footer .copyright {
+  text-align: center;
+  float: left;
+  color: #868686;
+}
+
+
+.order-1 {
+  order: 0 !important;
+}
+
+
+
+@media (min-width: 1567px) and (max-width: 1920px) {
+
+
+  #header .col-md-5 {
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  #header .text h1 {
+    font-size: 33px;
+    line-height: 48px;
+  }
+
+  #header .text span {
+    font-size: 18px;
+    color: #b9ccf9;
+    margin-top: 14px;
+    line-height: 34px;
+    font-weight: 300;
+    display: block;
+  }
+
+  #header .text p {
+    font-size: 15px;
+       line-height: 30px;
+    letter-spacing: 0.5px;
+  }
+
+}
+
+@media (min-width: 1367px) and (max-width: 1566px) {
+  #scroll {
+    margin-top: 33px;
+  }
+
+  #header .text h1 {
+    font-size: 34px;
+  }
+
+  #header .text span {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 991px) {
+  #sticky-header { display: none !important; }
+  .bannerimage img {max-width: 100%;}
+
+  #header .text h1 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  #detailed-steps .section-title h2 {
+    font-size: 16px;
+  }
+
+  #detailed-steps .detailing li {
+    width: 100%;
+  }
+
+  #detailed-steps .detailing p {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  #scroll { display: none;}
+
+  #detailed-steps .process-name span {
+    width: 62%; }
+  
+  #detailed-steps ol {
+    margin-right: 0;
+  }
+
+  #header .text h1 {
+    font-size: 22px;
+  }
+
+  #header .text span {
+    font-size: 17px;
+    margin-top: 7px;
+    line-height: 27px;
+  }
+
+  #header .text p {
+    font-size: 14px;
+    margin-top: 17px;
+    color: #000;
+    background: #efefef;
+    padding: 20px;
+  }
+
+  .top-right img {
+    margin-left: 2px;
+
+  }
+
+  #scroll {
+    height: 124px;
+    margin-top: 17px;
+  }
+
+  #scroll a {
+    color: #000
+  }
+
+  .order-1 {
+    order: 1 !important;
+  }
+
+  #detailed-steps .detailing:nth-child(odd) .text {
+    padding: 0;
+  }
+
+  #detailed-steps .detailing:nth-child(even) .text {
+    padding: 0 0;
+  }
+
+  #detailed-steps {
+    margin: 0 0;
+  }
+
+
+  #detailed-steps .detailing h2 {
+    font-size: 25px;
+  }
+
+  #detailed-steps .container-fluid {
+    padding: 0 30px;
+  }
+
+  #detailed-steps .detailing:nth-child(even) p {
+    padding-right: 0;
+  }
+
+  #detailed-steps .detailing li {
+    width: 100%;
+
+  }
+
+  #detailed-steps .detailing p {
+    font-size: 14px;
+
+  }
+
+
+
+}
