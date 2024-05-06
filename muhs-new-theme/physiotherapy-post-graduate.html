@@ -973,7 +973,7 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="page-list-title text-center">
-                                        <h1 class="position-relative mb-4">Departments</h1>
+                                        <h1 class="position-relative mb-4">Courses and Syllabus</h1>
                                         <nav aria-label="breadcrumb"
                                             class="d-flex align-items-center mb-2 justify-content-center">
 
@@ -982,8 +982,9 @@
                                                 <li class="breadcrumb-item"><i
                                                         class="fa-solid fa-house-chimney me-1"></i><a
                                                         href="index-final.html"></a></li>
-                                           
-                                                <li class="breadcrumb-item active" aria-current="page">Departments</li>
+                                                <li class="breadcrumb-item"><a href="#">Academic</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Courses and
+                                                    Syllabus</li>
                                             </ol>
                                         </nav>
                                     </div>
@@ -992,103 +993,53 @@
 
                             <div class="col-md-12 ">
 
-                                <div class="department searcharea p-3 mt-2">
+                                <div class="searcharea p-3 mt-2">
                                     <div class="searchfilters">
-                                        <div class="container">
+                                        <div class="container d-flex align-items-center">
+                                            <select class="selectpicker me-3" multiple
+                                                aria-label="Faculty select example" data-live-search="true">
+                                                <option selected="">Faculty</option>
+                                                <option value="10">Medical</option>
+                                                <option value="11">Dental</option>
+                                                <option value="12">Ayurved</option>
+                                                <option value="13">Unani</option>
+                                                <option value="14">Homoeopathy</option>
+                                                <option value="15">Nursing</option>
+                                                <option value="16">Physiotherapy</option>
+                                                <option value="17">Occupational Therapy</option>
+                                                <option value="18">Audiology and Speech Language Pathology</option>
+                                                <option value="19">Prosthetics and Orthotics</option>
 
+                                            </select>
 
-<div class="row">
-<div class="col-md-3">       <div class="searcbox">
-    <label for="selectpicker" class="d-block">Department</label>
-    <select class="selectpicker me-3" multiple
-        aria-label="Department select example" data-live-search="true">
-       
-        <option value="3">Academic (PG)</option>
-        <option value="2">Academic (UG)</option>
-        <option value="25">Administration</option>
-        <option value="15">AYUSH Nashik</option>
-        <option value="27">Civil</option>
-        <option value="31">Common Information</option>
-        <option value="6">Computer</option>
-        <option value="83">Department of Health Information &amp; Technology</option>
-        <option value="20">DM Mumbai</option>
-        <option value="22">DPH Aurangabad</option>
-        <option value="21">DTH Nagpur</option>
-        <option value="26">Election Cell</option>
-        <option value="28">Electrical</option>
-        <option value="5">Eligibility</option>
-        <option value="24">Establishment</option>
-        <option value="1" selected>Examination</option>
-        <option value="4">Finance</option>
-        <option value="18">GIBN Pune</option>
-        <option value="39">Health Centre, Nashik</option>
-        <option value="19">IDD Mumbai</option>
-        <option value="17">Institute of MET and Teachers Training Nashik</option>
-        <option value="108">International Education Hub</option>
-        <option value="29">Legal and Grievances</option>
-        <option value="14">Library</option>
-        <option value="125">Maharashtra Post Graduate Institute</option>
-        <option value="130">MUHS Quality Assurance Cell</option>
-        <option value="13">Planning Board</option>
-        <option value="8">Public Relation</option>
-        <option value="10">Purchase</option>
-        <option value="32">Regional Centre Mumbai</option>
-        <option value="126">Regional Centre, Kolhapur</option>
-        <option value="127">Regional Centre, Latur</option>
-        <option value="30">Right to Info. Cell</option>
-        <option value="23">SHCA Pune</option>
-        <option value="9">Special Cell</option>
-        <option value="120">Statistics</option>
-        <option value="89">Student Cell (Academic)</option>
-        <option value="7">Student Welfare</option>
-        <option value="91">University Department Cell (Fellowship / Certificate Course Section)</option>
-        <option value="90">University Department Cell (Ph.D and Research Grant)</option>
-        <option value="16">University Research Department</option>
+                                            <select class="selectpicker me-3" multiple
+                                                aria-label="Course-Type select example" data-live-search="true">
+                                                <option selected="">Course Type</option>
+                                                <option value="0">Graduate</option>
+                                                <option value="1">Post Graduate</option>
+                                                <option value="2">Ph.D.</option>
+                                                <option value="3">Post Graduate Diplomas</option>
+                                                <option value="4">Fellowship Courses</option>
+                                                <option value="5">Certificate Courses</option>
+                                                <option value="6">Super Speciality</option>
+                                                <option value="7">Under Graduate Diplomas</option>
+                                                <option value="8">M.Phil.</option>
+                                            </select>
+                                            <select class="selectpicker me-3" multiple
+                                                aria-label="Course select example" data-live-search="true">
+                                                <option selected="">Courses</option>
+                                                <option value="0">M. P. Th. in Sports Physiotherapy</option>
+                                                <option value="1">M.P.Th. in Cardiovascular and Respiratory
+                                                    Physiotherapy</option>
+                                                <option value="2">M.P.Th. in Community Physiotherapy</option>
+                                                <option value="3">M.P.Th. in Musculoskeletal Physiotherapy</option>
+                                                <option value="4">M.P.Th. in Neuro Physiotherapy</option>
+                                            </select>
 
-    </select>
-</div>
-</div>
-<div class="col-md-3"> 
-    <div class="searcbox">
-    <label for="doctype d-block">Doc Type</label>
-    <select class="selectpicker me-3" multiple
-        aria-label="Course-Type select example" data-live-search="true">
-       <option value="0" selected>General</option>
-        <option value="1">Notification</option>
-        <option value="2">Direction</option>
-        <option value="3">Circulars</option>
-        <option value="4">Forms</option>
-        <option value="5">Statute</option>
-        <option value="6">Ordinance</option>
-        <option value="7">Conferences / Seminars</option>
-        <option value="8">Exam Timetable</option>
-        <option value="8">Information for Differently Abled / Divyang Student</option>
-        <option value="8">Tender</option>
-    </select></div></div>
-<div class="col-md-3">
+                                            <button class="searchbutton text-white" type="button" value="Search"><i
+                                                    class="fa-solid fa-magnifying-glass"></i> Search
+                                            </button>
 
-    <div class="searcbox">
-        <label for="startDate">From Date</label>
-        <input id="startDate" class="form-control" type="date" placeholder="csdcsdcsdcsd sdsdcsdv" />
-    
-    </div></div>
-<div class="col-md-3"><div class="searcbox"><label for="endDate">To Date</label>
-    <input id="endDate" class="form-control" type="date" /></div>      </div>
-</div>
-
-
-                                       
-
-
-        
-
-
-
-                                  
-
-
-                                           
-                                           
 
                                         </div>
 
@@ -1109,20 +1060,20 @@
                 </div>
 
     </div>
-    <div class="content px-5 courses departments">
+    <div class="content px-5 courses">
         <div class="container-fluid px-5 p-3">
             <div class="sorting-container mb-3 mt-3">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="archive-result-count">
-                            We found <span class="count">15</span> <b>General</b> in <b>Examination</b> department</div>
+                            We found <span class="count">15</span> courses available for you </div>
                     </div>
-                    <div class="col-md-6 p-0 d-flex align-items-center justify-content-end">
+                    <div class="col-md-6 d-flex align-items-center justify-content-end">
                         <div class="dataview d-flex align-items-center justify-content-end">
                             <span class="me-2">See</span>
-                            <button class="btn  btn-grid active" title="Grid View"><i
+                            <button class="btn  btn-grid" title="Grid View"><i
                                     class="fa-solid fa-table-cells-large"></i></button>
-                            <button class="btn btn-list " title="List View"><i class="fa-solid fa-list"></i></button>
+                            <button class="btn btn-list active" title="List View"><i class="fa-solid fa-list"></i></button>
                         </div>
                         <div class="sorting d-flex align-items-center ms-3 float-end ps-3">
 
@@ -1143,41 +1094,54 @@
 
                                 <div class="radio d-flex align-items-center me-2">
                                     <input id="sort-popularity_desc" type="radio" class="me-1" value="popularity_desc">
-                                    <label for="sort-popularity_desc" class="font-wecard-bodyms-3 mt-2ight-medium text-gray">Title
+                                    <label for="sort-popularity_desc" class="font-weight-medium text-gray">Course Title
                                         (a-z)</label>
                                 </div>
 
                                 <div class="radio d-flex align-items-center me-2">
                                     <input id="sort-popularity_desc" type="radio" class="me-1" value="popularity_desc">
-                                    <label for="sort-popularity_desc" class="font-weight-medium text-gray">Title
+                                    <label for="sort-popularity_desc" class="font-weight-medium text-gray">Course Title
                                         (z-a)</label>
                                 </div>
                             </form>
+                           
+
                         </div>
                     </div>
 
                 </div>
+                
 
 
             </div>
-            <div class="grid-container mt-5" data-aos="fade-up">
+            <div class="grid-container list-view mt-5" data-aos="fade-up">
                 <div class="row">
-                      <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card position-relative p-1">
+                            
+                            <div class="buttons position-absolute">
+                                <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download Syllabus</a></div>
+                                <div class="fees text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#compare-fees"><i
+                                    class="fa-regular fa-money-bill-1 me-2"></i>Fees Structure</a></div>
+                            
+                            </div>
+                            <img class="card-img-top" src="assets/img/courses/sports-physiotherapy.jpg"
+                                alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <div class="card-title">
+                                    <h5 class="mb-0" class="mb-2">M. P. Th. in Sports Physiotherapy</h5>
+                                    <h4 class="mt-2 mb-4 ms-2">Master of Physiotherapy in Sports Physiotherapy</h4>
                                 </div>
 
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
+                                <div class="card-text mt-4 ms-2">
                                     <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
+                                        class="fa-regular fa-calendar-days me-2"></i>Course Type:<span
+                                        class="fw-normal"> Post Graduate</span></p>
+                                    <p class="pb-0 me-5"><i
+                                            class="fa-regular fa-calendar-days me-2"></i>Course Duration:<span
+                                            class="fw-normal"> 2 Years</span></p>
+                                    <p class=""><a class="text-decoration-underline"><i class="fa-solid fa-list-check me-2"></i>Eligibility<span
+                                            class="fw-normal"></span></a></p>
 
 
                                 </div>
@@ -1186,180 +1150,129 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
-
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
+                        <div class="card position-relative p-1">
+                            <div class="buttons position-absolute">
+                                <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download Syllabus</a></div>
+                                <div class="fees text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#compare-fees"><i
+                                    class="fa-regular fa-money-bill-1 me-2"></i>Fees Structure</a></div>
+                            
+                            </div>
+                            <img class="card-img-top" src="assets/img/courses/respiratory-physitherapy.jpg"
+                                alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <div class="card-title"> <h5 class="mb-0" class="mb-2">M.P.Th. in Cardiovascular and Respiratory Physiotherapy</h5>
+                                   <h4 class="mt-2 mb-4 ms-2">Master of Physiotherapy in Cardiovascular and Respiratory Physiotherapy</h4></div>
+                                   <div class="card-text mt-4 ms-2">
                                     <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
+                                        class="fa-regular fa-calendar-days me-2"></i>Course Type:<span
+                                        class="fw-normal"> Post Graduate</span></p>
+                                    <p class="pb-0 me-5"><i
+                                            class="fa-regular fa-calendar-days me-2"></i>Course Duration:<span
+                                            class="fw-normal"> 2 Years</span></p>
+                                    <p class=""><a class="text-decoration-underline"><i class="fa-solid fa-list-check me-2"></i>Eligibility<span
+                                            class="fw-normal"></span></a></p>
 
 
                                 </div>
-
+                                    
                             </div>
                         </div>
                     </div>
-                
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
+                        <div class="card position-relative p-1">
+                            <div class="buttons position-absolute">
+                                <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download Syllabus</a></div>
+                                <div class="fees text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#compare-fees"><i
+                                    class="fa-regular fa-money-bill-1 me-2"></i>Fees Structure</a></div>
+                            
+                            </div>
+                            <img class="card-img-top" src="assets/img/courses/community-physiotherapy.jpg"
+                                alt="Card image cap">
+                            <div class="card-body mt-2">
+                                
+                                    <div class="card-title"> <h5 class="mb-0" class="mb-2">M.P.Th. in Community Physiotherapy </h5>
+                                       <h4 class="mt-2 mb-4 ms-2">Master of Physiotherapy in Community Physiotherapy</h4></div>
 
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
-                                    <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
-
-
-                                </div>
-
+                                       <div class="card-text mt-4 ms-2">
+                                        <p class="pb-0 me-5"><i
+                                            class="fa-regular fa-calendar-days me-2"></i>Course Type:<span
+                                            class="fw-normal"> Post Graduate</span></p>
+                                        <p class="pb-0 me-5"><i
+                                                class="fa-regular fa-calendar-days me-2"></i>Course Duration:<span
+                                                class="fw-normal"> 2 Years</span></p>
+                                        <p class=""><a class="text-decoration-underline"><i class="fa-solid fa-list-check me-2"></i>Eligibility<span
+                                                class="fw-normal"></span></a></p>
+    
+    
+                                    </div>
                             </div>
                         </div>
                     </div>
-                
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
-
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
+                        <div class="card position-relative p-1">
+                            <div class="buttons position-absolute">
+                                <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download Syllabus</a></div>
+                                <div class="fees text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#compare-fees"><i
+                                    class="fa-regular fa-money-bill-1 me-2"></i>Fees Structure</a></div>
+                            
+                            </div>
+                            <img class="card-img-top" src="assets/img/courses/musculoskeletal-physiotherapy.jpg"
+                                alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <div class="card-title"> <h5 class="mb-0" class="mb-2">M.P.Th. in Musculoskeletal Physiotherapy</h5>
+                                   <h4 class="mt-2 mb-4 ms-2">Master of Physiotherapy in Musculoskeletal Physiotherapy</h4> </div>
+                               
+                                   <div class="card-text mt-4 ms-2">
                                     <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
+                                        class="fa-regular fa-calendar-days me-2"></i>Course Type:<span
+                                        class="fw-normal"> Post Graduate</span></p>
+                                    <p class="pb-0 me-5"><i
+                                            class="fa-regular fa-calendar-days me-2"></i>Course Duration:<span
+                                            class="fw-normal"> 2 Years</span></p>
+                                    <p class=""><a class="text-decoration-underline"><i class="fa-solid fa-list-check me-2"></i>Eligibility<span
+                                            class="fw-normal"></span></a></p>
 
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
+                        <div class="card position-relative p-1">
+<div class="buttons position-absolute">
+    <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download Syllabus</a></div>
+    <div class="fees text-center"><a href="#" data-bs-toggle="modal" data-bs-target="#compare-fees"><i
+        class="fa-regular fa-money-bill-1 me-2"></i>Fees Structure</a></div>
 
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
+</div>
+
+                           
+                            <img class="card-img-top" src="assets/img/courses/neuro-physiotherapy.jpg"
+                                alt="Card image cap">
+                            <div class="card-body mt-2">
+                                <div class="card-title">  <h5 class="mb-0" class="mb-2">M.P.Th. in Neuro Physiotherapy</h5>
+                                   <h4 class="mt-2 mb-4 ms-2">Master of Physiotherapy in Neuro Physiotherapy</h4></div>
+                                   <div class="card-text mt-4 ms-2">
                                     <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
+                                        class="fa-regular fa-calendar-days me-2"></i>Course Type:<span
+                                        class="fw-normal"> Post Graduate</span></p>
+                                    <p class="pb-0 me-5"><i
+                                            class="fa-regular fa-calendar-days me-2"></i>Course Duration:<span
+                                            class="fw-normal"> 2 Years</span></p>
+                                    <p class=""><a class="text-decoration-underline"><i class="fa-solid fa-list-check me-2"></i>Eligibility<span
+                                            class="fw-normal"></span></a></p>
 
 
                                 </div>
-
                             </div>
                         </div>
                     </div>
-                
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
-
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
-                                    <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
-
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
-                                    <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card position-relative py-0">
-                                  <div class="card-body py-2">
-                                <div class="card-title d-flex">
-                                    <img src="assets/img/department-icon.png" width="93px" height="85px">
-                                    <div class="ms-2 mt-2">
-                                    <h5 class="mb-0" class="mb-2">Examination</h5>
-                                    <h4 class="mt-2 mb-2 ms-2">Tentative Practical Time-Table for Summer 2024 Examinations for PG degree diploma Superspeciality Courses under the faculty of Medicine</h4></div>
-                                </div>
-
-                                <div class="card-text mt-2 ms-2 justify-content-end">
-                              
-                                    <p class="pb-0 me-5"><i
-                                            class="fa-regular fa-calendar-days me-2"></i><span
-                                            class="fw-normal"> 23/04/2024</span></p>
-                                            <div class="download-syllabus"><a><i class="fa-solid fa-download me-2"></i>Download</a></div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                
-
-               
-               
 
                 </div>
 
             </div>
+
+
             <div class="row mt-4">
                 <nav aria-label="Small page navigation">
                     <ul class="pagination pagination-sm d-flex justify-content-center">
@@ -1584,7 +1497,7 @@
                     <div class="col-lg-6 col-md-3 footer-links">
                         <h4>Our Location </h4>
                         <p><iframe
-                                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d59974.675255879366!2d93.79389751181644!3d20.03296044480211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bddeb1a8de69c63%3A0x39e942cc8ef8edeb!2sMumbai%20Naka%20Cir%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra!3m2!1d19.9867076!2d93.7840578!4m5!1s0x3bdde9a46f9ef8f1%3A0xf8fd6dbafd121120!2sMaharashtra%20University%20of%20Health%20Sciences%2C%203RH3%2BC34%2C%20Mhasrul%2C%20Vani%20Dindori%20Road%2C%20Nashik%2C%20Maharashtra%20422004!3m2!1d20.0785105!2d93.8027101!5e0!3m2!1sen!2sin!4v1662972280963!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d59974.675255877366!2d73.77389751181644!3d20.03296044480211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3bddeb1a8de69c63%3A0x39e942cc8ef8edeb!2sMumbai%20Naka%20Cir%2C%20Mumbai%20Naka%2C%20Nashik%2C%20Maharashtra!3m2!1d19.9867076!2d73.7840578!4m5!1s0x3bdde9a46f9ef8f1%3A0xf8fd6dbafd121120!2sMaharashtra%20University%20of%20Health%20Sciences%2C%203RH3%2BC34%2C%20Mhasrul%2C%20Vani%20Dindori%20Road%2C%20Nashik%2C%20Maharashtra%20422004!3m2!1d20.0785105!2d73.8027101!5e0!3m2!1sen!2sin!4v1662972280963!5m2!1sen!2sin"
                                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe></p>
                         <div class="social-links mt-3"> </div>
@@ -1616,12 +1529,14 @@
 
 
     <div class="modal fade" id="compare-fees" tabindex="-1" role="dialog"
-    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="background: rgba(30, 53, 123, 0.3);">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-body position-relative">
-                <div class="close position-absolute end-0 top-5" style="z-index: 99999;">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <div class="close position-absolute" style="z-index: 99999;top:-16px;
+                right:-20px;">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" style="border-radius: 50px;
+                    background: #ffffff; width: 30px; height: 30px;">
                         <span aria-hidden="true">&times;</span>
                 </div>
                 <div class="content p-4  position-relative  ">
@@ -1630,10 +1545,10 @@
                         <div class="col-md-12">
                             <div class="col-xs-12">
                                  <h5>Fees Structure | M. P. Th. in Sports Physiotherapy</h5>
-                               <div class="compare-fees">
-<table class="table table-striped">
+                               <div class="compare-fees mt-3">
+<table class="table table-striped  table-bordered">
 <thead>
-    <tr class="fw-normal">
+    <tr class="fw-normal table-warning">
  <th>College Code</th>  
  <th>College</th>  
  <th>Fees</th>  

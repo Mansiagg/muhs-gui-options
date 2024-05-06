@@ -25,7 +25,8 @@ a:hover {
     text-decoration: none;
 }
 
-html,body {
+html,
+body {
     margin: 0;
     overflow-x: hidden;
 }
@@ -122,7 +123,7 @@ html,body {
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
-    background-color: #5e6fb5;
+    background-color: #9f870b;
     padding: 8px 5px;
     font-size: 12px;
     width: 51px;
@@ -197,17 +198,20 @@ html,body {
     right: -5px;
     top: 15px;
 }
-.logo .mobilemenu i{
-font-size: 25px;
+
+.logo .mobilemenu i {
+    font-size: 25px;
 }
 
 .logo .offcanvas {
     background: rgba(0, 0, 0, 0.8);
-    width:100%;
+    width: 100%;
 }
+
 .logo .offcanvas-title {
-       color: rgba(255,255,255,0.8);
+    color: rgba(255, 255, 255, 0.8);
 }
+
 .logo h1 {
     font-size: 18px;
     font-family: 'Patua One' !important;
@@ -925,15 +929,18 @@ font-size: 25px;
 
 #quotation {
     /* background-image: linear-gradient(to right, #1e357b 0%, #2989d8 50%, #77b7fe 100%), url("../img/pagebannerbg.png");  */
-    background-position:top, center;
+    background-position: top, center;
     background-repeat: no-repeat;
     padding: 162px 0 80px 0px;
-    color: #ffffff; 
+    color: #ffffff;
     background-image:
         linear-gradient(45deg,
             rgba(30, 53, 123, 1),
             rgba(41, 137, 216, 0.75)),
         url('../img/aboutbg.jpg');
+    min-height: 462px;
+    position: relative;
+    z-index: 99;
 }
 
 #page .page-title.pdfpage {
@@ -948,12 +955,6 @@ font-size: 25px;
 
 #page .page-title.pdfpage h1 {
     font-size: 1.5rem;
-}
-
-#page span {
-    text-transform: capitalize;
-    font-size: 45px;
-    text-align: left;
 }
 
 #page a.cbutton {
@@ -1262,10 +1263,10 @@ font-size: 25px;
 .courses_view-all .btn:hover,
 .btn-:active,
 .btn:focus {
-    background-color: #20448c;
-    color: #fff;
-    border: 2px solid;
-    border-color: #ffffff;
+    outline: 0;
+    background: transparent;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 .object {
@@ -2548,7 +2549,7 @@ section {
     z-index: 9;
 }
 
-.team .member { 
+.team .member {
     position: relative;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -4202,14 +4203,37 @@ p.award-winning {
 
 .page-list-title h1 {
     color: var(--bs-white);
+    font-size: 1.7rem;
+}
+
+.page-list-title h1:after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    height: 1px;
+    width: 100px;
+    background-color: #ffffff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
 .page-list-title ol>li>a {
-    color: rgba(255,255,255,0.8); font-size: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
     font-weight: 300;
 }
-.breadcrumb-item+.breadcrumb-item::before { font-size: 15px; top: 8px;}
-.breadcrumb-item i{ font-size:14px;  color: rgba(255,255,255,0.8);}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    font-size: 15px;
+    top: 8px;
+}
+
+.breadcrumb-item i {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .page-list-title .breadcrumb-item.active {
     color: #ffc963;
 }
@@ -4259,15 +4283,18 @@ p.award-winning {
 
 
 
-.offcanvas .close i.fa-xmark{
+.offcanvas .close i.fa-xmark {
     font-size: 27px;
     color: #ffffff;
 }
+
 .offcanvas .btn-close:focus {
-box-shadow: none; }
+    box-shadow: none;
+}
 
 .offcanvas .phone-mail-area i {
-    color: #000000; display: block;
+    color: #000000;
+    display: block;
     margin-right: 5px;
     background: #ffc963;
     width: 36px;
@@ -4275,9 +4302,336 @@ box-shadow: none; }
     border-radius: 2px;
     text-align: center;
 }
-.ffcanvas .phone-mail-area div{ font-size: 13px;}
 
-.header-area{    position: absolute;
+.ffcanvas .phone-mail-area div {
+    font-size: 13px;
+}
+
+.header-area {
+    position: absolute;
     top: 0;
     width: 100%;
+}
+
+/** Courses **/
+
+.card {
+    margin-bottom: 1rem;
+}
+
+.list-view {
+    .row {
+        >[class*='col-'] {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+
+    .card {
+        @media (max-width: 575.98px) {
+            flex-direction: column;
+        }
+
+        flex-direction: row;
+
+        >.card-img-top {
+            width: auto;
+        }
+
+        .card-body {
+            display: inline-block;
+        }
+    }
+}
+
+.card {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px transparent solid;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, .09) !important;
+    transition: box-shadow 300ms ease, transform 300ms ease, -webkit-transform 300ms ease;
+}
+
+.card:hover,
+.card:active {
+    cursor: pointer;
+    background-color: var(--bs-white);
+    border-color: #9f870b;
+    transform: translate(0px, -6px);
+}
+
+.sorting-container {
+    /* border-bottom: 1px solid #ebebeb;} */
+}
+
+.sorting-container .count {
+    text-transform: capitalize;
+    font-size: 22px;
+    text-align: left;
+}
+
+.dataview .btn {
+    /* border: 1px solid #9e9d9d; */
+    border-radius: 0;
+    padding: 0px 4px;
+}
+
+.dataview span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.sorting .title {
+    font-size: 15px;
+}
+
+.sorting {
+    position: relative;
+}
+
+.sorting:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 13px;
+    width: 1px;
+    height: 20px;
+    background-color: #9f870b;
+}
+
+.search {
+    margin-top: -80px;
+    min-height: 150px;
+}
+
+.searcharea {
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+.searchfilters .dropdown .btn {
+    box-shadow: none;
+    outline: none;
+    font-weight: 300;
+    font-size: 15px;
+    border: 1px solid rgba(128, 128, 128, .2);
+    color: #000000;
+    background: #ffffff;
+    padding: 13px;
+}
+
+.searchfilters .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 28%;
+}
+
+.searchfilters .bootstrap-select .dropdown-toggle:focus {
+    outline: #9f870b dotted thin !important;
+}
+
+.searchfilters .searchbutton {
+    transition: all .2s ease-in-out;
+    border: none;
+    background: #1cb2ff;
+    outline: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+
+    font-size: 16px;
+    height: 50px;
+    line-height: 53px;
+    border-radius: 5px;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+.list-view .card .card-title h5 {
+    width: max-content !important;
+}
+
+.courses a:hover {
+    color: #000000;
+}
+
+.courses .card .card-title h5 {
+    font-size: 0.9rem;
+    line-height: 22px;
+    border: 1px solid #e1e1e1;
+    border-radius: 27px;
+    /* width: max-content; */
+    padding: 6px 15px;
+}
+
+.courses .card img {
+    border-radius: 0;
+}
+
+.courses .card .card-title h4 {
+    font-size: 1rem;
+    line-height: 22px;
+    color: #0050b4;
+    font-weight: 300;
+}
+
+.departments .card .card-title h4 {
+    font-size: 0.98rem;
+    line-height: 25px;
+    color: #0050b4;
+    font-weight: 300;
+}
+.departments .card-text p ,.departments .card-text a{
+    font-weight:400;
+    color: #000000;
+    font-size: 14px !important;
+}
+.departments .card .card-title h5 {
+    background: #ffe3d9; border: 0;
+    color: #000000; font-size: 13px; font-weight: 400;
+    width: max-content;}
+
+
+.courses .card-text p {
+    font-weight: 300;
+    color: #000000;
+    font-size: 15px;
+}
+
+.courses .card-text i {
+    color: #d83b01;
+}
+
+.list-view .buttons {
+    right: 20px;
+    top: 20%;
+}
+
+.grid-container .card .card-body {
+    min-height: 300px;
+}
+
+.grid-container.list-view .card .card-body {
+    min-height: auto;
+}
+
+.departments .grid-container .card-text{ display: flex;}
+
+.departments  .grid-container .card .card-body {
+    min-height: 254px;
+}
+.departments  .grid-container.list-view .card .card-body {
+    min-height: auto;
+}
+.buttons {
+    right: -7px;
+    top: 20%;
+}
+
+.buttons .download-syllabus {
+    /* transition: all .2s ease-in-out; */
+    border: none;
+    width: max-content;
+    background: #1cb2ff;
+    outline: none;
+    color: #ffffff;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 22px;
+    border-radius: 5px;
+
+}
+
+.buttons .download-syllabus:hover {
+    border: 1px solid #1cb2ff;
+    background: transparent;
+}
+
+.list-view .buttons .download-syllabus:hover a {
+    color: #000000;
+}
+
+.list-view .card-text {
+    display: flex;
+}
+
+.list-view .buttons .fees {
+    border: 1px solid #d94007;
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 35px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: max-content;
+    margin: 8px auto;
+    font-weight: 500;
+}
+
+.list-view .buttons .fees a {
+    color: #000000;
+}
+
+.buttons .fees {
+    background: #d94007;
+    border-radius: 5px;
+    padding: 10px 35px;
+    margin-top: 10px;
+    font-size: 14px;
+    width: max-content;
+    margin: 8px auto;
+    font-weight: bold;
+}
+
+.buttons .fees a {
+    color: #ffffff;
+}
+
+.list-view .buttons .fees:hover {
+    background: #d94007;
+    color: #ffffff;
+}
+
+.buttons .fees:hover a {
+    color: #ffffff;
+}
+
+#compare-fees tbody td {
+    font-weight: 300;
+    font-size: 15px;
+}
+.searcbox .dropdown { width: 100% !important;}
+.searcbox input {      padding: 24px;
+    color: #5e5e5e; font-size: 15px;
+    font-weight: 300;
+}
+.searcbox  label{ font-size: 13px; margin-bottom: 8px; }
+
+.compare-fees table{ font-size: 15px; }
+.compare-fees table th {font-size: 14px;  font-weight: 400; }
+.departments .card{    border-left: 2px solid #9f870b;
+}
+.objective { background: #2989d8; color: #ffffff;}
+.aboutcontent p{ font-size: 15px; font-weight: 300; line-height: 25px; color: #000000;}
+.objective  h3{    font-weight: 600; color: #ffffff; font-size: 40px;}
+.objective .content small{ font-size: 18px;}
+.objective li{ font-size: 15px; margin-bottom: 15px; font-weight: 300; text-align: justify;;}
+.objective ul li {
+    position: relative;
+    padding-left: 35px;
+}
+.objective ul li i {
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+}
+
+.aboutcontent h2{ font-size: 16px; color: #2989d8 ;}
+.aboutcontent h3{ font-size: 20px; font-weight: 600; letter-spacing: 0.5px;}
+.aboutcontent p{ text-align: justify; font-size: 14px;}
+
+.boxcontent .box{
+    background-color: #ffffff;
+    box-shadow: 0 6px 30px hsla(0, 0%, 7%, .03), 0 6px 30px hsla(0, 0%, 7%, .03);
 }
