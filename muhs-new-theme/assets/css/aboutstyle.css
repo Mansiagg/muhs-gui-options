@@ -4320,7 +4320,7 @@ p.award-winning {
 }
 
 .list-view {
-    .row {
+    .row.fullwidth {
         >[class*='col-'] {
             max-width: 100%;
             flex: 0 0 100%;
@@ -4477,10 +4477,12 @@ p.award-winning {
 }
 
 .departments .card .card-title h4 {
-    font-size: 0.98rem;
+    font-size: 0.95rem; margin-right: 5px; word-spacing: -2px;
     line-height: 25px;
     color: #0050b4;
     font-weight: 300;
+    text-align: justify;
+    text-align-last: auto;
 }
 .departments .card-text p ,.departments .card-text a{
     font-weight:400;
@@ -4504,8 +4506,8 @@ p.award-winning {
 }
 
 .list-view .buttons {
-    right: 20px;
-    top: 20%;
+    right: 8px;
+    top: 16%;
 }
 
 .grid-container .card .card-body {
@@ -4611,7 +4613,9 @@ p.award-winning {
 .compare-fees table th {font-size: 14px;  font-weight: 400; }
 .departments .card{    border-left: 2px solid #9f870b;
 }
-.objective { background: #2989d8; color: #ffffff;}
+.objective { background-color: #2989d8; color: #ffffff; background-image: url("../img/objective-bg.jpg");
+background-position: top 100px right; background-repeat: no-repeat;
+}
 .aboutcontent p{ font-size: 15px; font-weight: 300; line-height: 25px; color: #000000;}
 .objective  h3{    font-weight: 600; color: #ffffff; font-size: 40px;}
 .objective .content small{ font-size: 18px;}
@@ -4621,17 +4625,79 @@ p.award-winning {
     padding-left: 35px;
 }
 .objective ul li i {
+    /* position: absolute;
+    top: 5px;
+    left: 0; */
     position: absolute;
     top: 5px;
     left: 0;
-
+    background: #f3f4f6;
+    border-radius: 50%;
+    color: #002856;
+    width: 25px;
+    height: 25px; font-size: 13px;
+    text-align: center;
+    line-height: 23px;
+    
 }
 
 .aboutcontent h2{ font-size: 16px; color: #2989d8 ;}
 .aboutcontent h3{ font-size: 20px; font-weight: 600; letter-spacing: 0.5px;}
 .aboutcontent p{ text-align: justify; font-size: 14px;}
-
+.boxcontent:hover { cursor: pointer;}
 .boxcontent .box{
     background-color: #ffffff;
     box-shadow: 0 6px 30px hsla(0, 0%, 7%, .03), 0 6px 30px hsla(0, 0%, 7%, .03);
+    min-height: 372px;
 }
+.boxcontent .box .icon {
+    overflow: hidden; background-color:#002856  ;
+    width: 80px; cursor: pointer;
+    height: 80px;
+    line-height: 90px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, .09);
+    transition: .4s;
+}
+
+.boxcontent .box .icon i {
+    font-size: 32px;
+    margin: 0 auto;
+    transition: .4s;
+    color: #ffffff;
+}
+
+.boxcontent .box .icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: "";
+    width:55%;
+    height: 100%;
+    background-color: #d83b01;
+    transition: .4s;
+    visibility: visible;
+    opacity:1;
+    z-index: -1;
+}
+.boxcontent .box:hover .icon:after {
+    visibility: visible;
+    opacity: 1;
+    width:100%;
+}
+.boxcontent .box span{     border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 0px 20px;
+    line-height: 25px;
+    display: block;
+    width: max-content;
+    margin-bottom: 10px;}
+
+.achievements li{ list-style: lower-roman; margin-bottom: 15px; font-size: 16px; font-weight: 300;}
+.achievements .title{    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.5px;}
+
+    .list-view img.departmentimg {margin-left:40px !important;}
