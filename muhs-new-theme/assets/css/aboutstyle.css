@@ -4613,9 +4613,7 @@ p.award-winning {
 .compare-fees table th {font-size: 14px;  font-weight: 400; }
 .departments .card{    border-left: 2px solid #9f870b;
 }
-.objective { background-color: #2989d8; color: #ffffff; background-image: url("../img/objective-bg.jpg");
-background-position: top 100px right; background-repeat: no-repeat;
-}
+.objective { background-color: #2989d8; color: #ffffff; }
 .aboutcontent p{ font-size: 15px; font-weight: 300; line-height: 25px; color: #000000;}
 .objective  h3{    font-weight: 600; color: #ffffff; font-size: 40px;}
 .objective .content small{ font-size: 18px;}
