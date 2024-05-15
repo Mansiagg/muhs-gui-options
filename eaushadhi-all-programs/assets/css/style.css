@@ -359,9 +359,10 @@ a.meanmenu-reveal {
 }
 
 .logo {
-    position: relative;
-
-}
+    padding-left: 60px;
+    
+    }
+    
 
 
 .logo h1 {
@@ -1392,8 +1393,9 @@ header .loginbtn a {
 }
 
 #footer .heading {
-    font-size: 143px;
+    font-size: 203px;
     color: #f5f5f5;
+    letter-spacing: 21px; z-index: -1;
 }
 
 .nav-tabs .nav-link.active {
