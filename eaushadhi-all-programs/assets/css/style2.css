@@ -327,7 +327,7 @@ a.meanmenu-reveal {
 
 .header-top-bar .punchline {
     color: var(--bs-white);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -359,7 +359,7 @@ a.meanmenu-reveal {
 }
 
 .logo {
-    position: relative;
+padding-left: 60px;
 
 }
 
