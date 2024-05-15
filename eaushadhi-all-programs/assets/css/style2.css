@@ -369,7 +369,9 @@ a.meanmenu-reveal {
     font-size: 32px;
     color: #1a1a1a;
 }
-
+.logo p{
+    font-size: 13px;
+}
 .modal-dialog {
     max-width: 800px;
     margin-top: 100px;
@@ -1392,8 +1394,9 @@ header .loginbtn a {
 }
 
 #footer .heading {
-    font-size: 143px;
+    font-size: 203px;
     color: #f5f5f5;
+    letter-spacing: 21px;
 }
 
 .nav-tabs .nav-link.active {
