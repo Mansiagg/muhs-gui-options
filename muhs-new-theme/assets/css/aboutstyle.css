@@ -4501,7 +4501,7 @@ p.award-winning {
     font-size: 15px;
 }
 
-.courses .card-text i {
+.courses .card-text i, .departments .card-text i {
     color: #d83b01;
 }
 
@@ -4517,6 +4517,14 @@ p.award-winning {
 .grid-container.list-view .card .card-body {
     min-height: auto;
 }
+
+.departments .grid-container.list-view h5{display: none;}
+.departments .grid-container.list-view .card-body{ position: relative;}
+.departments .grid-container.list-view .card-text{ position: absolute; top: 10px; right: 0;}
+.departments .grid-container.list-view .departmentimg{display: none;}
+.departments .grid-container.list-view .docimage{display: block;}
+.departments .grid-container .docimage{display: none;}
+ 
 
 .departments .grid-container .card-text{ display: flex;}
 
