@@ -1634,3 +1634,15 @@ iframe {
 #pricing .accordion-body .content div:nth-of-type(even){ background: var(--theme-price-tablecol-color)}
 .pricingheads {background:var(--theme-light-bg);}
 /** Pricing CSS End*/
+
+/** FAQ **/
+#faq .faqsection h2{ font-size: 17px; font-weight: 700;} 
+#faq .faqsection .accordion-button { font-size: 14px; font-weight: 500;}
+#faq .faqsection .accordion-body { font-size: 14px; font-weight: 300;}
+.pageimagefaq {
+       right: 30px;
+    bottom: -45px;
+    z-index: 99;
+}
+#pagecontent.faqcontent p {
+    font-size: 14px;}
