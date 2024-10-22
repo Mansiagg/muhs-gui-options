@@ -39,11 +39,11 @@ p {
 	color: var(--bs-white);
 	max-height: 37px;
 }
-
+.logo{font-family: "Mooli", sans-serif;}
 .logo h1 {
 	color: var(--bs-white);
 	font-size: 15px;
-	font-family: "Mooli", sans-serif;
+	
 }
 
 .logo p {
@@ -101,7 +101,7 @@ p {
 
 #kpis .kpi .rightimg {
 	right: 1px;
-	top: 1px;
+	top: 1px; 
 }
 
 #kpis .kpi .rightimg img {
@@ -141,7 +141,7 @@ p {
 
 #kpis .purplekpi {
 	background-image: linear-gradient(to right top, #6678e2, #6e6ed2, #7464c2, #765ab3, #7751a3);
-	min-height: 322px;
+	min-height: 311px;
 }
 
 #kpis .purplekpi h2 {
@@ -173,9 +173,9 @@ p {
 	background: var(--ast-pink);
 	border-radius: 3px;
 	font-size: 13px;
-	bottom: -20px;
+	bottom: -12px;
 	right: 10px;
-	height: 40px;
+	height: 37px;
 }
 
 footer {
