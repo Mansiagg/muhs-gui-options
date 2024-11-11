@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>e-Aushadhi</title>
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="assets/img/logo.png" rel="icon">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/wowanimation.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#menu li a").on('click', function (e) {
+                e.preventDefault();                // Remove active class from all li elements
+                $("#menu li").removeClass('active');                // Add active class to the clicked li
+                $(this).parent().addClass('active');
+            });
+        });    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start of header area -->
+        <div class="medicines-image position-absolute end-0 top-0"><img src="assets/img/header-medicines-image.png" />
+        </div>
+        <header id="home" class="header-area header-wrapper">
+            <div id="sticky-header" class="header-middle-area">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-3 col-12"> <a href="#">
+                                <div class="logo pt-3 position-relative">
+                                    <img src="assets/img/logo.png" class="position-absolute start-0 top-0 pt-1">
+                                    <h1 class="mb-0 pb-0 text-black">e-Aushadhi</h1>
+                                    <p class="p-0 mb-0 d-block">(Govt. of Telangana)</p>
+                                </div>
+                            </a> </div>
+                        <div class="col-md-5 col d-flex align-items-center justify-content-end">
+                            <nav id="primary-menu">
+                                <ul id="menu"
+                                    class="main-menu menu-eff px-0 mb-0 d-flex justify-content-end align-items-center">
+                                    <li class="active"><a href="#home">Home</a> </li>
+                                    <li><a href="#services">About</a> </li>
+                                    <li><a href="#services">Services </a> </li>
+                                    <li><a href="#footer">Contact</a> </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-4 col-3 px-0 pt-4">
+                            <div class="phone-mail-area d-flex align-items-center">
+                                <div class="contact-email d-flex align-items-center"> <a
+                                        href="mailto:tsmsidc.itcell@gmail.com"
+                                        class="text-white d-flex align-items-center"><span
+                                            class="material-symbols-outlined me-1">
+                                            mail</span>tsmsidc.itcell@gmail.com</a>
+                                </div>
+                                <div class="contact-number me-4 ps-5"><a href="tel:04024656688"
+                                        class="text-white d-flex align-items-center">
+                                        <span class="material-symbols-outlined">
+                                            call
+                                        </span>+91040-24656688</a> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile-menu-area start -->
+            <div class="mobile-menu-area d-lg-none">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav id="dropdown" class="dnone" style="display: block;">
+                                <ul>
+                                    <div class="menuheading">MENU</div>
+                                    <li class="active"><a href="#"><i class="fa-solid fa-house"></i>Home</a> </li>
+                                    <li><a href="#services"><i class="fa fa-circle-info"></i> About Us</a></li>
+                                    <li><a href="#services"><i class="fa-solid fa-pills"></i>Services</a></li>
+                                    <li><a href="#"><i class="fa-solid fa-photo-film"></i>Gallery</a></li>
+                                    <li><a href="#footer"><i class="fa-solid fa-phone"></i>Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--mobile menu area end-->
+        </header>
+        <!-- End of header area -->
+        <!--slider area are start-->
+        <section id="bannersection" class="position-relative">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active pe-5 py-5 box" data-bs-pause="false" data-bs-interval="1000">
+                        <div class="row">
+                            <div class="col-md-6 mt-5 p-0">
+                                <div class="title">
+                                    <h1 class="fw-light ps-5">Drug and Vaccine
+                                        <span class="d-block fw-bold">Supply Chain Management</span>
+                                    </h1>
+                                    <div class="content mt-3 ps-5">
+                                        <p class="fw-light pe-5">e-Aushadhi Telangana is a web based supply chain management
+                                            application deals with Indenting based procurement, Inventory Management &
+                                            Distribution of various drugs, sutures and surgical itemsto various CDS of
+                                            States, Hospitals, Diagnostic Centre (DC) and Dispensary (DS) the final
+                                            consumer of the supply chain. </p>
+                                   
+                                          
+                                    </div>
+                                    <div class="d-flex align-items-bottom">
+                                        <div class="map"><img src="assets/img/Telangana-State-Map.png"/></div>
+                                        <div class="chief-minister"><img src="assets/img/sri-anumula-revanth-reddy.png"/>
+                                        <p class="mb-0">Sri. Anumula Revanth Reddy</p>
+                                        <small>Hon'ble Chief Minister</small>
+                                        </div>  
+                                        <div class="minister"><img src="assets/img/shri-damodar-raja-narasimha.png"/>
+                                            <p class="mb-0">Sri. Damodar Raja Narasimha</p>
+                                            <small>Hon'ble Minister for Health,<br> Medical & Family Welfare,<br> Science & Technology</small>
+                                        </div> 
+                                       </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 p-0">
+                                <div id="header-form" class="mt-5 pt-4 pb-2 px-3 wow fadeInRight">
+                                    <div class="card-body text-center text-white py-2" id="login">
+                                        <h1 class="mb-2">Login</h1><span class="fw-light">Welcome back! Please enter
+                                            your credentials<br> to access your account.</span>
+                                        <form class="mt-4 mb-4">
+                                            <div class=" form-outline mb-3"><input type="email" id=""
+                                                    class="form-control form-control-lg" placeholder="* Username"
+                                                    required="true" /> </div>
+                                            <div class="form-outline mb-3"> <input type="password" id=""
+                                                    class="form-control form-control-lg" placeholder="* Password"
+                                                    required="true" /> </div>
+                                            <div class="form-outline mb-3 text-start"> <input type="text" id=""
+                                                    class="form-control form-control-lg" placeholder="Enter Captcha"
+                                                    required="true" />
+                                                <p class="text-decoration-underline text-white">Captcha is case
+                                                    sensitive
+                                                </p> <img src="assets/img/captcha.jpg">
+                                            </div>
+                                            <input type="submit" class="py-2 mt-2" />
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                            <div class="latest-news position-absolute bottom-0 end-0">
+                                    <div class="latest-news-box bg-white px-3 py-3">
+                                        <h2 class="mb-3">Latest <b>News</b><span class="float-end"><img src="assets/img/notification-icon.png"></span></h2>
+                                        <div class="icons"></div>
+                                        <ul class="p-0 m-0">
+                                           <li><a>
+                                            <h3>Research product</h3>
+                                            <p>here description will be displayed</p>
+                                           </a></li>
+                                           <hr/> 
+                                           <li><a>
+                                            <h3>Research product</h3>
+                                            <p>here description will be displayed</p>
+                                           </a></li>
+                                           <hr/> 
+                                           <li><a>
+                                            <h3>Research product</h3>
+                                            <p>here description will be displayed</p>
+                                           </a></li>
+                                           <hr/> 
+                                        </ul>
+                                    </div>
+
+                            </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+               <div class="bggreen position-absolute end-0 bottom-0"></div>
+        </section> <!-- Page Sections Starts Here-->
+        <main id="main" class="mt-5">
+            <!-- Services Section -->
+          
+            <section id="services" class="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="ps-6 wow fadeInLeft text-center" data-wow-duration="1.5s" data-wow-delay="1.5s"">
+                                     <h5 class=" fw-bold position-relative">Our Services</h5>
+                                <p class="servicescontent mt-4"><span class="fw-semibold">e-Aushadhi</span> is a web
+                                    based application which deals with the management of stocks of various drugs,
+                                    sutures and surgical items required by different district drug warehouses of
+                                    different states. The prime objective of a District Drug Warehouse is to supply
+                                    drugs to the various medical institutes that are associated with the given district
+                                    drug warehouse. </p>
+                                <p class="servicescontent">A Platform to automate various activities of <small
+                                        style="font-size: 25px;">Telangana</small> Medical Services and
+                                    Infrastructure Corporation Limited</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-12 col-xl-12 col-12 mt-5">
+                            <div class="row wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s"">
+                                 <div class=" col-md-3 col-sm-6 col-12">
+                                <div class="box mb-5 text-center mx-3 py-2 position-relative">
+                                    <div class="image mb-4">
+                                        <img src="assets/img/services/drugs.jpg">
+                                    </div>
+                                    <div class="content fw-light py-2 px-2">
+                                        <h6 class="fw-regular">Drug Section</h6>
+                                        <p class="fw-light">Carry out procurement of drugs, surgical & Reagents
+                                    </div>
+                                    </p>
+                                    <span class="material-symbols-outlined position-absolute">
+                                        pill
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="box mb-5 text-center mx-3 py-2 position-relative">
+                                    <div class="image mb-4">
+                                        <img src="assets/img/services/dashboard.jpg">
+                                    </div>
+                                    <div class="content fw-light py-2 px-2">
+                                        <h6 class="fw-regular">Dashboard</h6>
+                                        <p>Statistical Maintenance of Data.
+                                    </div>
+                                    </p>
+                                    <span class="material-symbols-outlined position-absolute">
+                                        bar_chart_4_bars
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="box mb-5 text-center mx-3 py-2 position-relative">
+                                    <div class="image mb-4">
+                                        <img src="assets/img/services/warehouse.jpg">
+                                    </div>
+                                    <div class="content fw-light py-2 px-2">
+                                        <h6 class="fw-regular">Warehouse</h6>
+                                        <p>Storage and Distribution of drugs to State.</p>
+                                    </div>
+                                    <span class="material-symbols-outlined position-absolute">
+                                        warehouse
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="box mb-5 text-center mx-3 py-2 position-relative">
+                                    <div class="image mb-4">
+                                        <img src="assets/img/services/procurement.jpg">
+                                    </div>
+                                    <div class="content fw-light py-2 px-2">
+                                        <h6 class="fw-regular">Procurement</h6>
+                                        <p>To facilitate the procurement of medicines that meet prescribed safety and
+                                            health
+                                            standards</p>
+                                    </div>
+                                    <span class="material-symbols-outlined position-absolute">
+                                        package_2
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <!-- End Services Section -->
+    <!-- Contact Section -->
+    <section id="quotation" class="py-5 position-relative">
+        <div class="container-fluid">
+            <div class="position-absolute end-0 bottom-0"><img src="assets/img/quotebg.jpg" /></div>
+            <div class="position-absolute end-0 bottom-0" style="margin-bottom: -16px;"><img
+                    src="assets/img/contact.png" /></div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xl-6">
+                    <div class="quotetext justify-align-center position-relative">
+                        <h6 class="m-0 fw-regular text-white">Serving you with excellence, every step of the way</h6>
+                        <p class="fw-light mt-3">Implementing the complete Supply Chain Management System for Medicines,
+                            Surgical items and Sutures (DVDMS) across the States.</p>
+                        <div class="phone-mail-area d-flex align-items-center float-start">
+                            <div class="contact-email d-flex align-items-center"> <a
+                                    href="mailto:tsmsidc.itcell@gmail.com"
+                                    class="text-white d-flex align-items-center"><span
+                                        class="material-symbols-outlined me-1 p-2">
+                                        mail</span>tsmsidc.itcell@gmail.com</a>
+                            </div>
+                            <div class="contact-number me-4 ps-5"><a href="tel:04024656688"
+                                    class="text-white d-flex align-items-center">
+                                    <span class="material-symbols-outlined p-2 me-2">
+                                        call
+                                    </span>+91040-24656688</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xl-6 d-flex align-items-center justify-content-center">
+                    <a class="cbutton me-3 px-3 py-3 text-center" href="#">Let’ Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    </main>
+    <!-- Page Sections End Here-->
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="position-relative">
+        <div
+            class="heading position-absolute start-0 end-0 bottom-0 m-auto text-center fw-bolder d-flex align-items-bottom justify-content-center  ">
+            DVDMS</div>
+        <div class="container-fluid text-center">
+            <div class="footer-copyright mt-3 pt-2">
+                <div class="copyright float-start fw-normal pb-1">© 2024 Copyright e-Aushadhi. All Rights
+                    Reserved.</div>
+                <div class="float-end fw-light">Designed & Developed by <span class="fw-bold">CDAC</span></div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <a href="#" class="back-to-top">
+        <span class="material-symbols-outlined">
+            arrow_upward
+        </span></a> <!-- jquery latest version -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/js/main.js"></script>
+     <script src="assets/js/script1.js"></script>
+</body>
+
+</html>
