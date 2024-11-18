@@ -207,26 +207,26 @@ p {
 	border-bottom: none
 }
 #pdfsection #press-releases-pane .datalist>li {
-background: #cdd3ff;
+background: #f6eeff;
 }
 
 #pdfsection #instructions-pane .datalist>li {
-	background: #e3ffd7;
+	background: #f4ffef;
 	
 }
 
 #pdfsection #tenders-vacancies-pane .datalist>li {
-	 background: #ffdcf1;
+	 background: #fff3fa;
 
 }
 
 #pdfsection #stories-pane .datalist>li {
- background: #e4fff6;
+ background: #f0fffa;
 	
 }
 
 #pdfsection .datalist li a {
-	color: #414141; font-size: 14px;
+	color: #414141; font-size: 15px;
 }
 
 #pdfsection .datetime span {
@@ -409,8 +409,8 @@ footer {
 	}
 }
 
-@keyframes zoom-out {
+/* @keyframes zoom-out {
 	100% {
 		width: 100%;
 	}
-}
+} */
