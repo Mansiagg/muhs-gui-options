@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="images/logo.ico" rel="icon">
+      <title>Document</title>
+      <link rel="StyleSheet" href="css/bootstrap.min.css">
+      <link rel="StyleSheet" href="css/form.css">
+      <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+      <header>
+            <div class="container-fluid px-2 px-md-5">
+                  <div class="row">
+                        <div class="col-md-10 col-8">
+                              <div class="logo position-relative mt-2 pt-2">
+                                    <img src="images/logo.png" class="position-absolute start-0 mt-sm-0 mt-1" />
+                                    <h1 class="p-0 m-0 text-white">DVDMS</h1>
+                                    <h2 class="fw-regular">Ministry of Health & Family Welfare (Govt. of India)</h2>
+                              </div>
+                        </div>
+                        <div class="col-md-2 col-4 d-flex align-items-center justify-content-end pt-2">
+                              <img src="images/nhm.jpg" />
+                        </div>
+                  </div>
+            </div>
+            <div class="line mt-2"></div>
+      </header>
+      <main>
+            <section id="user-manuals" class="mb-4 mt-4">
+                  <h3 class="text-center text-white mb-1">USER MANUALS</h3>
+                  <h4 class="text-center text-white fw-light">Get familiar with Manual help sections and explore their
+                        features</h4>
+                  <div class="container px-md-5 mt-4 ">
+                        <div class="row d-flex align-items-center justify-content-center px-md-5">
+                              <div class="col-xl-4 col-md-6 mb-2">
+                                    <div class="manuals py-4 px-4 ">
+                                          <div class="headingbox d-flex align-items-center">
+                                                <div class="icon"><img src="images/pdf.jpg" /></div>
+                                                <div class="heading fw-semibold cursor-pointer ms-2">User Manuals<small
+                                                            class="fw-light mt-1 d-block">3 Articles</small></div>
+                                          </div>
+                                          <hr />
+                                          <div class="list">
+                                                <ul class="list-unstyled p-0 m-0">
+                                                      <li><a href="data/Uer Manual - DVDMS -HQ processes.pdf"
+                                                                  class="text-decoration-none d-flex align-items-center"
+                                                                  target="_blank"><span
+                                                                        class="material-symbols-outlined me-1">
+                                                                        description
+                                                                  </span>HQ User Manual</a></li>
+                                                      <li><a href="data/Uer Manual - DVDMS - SPO Processes.pdf" class="text-decoration-none d-flex align-items-center
+                      " target="_blank"><span class="material-symbols-outlined me-1">
+                                                                        description
+                                                                  </span>SPO User Manual</a></li>
+                                                      <li><a href="data/Uer Manual - DVDMS - District Processs.pdf"
+                                                                  class="text-decoration-none d-flex align-items-center"
+                                                                  target="_blank"><span
+                                                                        class="material-symbols-outlined me-1">
+                                                                        description
+                                                                  </span>Nodel User Manual</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-xl-4 col-md-6  mb-2">
+                                    <div class="manuals py-4 px-4">
+                                          <div class="headingbox d-flex align-items-center">
+                                                <div class="icon"><img src="images/ppt.jpg" /></div>
+                                                <div class="heading fw-semibold cursor-pointer ms-2">Process PPT<small
+                                                            class="fw-light mt-1 d-block">3 Articles</small></div>
+                                          </div>
+                                          <hr />
+                                          <div class="list">
+                                                <ul class="list-unstyled p-0 m-0">
+                                                      <li> <a href="data/CDB-Program Training HQ.pptx"
+                                                                  class="text-decoration-none d-flex align-items-center"
+                                                                  target="_blank"><span
+                                                                        class="material-symbols-outlined me-1">
+                                                                        description
+                                                                  </span>HQ PPT</a></li>
+                                                      <li> <a href="data/CDB-Program Training SPO.pptx"
+                                                                  class="text-decoration-none d-flex align-items-center"
+                                                                  target="_blank"><span
+                                                                        class="material-symbols-outlined me-2">
+                                                                        description
+                                                                  </span>SPO PPT</a></li>
+                                                      <li> <a href="data/CDB-Program Training Nodal.pptx"
+                                                                  class="text-decoration-none d-flex align-items-center"
+                                                                  target="_blank"><span
+                                                                        class="material-symbols-outlined me-1">
+                                                                        description
+                                                                  </span>Nodal PPT</a></li>
+                                                </ul>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section id="videos" class="py-2">
+                  <div class="container-fluid px-3 px-md-5 py-md-1">
+                        <div class="row">
+                              <div class="col-md-12 col-xl-3 col-12 col-sm-12">
+                                    <h1 class="pt-3 fw-semibold d-flex align-items-center"><img
+                                                src="images/video-icon.png" class="me-2" />Tutorial Videos</h1>
+                              </div>
+                              <div class="col-md-12 col-xl-9 col-12 col-sm-12 d-md-flex align-items-center justify-content-lg-start  justify-content-xl-end justify-content-md-start justify-content-start">
+                                    <div class="search position-relative me-3">
+                                          <span class="material-symbols-outlined position-absolute">video_search</span>
+                                          <input type="text" id="searchInput" placeholder="Search Videos..."
+                                                onkeyup="filterVideos()" class="p-2 px-5">
+                                    </div>
+                                    <div class="filter fw-bold mt-2 mt-md-0">
+                                          Sort By |
+                                          <label><input type="radio" name="language" id="englishRadio" checked"
+                                                      class="me-1">English</label>
+                                          <label><input type="radio" name="language" id="hindiRadio"
+                                                      class="me-1">Hindi</label>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="divider mt-2 mb-3"></div>
+                        <div class="scrollbar" id="scrollbarstyle">
+                              <div class="row pe-3">
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Demand</a></div>
+                                    </div>
+
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Approval Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Indent Generation</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Offline Release
+                                                      Order</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Demand Notification
+                                                      Details New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Purchase Demand
+                                                      New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>
+                                                      Compilation New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Freezing New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Staggering</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/Demand Management/Release Order.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Release
+                                                      Order</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Indent
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Demand Management/Tranfer_Request_Shortage.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Transfer Request for Shortage</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Demand Management/Transfer_Request_Excess.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Transfer
+                                                      Request Excess</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Recieve Management/RecieveFromThirdParty.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Receive
+                                                      From Third Party</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/Recieve Management/Challanprocess.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Challan
+                                                      Process</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/Recieve Management/ChallanProcess2.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Challan
+                                                      Process For Local Purchase</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Recieve Management/Issue_Acknowledge_Desk_2.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue
+                                                      Acknowledge Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Recieve Management/Itemwise_Transfer_Acknowledged_Desk.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Itemwise Transfer Acknowledge
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Issue Management/Issue_TO_Substore_Offline.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue
+                                                      To Sub Store Offline</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Issue Management/Issue_To_Third_Party.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue
+                                                      To
+                                                      Third Party </a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Itemwise Drug Transfer
+                                                      Order</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Issue Management/Condemnation_Register.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Condemnation Register</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Issue Management/Item_wise_Online_transfer_Details.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Itemwise Online Transfer Detail</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/Issue Management/Issue_Desk.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Issue Management/Breakage_Lost_Item_Details.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Breakage Lost Item Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Transfer Approval
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order Desk</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Letter Of Acceptance
+                                                      Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Rate Contract
+                                                      Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Supplier Interface
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order
+                                                      Approval</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Procruetment Desk/Local_Purchase_Merge.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Local
+                                                      Purchase Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Inventory Management Program/Add_Inventory.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Add
+                                                      Item Inventory</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/CMSS VIEW/Inventory_Management_View.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Inventory Management</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Physical Stock
+                                                      Verification</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="English/Inventory Management Program/Stock_Status_Modification.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Stock
+                                                      Status Modification</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Rate Contract Details
+                                                      View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Tender View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order View</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Challan Process View
+                                                      Spring</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>QC Report Acknowledge
+                                                      View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="English/CMSS VIEW/Inventory_Management_View.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Cmss
+                                                      View - Inventory Management View</a></div>
+                                    </div>
+
+
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Demand</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Approval Desk</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Indent
+                                                      Generation</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Offline Release
+                                                      Order</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Demand
+                                                      Notification Details New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Purchase
+                                                      Demand New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Demand
+                                                      Compilation New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Freezing Annual
+                                                      Demand New</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Annual Demand
+                                                      Staggering</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Release Order</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Indent
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Transfer_Request_Shortage.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Transfer Request for Shortage</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Transfer _Request_Excess.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Transfer Request Excess</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Local_PO/Recieve_From_Third_Party.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Receive From Third Party</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Local_PO/challan process 3.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Challan Process</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="Hindi/Local_PO/challan process for local purchase1.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Challan Process For Local
+                                                      Purchase</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Issue Acknowledge
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Itemwise Transfer
+                                                      Acknowledge Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a
+                                                      href="Hindi/Breakage items/issue to sub store off line.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue To Sub Store Offline</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Breakage items/issue to third party.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Issue To Third Party </a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Itemwise Drug
+                                                      Transfer Order</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Condemnation
+                                                      Register</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Itemwise Online
+                                                      Transfer Detail</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Issue Desk</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Breakage items/breakage lost 2.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Breakage Lost Item Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Transfer Approval
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Letter Of
+                                                      Acceptance Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Rate Contract
+                                                      Details</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Supplier Interface
+                                                      Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order
+                                                      Approval</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Local_PO/Local_Purchase_Desk.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Local Purchase Desk</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/Add_Inventory.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Add
+                                                      Item Inventory</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/drug inventory view.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Inventory Management</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Physical Stock
+                                                      Verification</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/stock status modification.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined">
+                                                            play_circle
+                                                      </span>Stock Status Modification</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Rate Contract
+                                                      Details View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Tender View</a>
+                                          </div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Purchase Order
+                                                      View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Challan Process
+                                                      View Spring</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="https://www.google.com"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>QC Report
+                                                      Acknowledge View</a></div>
+                                    </div>
+                                    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+                                          <div class="tvideos"><a href="Hindi/drug inventory view.mp4"
+                                                      class="d-flex align-items-top text-decoration-none"
+                                                      target="_blank"><span class="material-symbols-outlined me-1">
+                                                            play_circle
+                                                      </span>Cmss View - Inventory Management
+                                                      View</a></div>
+                                    </div>
+
+                              </div>
+                        </div>
+
+                  </div>
+                  </div>
+            </section>
+      </main>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/form.js"></script>
+</body>
+</html>
