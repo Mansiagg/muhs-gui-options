@@ -1,112 +1,47 @@
 @media (min-width:1500px) and (max-width:1800px) {
-
-    #navbarSupportedContent ul li a {
-        padding: 20px 20px;
-    }
-
-    #navbarSupportedContent li span {
-        font-size: 13px;
-    }
-
-    .logo h1 {
-        color: var(--bs-white);
-        font-size: 17px;
-    }
-
-    .logo p {
-        color: #fef5ee;
+    ul.ruby-menu > li > a {
+        display: block;
+        color: rgba(0, 0, 0, 0.75);
+        line-height: 35px;
+        padding: 0 25px;
+        text-decoration: none;
+        font-weight: 500;
         font-size: 14px;
     }
 
 }
 @media (min-width:1200px) and (max-width:1280px) {
+    ul.ruby-menu > li > a {
+        display: block;
+        color: rgba(0, 0, 0, 0.75);
+        line-height: 35px;
+        padding: 0 15px }
 
+        .logo h1 {
+            font-size: 13px;
+            line-height: 17px;
+        }
 }
 
 
 @media (min-width:992px) and (max-width:1200px) { 
-    #navbarSupportedContent ul li a {
-        padding: 20px 8px}
-        .logo img {
-           width: 20%;
-        }
+
 
 }
 @media (max-width: 991px) {
 
-    #navbarSupportedContent {
-        background: var(--ast-blue);
-        margin-top: 20px;
-    }
 
-    .navbar-toggler {
-        border: 0;
-        position: absolute;
-        right: 0;
-        top: -16px;
-    }
-
-    .rightimg {
-        display: none;
-    }
 }
 
 
 @media (max-width: 768px) {
-    #kpis {
-        left: -6px
-    }
-
-    .bluekpi small {
-        line-height: 10px;
-        font-size: 12px;
-    }
-
-    .navbar {
-        position: absolute;
-        top: 28px;
-        right: 0;
-    }
-
-    #topbar {
-        max-height: 34px;
-    }
-
-    .loginbtn button {
-        height: 41px;
-    }
-
-    .logo img {
-        margin-top: -9px;
-    }
-
-    .ashokchakra {
-        display: none;
-    }
-
-    .imres {
-        margin-top: -25px;
-    }
+ 
 
 }
 
 @media (max-width: 500px) {
 
-    .logo h1 {
-        font-size: 14px;
-    }
-
-    .logo p {
-        font-size: 12px;
-    }
-
-    .logo img {
-        margin-top: -2px;
-    }
-
-    .imres {
-        margin-top: -38px;
-    }
+    
 
 }
 
