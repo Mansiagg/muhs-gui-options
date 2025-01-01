@@ -2,7 +2,7 @@ div.ruby-menu-demo-header {
     position: relative;
     z-index: 99999
 }
-
+div.ruby-menu-demo-header p{ font-size: 15px; font-weight: 500; }
 div.ruby-menu-demo-description {
     position: relative;
     width: 980px;
@@ -546,11 +546,6 @@ ul.ruby-menu > li > a {
     color: #222
 }
 
-ul.ruby-menu > li > a:hover,ul.ruby-menu > li:hover > a,ul.ruby-menu > li.ruby-active-menu-item > a:hover,ul.ruby-menu > li.ruby-active-menu-item:hover > a {
-    background: #222;
-    color: #fff
-}
-
 ul.ruby-menu > li.ruby-active-menu-item > a {
     background: #efefef;
     color: #222
@@ -924,8 +919,12 @@ ul.ruby-menu > li > a {
 }
 
 ul.ruby-menu > li > a:hover,ul.ruby-menu > li:hover > a,ul.ruby-menu > li.ruby-active-menu-item > a:hover,ul.ruby-menu > li.ruby-active-menu-item:hover > a {
-    background: #ec1a47;
-    color: var(--bs-white);
+    /* background: #ec1a47;
+    color: var(--bs-white); */
+    
+    border-bottom: 1px solid #ec1a47;
+    color: var(--bs-black);
+    background: transparent;
 }
 
 ul.ruby-menu > li > a:only-child:after,ul.ruby-menu > li:hover > a:only-child:after {
@@ -933,8 +932,12 @@ ul.ruby-menu > li > a:only-child:after,ul.ruby-menu > li:hover > a:only-child:af
 }
 
 ul.ruby-menu > li.ruby-active-menu-item > a {
-    background: #ec1a47;
-    color: var(--bs-white);
+    /* background: #ec1a47; */
+    /* color: var(--bs-white); */
+   
+    border-bottom:1px solid #ec1a47;
+    color: var(--bs-black);
+    background: transparent;
 }
 
 ul.ruby-menu > li > a .fa {
