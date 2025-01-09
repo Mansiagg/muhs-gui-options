@@ -2,7 +2,7 @@ div.ruby-menu-demo-header {
     position: relative;
     z-index: 99999
 }
-div.ruby-menu-demo-header p{ font-size: 15px; font-weight: 500; }
+div.ruby-menu-demo-header p{ font-size: 15px; font-weight: 400; }
 div.ruby-menu-demo-description {
     position: relative;
     width: 980px;
@@ -1103,7 +1103,7 @@ ul.ruby-menu > li.ruby-menu-mega > div,ul.ruby-menu > li.ruby-menu-mega-blog > d
     top: 50px;
     left: 0;
     background: #fff;
-    border-top: 4px solid #19ad86;
+    border: 1px solid #cccccc;
     overflow: hidden;
     -webkit-box-shadow: 0 8px 24px -5px #ccc;
     -moz-box-shadow: 0 8px 24px -5px #ccc;
@@ -2143,3 +2143,5 @@ span.ruby-c-content {
         color: #666
     }
 }
+
+.ruby-menu-mega span.material-symbols-outlined {  color: rgba(0,0,0,0.9); font-size: 15px;} 

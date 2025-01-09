@@ -185,12 +185,12 @@ header .all-logins a{border: dotted rgb(255 255 255 /35%);
 #kpis .view-more,
 #pdfsection .view-more {
 	width: 128px;
-	background: var(--ast-pink);
-	border-radius: 3px;
-	font-size: 13px;
-	bottom: -12px;
-	right: 10px;
-	height: 37px;
+    background: var(--ast-pink);
+    border-radius: 3px;
+    font-size: 13px;
+    bottom: 8px;
+    right: 1px;
+    height: 37px;
 }
 
 #pdfsection .view-more {
@@ -282,16 +282,14 @@ header .all-logins a{border: dotted rgb(255 255 255 /35%);
 	color: red;
 }
 
-footer {
-	background: var(--ast-navyblue);
-	font-size: 13px;
-}
 .aboutsection h2{color: #0774FF; font-size: 25px;}
-.aboutsection p{color: rgba(0,0,0,0.7); font-size: 14px; text-align: justify; line-height: 25px; }
+.aboutsection p{color: rgba(0,0,0,0.7); font-size: 0.85rem; text-align: justify; line-height: 24px; }
 .aboutsection small{color: #0774FF;}
 .aboutsection  .mission .image { border-radius: 5px;}
-.aboutsection .mission h3{font-size: 22px;}
+.aboutsection .mission h3{font-size: 22px; color: rgba(0,0,0,0.8); }
 .aboutsection .mission .box{border: 1px solid #d9d9d9;}
+.aboutsection .mission .icon{color:#ffffff; top:-19px; right:-10px; background-color:var(--ast-pink); border-radius: 8px; width:40px; height: 40px; 
+text-align: center; padding: 8px 0; box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);}
 
 /*----------bootstrap-navbar-css------------*/
 
@@ -512,46 +510,18 @@ footer {
 
 
 /*** Footer Start ***/
-.footer {
-    background: var(--bs-dark);
-}
-.footer .footer-item a {
-    line-height: 35px;
-    color: var(--bs-white);
-    transition: 0.5s;
-}
-
-.footer .footer-item p {
-    line-height: 35px;
-}
-
-.footer .footer-item a:hover {
-    letter-spacing: 1px;
-    color: var(--bs-primary);
-}
-
-.footer .footer-item-post a {
-    transition: 0.5s;
-}
-
-.footer .footer-item-post a:hover {
-    color: var(--bs-primary) !important;
-}
-
-.footer .footer-item-post .footer-btn a {
-    transition: 0.5s;
-}
-
-.footer .footer-item-post .footer-btn a:hover {
-    color: var(--bs-dark);
-}
+.footer-links { background: #f7f7f7; font-size: 15px;}
+.footer-links a{ color: rgba(0,0,0,.8);}
+.footer-links li { border-right: 1px solid #ccc;}
+.footer-links li:last-child{ border:0;}
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--bs-dark) !important;
+    background: #62ac5f !important; font-size: 14px;
 }
+
 /*** copyright end ***/
 .back-to-top {
     position: fixed;
