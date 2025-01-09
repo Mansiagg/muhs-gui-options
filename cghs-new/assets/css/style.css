@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
 	font-family: "Open Sans", sans-serif;
@@ -77,15 +77,15 @@ a{ text-decoration: none;}
 	margin: 1px 0;
 	outline: none;
 }
-
+.shareSocial {top: 30%; z-index: 999;}
 
 .socialList a {
- margin:2px 3px; display: block;
+ margin:4px 3px; 
 	text-decoration: none; text-align: center;
 	color: #fff;
 
 }
-.socialList i{padding:4px 6px;	border-radius: 100%; width: 25px; height: 25px; line-height: 16px;	font-size: 13px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border:1px solid rgba(255,255,255,0.4);  transition: .5s;}
+.socialList i{padding:4px 6px; 	border-radius: 100%; width: 35px; height: 35px; line-height:25px;	font-size: 16px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border:1px solid rgba(255,255,255,0.4);  transition: .5s;}
 
 .socialList a:hover i {
 	color: #fff; background: #000000; color: #ffffff;
@@ -95,6 +95,12 @@ a{ text-decoration: none;}
 .socialList .fa-twitter{background: #00aced;}
 .socialList .fa-square-instagram{background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);}
 
+header .all-logins a{border: dotted rgb(255 255 255 /35%);
+    border-width: 0 0 0 2px; cursor: pointer;
+    background-color: transparent;    line-height: 18px;
+    font-size: 12px;}
+	header .all-logins a:hover{}
+	header .all-logins span{ color: #ffffff; font-size: 25px;}
 .logo h1 {
 	font-size: 15px;
 	line-height: 17px;
@@ -117,8 +123,7 @@ a{ text-decoration: none;}
 }
 
 .satyamev-jayate {
-	border-left: 1px solid #e7e7e7;
-	border-right: 1px solid #e7e7e7;
+
 	height: 100%;
 }
 
@@ -133,85 +138,48 @@ a{ text-decoration: none;}
 
 
 #kpis {
-	left: 30px;
-	bottom: 55px;
-	z-index: 99;
+	position: absolute;
+    width: 66%;
+    bottom: 20%;
+    left: 0;
+    z-index: 9;
+    right: 0;
 }
 
 #kpis .kpi {
-	border: 1px solid rgba(255, 255, 255, 0.5);
-	min-height: 153px;
+	/* border: 1px solid rgba(255, 255, 255, 0.5); */
+	min-height: 278px;
+	max-height: 278px;
 	border-radius: 5px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-	background-image: url('../images/kpibg.png');
+	box-shadow: rgba(50, 50, 93, 0.2) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.3) 0px -2px 6px 0px inset;
+	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 60px 0 rgba(0, 0, 0, 0.2) ; */
+	background-image: url('../images/kpibg.jpg');
 	background-repeat: no-repeat;
 	background-position: top right;
-}
-
-#kpis .kpi .rightimg {
-	right: 1px;
-	top: 1px;
-}
-
-#kpis .kpi .rightimg img {
-	mix-blend-mode: multiply;
-	overflow: hidden;
-}
-
-#kpis .kpi .icon {
-	right: 10px;
-	top: 8px;
-	z-index: 9999;
+	background-color: #ffffff;
 }
 
 #kpis .kpi .icon span {
-	font-size: 40px;
+	font-size: 40px; color: #1f7acd;
 }
 
 #kpis .kpi h2 {
-	font-size: 18px;
+	font-size: 19px; color: #2c4964;
 }
 
 #kpis .kpi p {
-	font-size: 16px;
+	font-size: 16px; color:rgba(0,0,0,0.7);
 }
 
 #kpis .kpi b {
-	font-weight: 600;
+	font-size: 21px; font-weight: 800;
 }
 
-#kpis .pinkkpi {
-	background-image: linear-gradient(to right top, #ef3c73, #e44764, #d85057, #cb584e, #bd5e48);
+#kpis .kpi small{
+	font-size: 13px; color:rgba(0,0,0,0.7);
 }
-
-#kpis .bluekpi {
-	background-image: linear-gradient(to right top, #8690e9, #6a99e9, #53a1e3, #47a6da, #49aacf);
-}
-
-#kpis .purplekpi {
-	background-image: linear-gradient(to right top, #6678e2, #6e6ed2, #7464c2, #765ab3, #7751a3);
-	min-height: 322px;
-}
-
-#kpis .purplekpi h2 {
-	background-color: var(--bs-white);
-	color: #195ec2;
-	border-radius: 5px;
-}
-
-#kpis .purplekpi .icon {
-	right: 18px;
-	top: 10px;
-}
-
-#kpis .purplekpi .icon span {
-	color: #7751a3
-}
-
-.purplekpi .icon {
-	z-index: 999;
-}
-
+#kpis .cardholders p b{ font-size: 16px;}
+#kpis .cardholders .image { width: 54px; height: 54px; background-color: #ffffff;	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; margin-top: -9px;}
 #kpis .cghs {
 	font-size: 54px;
 	color: rgba(255, 255, 255, 0.1);
@@ -235,7 +203,7 @@ a{ text-decoration: none;}
 
 #pdfsection .nav-link {
 	border: 1px solid #c7c7c7 !important;
-	margin-right: 2px;
+	margin-right: 0; font-size: 14px;
 	background: var(--ast-blue) !important;
 	color: var(--bs-white) !important
 }
@@ -491,17 +459,26 @@ footer {
 
 
 .header-carousel .header-carousel-item .carousel-caption {
-    position: absolute;
-    width: 80%;
+	position: absolute;
+    width: 66%;
     height: 100%;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    top: 23%;
+    left: 0;
     z-index: 9;
+    right: 0;
+    margin: 0 auto;
 }
+
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails {
+    height: 100%;font-family: "Poppins", sans-serif;
+    top:19%; padding-left: 200px;}
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails h2{color:#323141; font-size: 22px; }
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails h3{ font-size: 19px;color:#323141;}
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails b{ font-size: 20px; color:#dc7c00; font-weight: 800; }
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails p{color:#724515; font-size: 17px; }
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails hr{color:#323141; border-top: 2px solid; opacity: 1;}
 
 @media (max-width: 992px) {
     .header-carousel .header-carousel-item .carousel-caption {
@@ -588,3 +565,8 @@ footer {
     font-weight: 400;
     transition: 0.5s;
 }
+
+
+.carousel-caption h1{ font-size: 39px;}
+.carousel-caption p{ font-size: 16px;}
+

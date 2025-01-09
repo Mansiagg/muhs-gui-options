@@ -1,0 +1,73 @@
+@media (min-width:1500px) and (max-width:1800px) {
+    ul.ruby-menu>li>a {}
+
+}
+
+@media (min-width:1280px) and (max-width:1450px) {
+
+    #kpis {
+        width: 83%;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
+
+        top:10%;
+    }
+    .owl-prev {
+        right: 30px;
+        top: 42%;
+    }
+    .header-carousel .header-carousel-item .carousel-caption {
+
+        width: 83%; top: 10%;
+    }
+
+    ul.ruby-menu>li>a:after {
+        margin-top: 1px;
+        margin-left: -1px;
+        font-size: 14px;
+    }
+
+    ul.ruby-menu>li>a {
+        padding: 0 11px;
+        font-size: 13px;
+    }
+
+    .loginbuttton {
+
+        line-height: 15px;
+        padding: 3px 11px;
+        max-height: 40px;
+
+    }
+
+    .logo h1 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1280px) {
+    .logo h1 {
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {}
+
+@media (max-width: 991px) {}
+
+
+@media (max-width: 768px) {}
+
+@media (max-width: 500px) {}
+
+
+
+@media (min-width: 1200px) {}
+
+
+@media (min-width: 1400px) {}
