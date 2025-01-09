@@ -2,7 +2,7 @@ div.ruby-menu-demo-header {
     position: relative;
     z-index: 99999
 }
-div.ruby-menu-demo-header p{ font-size: 15px; font-weight: 400; }
+div.ruby-menu-demo-header p{ font-size: 14px; font-weight: 400; }
 div.ruby-menu-demo-description {
     position: relative;
     width: 980px;
