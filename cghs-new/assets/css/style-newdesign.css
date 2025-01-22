@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -21,7 +22,7 @@ h6 {
 }
 
 .material-symbols-outlined {
-    font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24
 }
 
 p {
@@ -47,7 +48,7 @@ a {
 
 #topbar .language select {
     border-radius: 19px;
-    padding: 2px 43px 3px 9px;
+    padding: 2px 28px 3px 9px;
     max-height: 40px;
     font-size: 13px;
 }
@@ -249,37 +250,44 @@ header .all-logins span {
     color: rgba(255, 255, 255, 0.1);
 }
 
+#pdfsection {
+    background: #f5f4f4;
+    padding: 13px 13px;
+}
+
 #kpis .view-more,
 #pdfsection .view-more {
-    width: 128px;
+    width: 108px;
     background: var(--ast-pink);
     border-radius: 3px;
     font-size: 13px;
-    bottom: 8px;
-    right: 1px;
+    bottom: -10px;
+    right: 0;
     height: 37px;
+    left: 0;
+    margin: 0 auto;z-index: 999999;
 }
 
-#pdfsection .view-more {
-    float: right;
-    z-index: 999999;
-}
 
 #pdfsection .nav-link {
-    border: 1px solid #133f6a !important;
-    margin-right: 3px;
+    border-bottom: 1px solid #a6a8ab !important;
     font-size: 14px;
-    /* background: var(--ast-blue) !important; */
     color: #000000 !important;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-    border-bottom: 0px !important;
+    border-radius: 0;
+    padding: 5px 25px !important;
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+#pdfsection .nav-link:hover {
+    border-top: 0 !important;
+    font-weight: 500;
 }
 
 #pdfsection .nav-link.active {
     background: var(--ast-pink) !important;
     color: var(--bs-white) !important;
-    border: 0px !important;
 }
 
 #pdfsection .datalist>li {
@@ -313,7 +321,7 @@ header .all-logins span {
 
 #pdfsection .datalist li a {
     color: #414141;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #pdfsection .datetime span {
@@ -348,17 +356,23 @@ header .all-logins span {
 .multiplepdflist span {
     color: red;
 }
-
-.aboutsection h2 {
-    color: #0774FF;
-    font-size: 25px;
+.sticky {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background: #ffffff
 }
+#sociallinks  {    --tw-bg-opacity: 1;
+    background-color: rgb(240 249 255 / var(--tw-bg-opacity));
+    min-height: 59px;   }
+
 
 .aboutsection p {
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.68);
     font-size: 0.85rem;
     text-align: justify;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .aboutsection small {
@@ -370,27 +384,38 @@ header .all-logins span {
 }
 
 .aboutsection .mission h3 {
-    font-size: 22px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
 }
 
 .aboutsection .mission .box {
-    border: 1px solid #d9d9d9;
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    min-height: 350px;
+
 }
 
-.aboutsection .mission .icon {
-    color: #ffffff;
-    top: -19px;
-    right: -10px;
-    background-color: var(--ast-pink);
-    border-radius: 8px;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    padding: 8px 0;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+.aboutsection .mission .box p {
+    line-height: 20px;
 }
 
+.aboutsection .important span {
+
+    border-radius: 50% 50% 50% 50%;
+    width:50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: var(--ast-pink);
+    line-height: 1; font-size: 30px;
+
+}
+.aboutsection .important a{ font-size: 14px;}
+#aboutsection .socialboxes .box .icon{ color: red; border-radius: 50px; background-color: #ffffff; width: 50px; height: 50px;
+font-size: 20px; line-height: 50px;
+}
 /*----------bootstrap-navbar-css------------*/
 
 #navbarSupportedContent {
@@ -517,8 +542,8 @@ header .all-logins span {
 }
 
 .owl-prev {
-    right: 30px;
-    top: 43%;
+    left: 30px;
+
 }
 
 .owl-next {
@@ -577,15 +602,64 @@ header .all-logins span {
 
 .header-carousel .header-carousel-item .carousel-caption {
     position: absolute;
-    width: 66%;
-    height: 100%;
-    top: 23%;
+    height: max-content;
+    width: max-content;
+    top: 35%;
     left: 0;
     z-index: 9;
     right: 0;
     margin: 0 auto;
 }
 
+#slider .carousel-caption {
+    font-family: "Jost", serif;
+
+    z-index: 99999999;
+}
+
+#slider .carousel-caption h3 {
+    font-size: 18px;
+    width: max-content;
+    /* background: linear-gradient(to right, #e87302, #e87302, #e87302, #329401, #329401, #329401); */
+    background-color: #ec1a47;
+}
+
+#slider .carousel-caption h1 {
+    font-size: 40px;
+}
+
+
+#slider .carousel-caption span {
+    color: #ffffff
+}
+
+
+#slider .carousel-caption p {
+    /* font-weight: 400;  mask: linear-gradient(rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.8), transparent);
+    backdrop-filter: blur(50px); */
+    font-size: 17px;
+    color: #112d49;
+    /* text-shadow: -1px -1px 0 #152b42, 1px -1px 0 #152b42, -1px 1px 0 #152b42, 1px 1px 0 #152b42; */
+    background-color: rgba(255, 255, 255, 0.79);
+    padding: 0 10px;
+    border-radius: 5px;
+    /* background: linear-gradient(to right, #e87302, #e87302, #e87302, #329401, #329401, #329401);
+  */
+}
+
+.animate-duration-4s {
+    animation-duration: 4s !important;
+    -webkit-animation-duration: 4s !important;
+    -moz-animation-duration: 4s !important;
+    -ms-animation-duration: 4s !important;
+}
+
+.animate-duration-2s {
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+}
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
     height: 100%;
@@ -696,147 +770,21 @@ header .all-logins span {
     transition: 0.5s;
 }
 
-
-.carousel-caption h1 {
-    font-size: 39px;
+#aboutsection h2 {
+    font-size: 24px;
 }
 
-.carousel-caption p {
-    font-size: 16px;
+#aboutsection .heading .line {
+    color: rgba(0, 0, 0, 0.88);
+    display: inline-block;
+    width: 56px;
+    height: 2px;
+    background: var(--ast-pink);
 }
 
-.w3-spin {
-    animation: w3-spin 2s infinite linear
-}
-
-@keyframes w3-spin {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    100% {
-        transform: rotate(359deg)
-    }
-}
-
-.w3-animate-fading {
-    animation: fading 10s infinite
-}
-
-@keyframes fading {
-    0% {
-        opacity: 0
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    100% {
-        opacity: 0
-    }
-}
-
-.w3-animate-opacity {
-    animation: opac 0.8s
-}
-
-@keyframes opac {
-    from {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-.w3-animate-top {
-    position: relative;
-    animation: animatetop 0.4s
-}
-
-@keyframes animatetop {
-    from {
-        top: -300px;
-        opacity: 0
-    }
-
-    to {
-        top: 0;
-        opacity: 1
-    }
-}
-
-.w3-animate-left {
-    position: relative;
-    animation: animateleft 3s ease-in-out; /* Increased duration and added easing */
-}
-
-@keyframes animateleft {
-    from {
-        left: -300px;
-        opacity: 0
-    }
-
-    to {
-        left: 0;
-        opacity: 1
-    }
-}
-
-.w3-animate-right {
-    position: relative;
-    animation: animateright 3s ease-in-out; /* Increased duration and added easing */
-}
-
-@keyframes animateright {
-    from {
-        right: -300px;
-        opacity: 0
-    }
-
-    to {
-        right: 0;
-        opacity: 1
-    }
-}
-
-.w3-animate-bottom {
-    position: relative;
-    animation: animatebottom 3s ease-in-out; /* Increased duration and added easing */
-}
-
-@keyframes animatebottom {
-    from {
-        bottom: -300px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0;
-        opacity: 1
-    }
-}
-
-.w3-animate-zoom {
-    animation: animatezoom 0.6s
-}
-
-@keyframes animatezoom {
-    from {
-        transform: scale(0)
-    }
-
-    to {
-        transform: scale(1)
-    }
-}
-
-.w3-animate-input {
-    transition: width 0.4s ease-in-out
-}
-
-.w3-animate-input:focus {
-    width: 100% !important
+#aboutsection small {
+    color: var(--ast-pink);
+    font-size: 12px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
 }

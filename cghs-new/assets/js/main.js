@@ -38,8 +38,8 @@
         margin: 0,
         nav : true,
         navText : [
-            '<span class="material-symbols-outlined">keyboard_backspace</span>',
-            '<span class="material-symbols-outlined">east</span>'
+            '<span class="material-symbols-outlined">chevron_left</span>',
+            '<span class="material-symbols-outlined">chevron_right</span>'
         ]
     });
 
@@ -61,7 +61,15 @@
 });
 
 
-
+$(window).scroll(function () {
+	console.log($(window).scrollTop())
+	if ($(window).scrollTop() > 63) {
+	  $('.main-menu').addClass('sticky');
+	}
+	if ($(window).scrollTop() < 64) {
+	  $('.main-menu').removeClass('sticky');
+	}
+  });
     
    // Back to top button
    $(window).scroll(function () {
@@ -78,4 +86,6 @@
 
 
 })(jQuery);
+
+
 
