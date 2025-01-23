@@ -82,11 +82,7 @@ a {
     outline: none;
 }
 
-.shareSocial {
-    top: 30%;
-    z-index: 999;
-    right: 11px;
-}
+
 
 .satyamev-jayate {
     top: 20%;
@@ -100,45 +96,33 @@ a {
     padding-top: 2px;
 }
 
-.socialList a {
-    margin: 4px 3px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
+.shareSocial {
+    top: 30%;
+    z-index: 999;
+    right: 0px;
+}
+.call a{ font-size: 0;}
+.call span {
+    transition:all 0.5s;
+    background-color:#E94751;
+    color:#ffffff; border: 1px dashed #ffffff;
+    width: 42px;
+    height: 42px;
+   text-align: center; line-height:40px;
+    border-radius: 20px;
+    font-size: 1.5em;
 
 }
+.call:hover a {
+    font-size:1.0em;
+    color:white;
+    padding:10px 10px; background: #5ebb4c; border-radius: 10px;border: 1px solid #ffffff;
+  }
+  .call:hover span {
+    transform:rotate(360deg); cursor: pointer;
+  }
 
-.socialList i {
-    padding: 4px 6px;
-    border-radius: 100%;
-    width: 35px;
-    height: 35px;
-    line-height: 25px;
-    font-size: 16px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    transition: .5s;
-}
-
-.socialList a:hover i {
-    color: #fff;
-    background: #000000;
-    color: #ffffff;
-    transform: rotateY(360deg);
-}
-
-.socialList .fa-facebook-f {
-    background: #3b5998;
-}
-
-.socialList .fa-twitter {
-    background: #00aced;
-}
-
-.socialList .fa-square-instagram {
-    background: linear-gradient(45deg, #f09433, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888);
-}
-
+  
 header .all-logins a {
     border: dotted rgb(255 255 255 /35%);
     border-width: 0 0 0 2px;
@@ -148,7 +132,6 @@ header .all-logins a {
     font-size: 12px;
 }
 
-header .all-logins a:hover {}
 
 header .all-logins span {
     color: #ffffff;
@@ -265,7 +248,8 @@ header .all-logins span {
     right: 0;
     height: 37px;
     left: 0;
-    margin: 0 auto;z-index: 999999;
+    margin: 0 auto;
+    z-index: 999999;
 }
 
 
@@ -356,6 +340,7 @@ header .all-logins span {
 .multiplepdflist span {
     color: red;
 }
+
 .sticky {
     top: 0;
     z-index: 100;
@@ -363,9 +348,12 @@ header .all-logins span {
     width: 100%;
     background: #ffffff
 }
-#sociallinks  {    --tw-bg-opacity: 1;
+
+#sociallinks {
+    --tw-bg-opacity: 1;
     background-color: rgb(240 249 255 / var(--tw-bg-opacity));
-    min-height: 59px;   }
+    min-height: 59px;
+}
 
 
 .aboutsection p {
@@ -402,20 +390,32 @@ header .all-logins span {
 .aboutsection .important span {
 
     border-radius: 50% 50% 50% 50%;
-    width:50px;
+    width: 50px;
     height: 50px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     background: var(--ast-pink);
-    line-height: 1; font-size: 30px;
+    line-height: 1;
+    font-size: 30px;
 
 }
-.aboutsection .important a{ font-size: 14px;}
-#aboutsection .socialboxes .box .icon{ color: red; border-radius: 50px; background-color: #ffffff; width: 50px; height: 50px;
-font-size: 20px; line-height: 50px;
+
+.aboutsection .important a {
+    font-size: 14px;
 }
+
+#aboutsection .socialboxes .box .icon {
+    color: red;
+    border-radius: 50px;
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+
 /*----------bootstrap-navbar-css------------*/
 
 #navbarSupportedContent {
@@ -613,11 +613,10 @@ font-size: 20px; line-height: 50px;
 
 #slider .carousel-caption {
     font-family: "Jost", serif;
-
     z-index: 99999999;
 }
 
-#slider .carousel-caption h3 {
+#slider .cghsbanner .carousel-caption h3 {
     font-size: 18px;
     width: max-content;
     /* background: linear-gradient(to right, #e87302, #e87302, #e87302, #329401, #329401, #329401); */
@@ -628,13 +627,11 @@ font-size: 20px; line-height: 50px;
     font-size: 40px;
 }
 
-
 #slider .carousel-caption span {
     color: #ffffff
 }
 
-
-#slider .carousel-caption p {
+#slider .cghsbanner .carousel-caption p {
     /* font-weight: 400;  mask: linear-gradient(rgba(0, 0, 0,0.8), rgba(0, 0, 0,0.8), transparent);
     backdrop-filter: blur(50px); */
     font-size: 17px;
@@ -647,52 +644,60 @@ font-size: 20px; line-height: 50px;
   */
 }
 
-.animate-duration-4s {
-    animation-duration: 4s !important;
-    -webkit-animation-duration: 4s !important;
-    -moz-animation-duration: 4s !important;
-    -ms-animation-duration: 4s !important;
-}
-
-.animate-duration-2s {
-    animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-}
-
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
     height: 100%;
-    font-family: "Poppins", sans-serif;
-    top: 19%;
-    padding-left: 200px;
+    top: 25%;
+    padding-left: 100px;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails h2 {
     color: #323141;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails h3 {
-    font-size: 19px;
+    font-size: 21px;
     color: #323141;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails b {
-    font-size: 20px;
+    font-size: 22px;
     color: #dc7c00;
     font-weight: 800;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails p {
     color: #724515;
-    font-size: 17px;
+    font-size: 21px;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails hr {
     color: #323141;
     border-top: 2px solid;
     opacity: 1;
+}
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji h2 {
+    color: #323141;
+    font-size: 33px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji {
+    top: 38%;
+
+}
+
+.sabkatext {
+    margin-top: -35px;
+}
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji .sabkatext p:first-child {
+    font-size: 84px;
+}
+
+.header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji .sabkatext p:nth-child(2) {
+    font-size: 25px;
 }
 
 @media (max-width: 992px) {
@@ -721,29 +726,31 @@ font-size: 20px; line-height: 50px;
 
 
 /*** Footer Start ***/
+footer {background: #06032e; padding-top: 20px;}
 .footer-links {
-    background: #f7f7f7;
+ 
     font-size: 15px;
 }
 
 .footer-links a {
-    color: rgba(0, 0, 0, .8);
+    color:rgba(255, 255, 255, .75);
 }
 
 .footer-links li {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid rgba(255, 255, 255, .5);
 }
 
 .footer-links li:last-child {
     border: 0;
 }
 
+.disclaimer { font-size: 13px;  color: rgba(255, 255, 255, .8);}
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    background: #62ac5f !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+   
     font-size: 14px;
 }
 

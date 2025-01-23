@@ -28,35 +28,66 @@
 
 
     // Hero Header carousel
-    $(".header-carousel").owlCarousel({
-        items: 1,
-        autoplay: true,
-        smartSpeed: 500,
-        center: false,
-        dots: false,
-        loop: true,
-        margin: 0,
+    // $(".header-carousel").owlCarousel({
+    //     items: 1,
+    //     autoplay: true,
+    //     smartSpeed: 500,
+    //     center: false,
+    //     dots: false,
+    //     loop: true,
+    //     margin: 0,
+    //     nav : true,
+    //     navText : [
+    //         '<span class="material-symbols-outlined">chevron_left</span>',
+    //         '<span class="material-symbols-outlined">chevron_right</span>'
+    //     ]
+    // });
+
+
+    $(document).ready(function(){
+        // Initialize WOW.js
+        new WOW().init();
+    
+        // Initialize Owl Carousel
+        var owl = $('.header-carousel');
+        owl.owlCarousel({
+          items: 1, // adjust number of items per slide
+          loop: true,
+          smartSpeed: 700,
+          center: false,
+          dots: false,
+          autoplay: true,
+          margin: 0,
         nav : true,
         navText : [
             '<span class="material-symbols-outlined">chevron_left</span>',
             '<span class="material-symbols-outlined">chevron_right</span>'
         ]
-    });
+        });
+    
+        // Trigger WOW animations when the carousel changes
+        owl.on('changed.owl.carousel', function(event) {
+          // Trigger WOW.js to reset and run the animations
+          new WOW().init();
+        });
+      });
+
+
 
 
  // Hero Header carousel
  $(".logo-carousel").owlCarousel({
-    items: 4,
+    items: 7,
     autoplay: true,
     smartSpeed: 500,
     center: false,
-    dots: false,
+    dots: true,
     loop: true,
     margin: 0,
     nav : true,
     navText : [
-        '<span class="material-symbols-outlined">keyboard_backspace</span>',
-        '<span class="material-symbols-outlined">east</span>'
+        '<span class="material-symbols-outlined">chevron_left</span>',
+            '<span class="material-symbols-outlined">chevron_right</span>'
     ]
 });
 
