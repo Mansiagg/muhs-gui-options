@@ -73,23 +73,22 @@
       });
 
 
+      var owl = $('.logo-carousel');
+      owl.owlCarousel({
+        items: 7, // adjust number of items per slide
+        loop: true,
+        smartSpeed: 700,
+        center: false,
+        dots: false,
+        autoplay: true,
+        margin: 0,
+      nav : true,
+      navText : [
+          '<span class="material-symbols-outlined">chevron_left</span>',
+          '<span class="material-symbols-outlined">chevron_right</span>'
+      ]
+      });
 
-
- // Hero Header carousel
- $(".logo-carousel").owlCarousel({
-    items: 7,
-    autoplay: true,
-    smartSpeed: 500,
-    center: false,
-    dots: true,
-    loop: true,
-    margin: 0,
-    nav : true,
-    navText : [
-        '<span class="material-symbols-outlined">chevron_left</span>',
-            '<span class="material-symbols-outlined">chevron_right</span>'
-    ]
-});
 
 
 $(window).scroll(function () {

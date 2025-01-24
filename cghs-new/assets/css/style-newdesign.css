@@ -541,12 +541,12 @@ header .all-logins span {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.owl-prev {
+.header-carousel .owl-prev {
     left: 30px;
 
 }
 
-.owl-next {
+.header-carousel .owl-next {
     right: 30px;
 }
 
@@ -688,7 +688,7 @@ header .all-logins span {
 
 }
 
-.sabkatext {
+.header-carousel .sabkatext {
     margin-top: -35px;
 }
 
@@ -712,14 +712,27 @@ header .all-logins span {
         object-fit: cover;
     }
 
-    .owl-prev,
-    .owl-next {
+    .header-carousel .owl-prev,
+    .header-carousel .owl-next {
         top: 40px !important;
     }
 
-    .owl-prev {
+    .header-carousel .owl-prev {
         left: 65%;
     }
+}
+
+
+.logo-carousel .owl-nav.disabled {
+    display: block !important;
+}
+.logo-carousel .owl-prev {
+    left: -20px;
+
+}
+
+.logo-carousel .owl-next {
+    right: -20px;
 }
 
 /*** Header Carousel End ***/
