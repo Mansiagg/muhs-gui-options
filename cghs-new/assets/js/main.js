@@ -92,9 +92,11 @@
 
 
 $(window).scroll(function () {
+ 
 	console.log($(window).scrollTop())
 	if ($(window).scrollTop() > 63) {
 	  $('.main-menu').addClass('sticky');
+    
 	}
 	if ($(window).scrollTop() < 64) {
 	  $('.main-menu').removeClass('sticky');
@@ -114,6 +116,7 @@ $(window).scroll(function () {
   btn.on('click', function(e) {
     e.preventDefault();
     $('html, body').animate({scrollTop:0}, '300');
+    
   });
   
 

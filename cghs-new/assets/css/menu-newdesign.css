@@ -925,6 +925,7 @@ ul.ruby-menu > li > a:hover,ul.ruby-menu > li:hover > a,ul.ruby-menu > li.ruby-a
     border-bottom: 1px solid #ec1a47;
     color: var(--bs-black);
     background: transparent;
+    padding-bottom: 10px;
 }
 
 ul.ruby-menu > li > a:only-child:after,ul.ruby-menu > li:hover > a:only-child:after {
@@ -938,6 +939,7 @@ ul.ruby-menu > li.ruby-active-menu-item > a {
     border-bottom:1px solid #ec1a47;
     color: var(--bs-black);
     background: transparent; 
+    padding-bottom: 10px;
 }
 
 ul.ruby-menu > li > a .fa {

@@ -743,20 +743,22 @@ header .all-logins span {
 
 
 /*** Footer Start ***/
-footer {background: #06032e; padding-top: 20px;}
+footer {background:url('../images/footerbg.png') top repeat;}
+footer .logos img{ background: var(--bs-white); }
+.footer-links h4{ font-size:17px ; color: rgba(255, 255, 255, 1); }
 .footer-links {
  
     font-size: 15px;
 }
 
 .footer-links a {
-    color:rgba(255, 255, 255, .75);
+    color:rgba(255, 255, 255, .5);
 }
 
 .footer-links li {
     border-right: 1px solid rgba(255, 255, 255, .5);
 }
-
+.footer-links li+li { padding:0 8px;}
 .footer-links li:last-child {
     border: 0;
 }
@@ -767,7 +769,7 @@ footer {background: #06032e; padding-top: 20px;}
 /*** copyright Start ***/
 .copyright {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-   
+    background-color: #62ac5f;
     font-size: 14px;
 }
 
