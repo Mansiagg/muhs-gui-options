@@ -743,7 +743,7 @@ header .all-logins span {
 
 
 /*** Footer Start ***/
-footer {background:url('../images/footerbg.png') top repeat;}
+footer {background:url('../images/footerbg.png') top repeat; background-attachment: fixed;}
 footer .logos img{ background: var(--bs-white); }
 .footer-links h4{ font-size:17px ; color: rgba(255, 255, 255, 1); }
 .footer-links {
