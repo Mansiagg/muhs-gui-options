@@ -53,7 +53,7 @@
         owl.owlCarousel({
           items: 1, // adjust number of items per slide
           loop: true,
-          smartSpeed: 700,
+          smartSpeed: 1500,
           center: false,
           dots: false,
           autoplay: true,
