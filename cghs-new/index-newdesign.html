@@ -23,14 +23,14 @@
 </head>
 
 <body>
-    <div class="shareSocial mx-2 position-absolute">
+    <div class="shareSocial mx-2 position-fixed wow fadeInRight mail">
         <div class="d-block mb-4 call w-100">
             <a href="mailto:cghs-helpdesk@lsmgr.nic.in">cghs-helpdesk@lsmgr.nic.in</a>
             <span class="material-symbols-outlined">mail</span>
         </div>
 
     </div>
-    <div class="shareSocial mx-2 position-absolute" style="top: 36%;">
+    <div class="shareSocial mx-2 position-fixed wow fadeInRight call" data-wow-delay="1s" >
         <div class="d-block mb-4 call w-100">
             <a href="tel:1800-208-8900">24X7:1800-208-8900</a>
             <span class="material-symbols-outlined">
@@ -72,15 +72,15 @@
                                 book_online
                             </span>Book Online<br> Appointment</a>
                     </div>
-                    <div class="search border-start border-end border-1 border-white border-opacity-25 px-2 pt-1"><span
+                    <div class="search border-start border-end border-1 border-white border-opacity-25 px-xl-2 pt-1"><span
                             class="material-symbols-outlined">
                             search
                         </span></div>
-                    <div class="border-end border-1 border-white border-opacity-25 px-2 pt-1"><span
+                    <div class="border-end border-1 border-white border-opacity-25 px-xl-2 pt-1"><span
                             class="material-symbols-outlined">
                             format_size
                         </span></div>
-                    <div class="border-end border-1 border-white border-opacity-25 px-2 pt-1"><span
+                    <div class="border-end border-1 border-white border-opacity-25 px-xl-2 pt-1"><span
                             class="material-symbols-outlined">
                             accessible
                         </span></div>
@@ -312,7 +312,7 @@
                             priority – always and everywhere</h3>
                         <h1 class="mb-1 mt-2 animated fadeInDown fw-bold" data-wow-duration="2s"><span>Central
                                 Government</span> Health Scheme</h1>
-                        <p class="mt-3 mb-5 py-1 px-3 mt-1 wow pulse fw-regular d-flex align-items-center"
+                        <p class="m-auto mt-3 mb-5 py-1 px-3 mt-1 wow pulse fw-regular d-flex align-items-center justify-content-center"
                             data-wow-duration="4500ms" data-wow-iteration="infinite">
                             Presently approximately <span class="material-symbols-outlined ms-2 me-1"
                                 style="color: #000; font-size: 28px;"> groups</span><b class="">42 lakh
@@ -330,9 +330,9 @@
                 <div class="carousel-caption ministerdetails modiji text-center">
                     <h2 class="fw-bold mb-2 wow fadeInDown">Shri Narendra Modi</h2>
                     <h3><b class="fw-bold">Hon'ble Prime Minister </b></h3>
-                    <hr class="mt-2" />
-                    <div class="d-flex align-items-center sabkatext wow fadeInUp text-center">
-                        <p class="bold">S</p>
+                    <hr class="mt-2 m-auto" />
+                    <div class="d-flex align-items-center justify-content-center sabkatext wow fadeInUp text-center">
+                        <p class="bold mt-2">S</p>
                         <p class="me-2 fst-italic fw-bold">abka</p>
                         <!-- <p class="fst-italic fw-semibold mb-1" style="font-size: 25px;">"Saath"<br>"Vikas"<br>"Vishwas"<br>"Prayas"
                         </p> -->
@@ -357,7 +357,7 @@
                 <div class="carousel-caption ministerdetails text-center">
                     <h2 class="fw-bold mb-2 wow fadeInDown">Shri Jagat Prakash Nadda</h2>
                     <h3><b>Hon'ble Minister </b>- Health & Family Welfare </h3>
-                    <hr class="mt-2 mb-2" />
+                    <hr class="mt-2 mb-2 m-auto" />
                     <p class="fst-italic fw-semibold mb-1 wow fadeInUp">Over 900 healthcare organisations empanelled
                         under CGHS - JP Nadda
                     </p>
@@ -778,7 +778,7 @@
                                                                 class="view-more text-center text-white p-2 position-relative">
                                                                 <div class="wavy-line"></div>
                                                                 <a href="press-releases.html"
-                                                                    class="text-white text-decoration-none">View More
+                                                                    class="text-white text-decoration-none">View All
                                                                     &gt;&gt;</a>
                                                             </div>
 
@@ -1206,7 +1206,7 @@
                                     <div class="box mb-4 position-relative wow fadeInDown" data-wow-duration="1s">
 
                                         <div class="image">
-                                            <img src="assets/images/vision.jpg" />
+                                            <img src="assets/images/vision.jpg" class="img-fluid" />
                                         </div>
                                         <div class="text px-3">
                                             <h3 class="mt-3 mb-2 fw-bold">Vision</h3>
@@ -1221,7 +1221,7 @@
                                     <div class="box position-relative wow fadeInDown" data-wow-delay="1s">
 
                                         <div class="image">
-                                            <img src="assets/images/mission.jpg" />
+                                            <img src="assets/images/mission.jpg" class="img-fluid"/>
                                         </div>
                                         <div class="text px-3">
                                             <h3 class="mt-3 mb-2 fw-bold">Mission</h3>
@@ -1323,7 +1323,7 @@
 
             </div>
     </footer>
-
+    <a id="button"><span class="material-symbols-outlined">north</span></a>
     <!-- Copyright End -->
     <!-- Back to Top -->
 
@@ -1332,23 +1332,7 @@
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/wow.js"></script>
-    <script>
-        wow = new WOW(
-            {
-                animateClass: 'animated',
-                offset: 100,
-                callback: function (box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
-            }
-        );
-        wow.init();
-        document.getElementById('moar').onclick = function () {
-            var section = document.createElement('section');
-            section.className = 'section--purple wow fadeInDown';
-            this.parentNode.insertBefore(section, this);
-        };
-    </script>
+    
     <script src="assets/js/scripts.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>

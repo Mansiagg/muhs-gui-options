@@ -101,16 +101,18 @@ a {
     z-index: 999;
     right: 0px;
 }
+.shareSocial.call { top:36%}
 .call a{ font-size: 0;}
 .call span {
     transition:all 0.5s;
-    background-color:#E94751;
+    background-color:var(--ast-pink);
     color:#ffffff; border: 1px dashed #ffffff;
     width: 42px;
     height: 42px;
    text-align: center; line-height:40px;
     border-radius: 20px;
     font-size: 1.5em;
+    
 
 }
 .call:hover a {
@@ -542,12 +544,12 @@ header .all-logins span {
 }
 
 .header-carousel .owl-prev {
-    left: 30px;
+    left:15px;
 
 }
 
 .header-carousel .owl-next {
-    right: 30px;
+    right:15px;
 }
 
 .owl-prev:hover,
@@ -642,6 +644,7 @@ header .all-logins span {
     border-radius: 5px;
     /* background: linear-gradient(to right, #e87302, #e87302, #e87302, #329401, #329401, #329401);
   */
+  
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
@@ -674,7 +677,8 @@ header .all-logins span {
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails hr {
     color: #323141;
     border-top: 2px solid;
-    opacity: 1;
+    opacity: 1; width: 65%;
+    
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji h2 {
@@ -808,3 +812,38 @@ footer {background: #06032e; padding-top: 20px;}
     letter-spacing: 0.1px;
     font-weight: 500;
 }
+#button {
+	width: 50px;
+    height: 50px;
+	display: inline-block;
+	background: var(--ast-pink);
+	text-align: center;
+	border-radius: 4px;
+    box-shadow: 3px 3px 10px #fff;
+	position: fixed;
+	padding: 7px 10px;
+	bottom: 80px;
+	right: 30px;
+	line-height: 50px;
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+	opacity: 0;
+	visibility: hidden;
+	border-radius: 50px;
+	z-index: 1000;
+  }
+
+
+  #button span{ color: var(--bs-white);}
+   #button:hover {
+	cursor: pointer;
+	background-color: var(--ast-navyblue);
+  }
+  #button:active {
+	background-color: var(--ast-navyblue);
+  }
+  #button.show {
+	opacity: 1;
+	visibility: visible;
+  }

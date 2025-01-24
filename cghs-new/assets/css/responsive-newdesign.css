@@ -4,22 +4,12 @@
 }
 
 @media (min-width:1280px) and (max-width:1450px) {
-
-    #kpis {
-        width: 83%;
-    }
-
-    .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
-
-        top:10%;
-    }
     .owl-prev {
         right: 30px;
         top: 42%;
     }
-    .header-carousel .header-carousel-item .carousel-caption {
-
-        width: 83%; top: 10%;
+    .shareSocial.call {
+        top: 36%;
     }
 
     ul.ruby-menu>li>a:after {
@@ -29,7 +19,7 @@
     }
 
     ul.ruby-menu>li>a {
-        padding: 0 11px;
+        padding: 0 10px;
         font-size: 13px;
     }
 
@@ -53,10 +43,67 @@
         font-size: 13px;
         line-height: 17px;
     }
+
+    ul.ruby-menu>li>a {
+        padding: 0 4px;
+    }
+
+    header .all-logins a {
+        font-size: 11px;
+    }
+
+    ul.ruby-menu>li>a:after {
+        content: "";
+    }
+
+    .shareSocial.mail {
+        top: 20%;
+
+    }
+
+    .shareSocial.call {
+        top: 26%;
+
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji {
+        top: 34%;
+    }
 }
 
 
-@media (min-width:992px) and (max-width:1200px) {}
+@media (min-width:992px) and (max-width:1200px) {
+
+    .loginbuttton {
+
+        padding: 0 6px;
+        font-size: 11px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    header .all-logins a {
+        line-height: 17px;
+        font-size: 11px;
+    }
+
+    ul.ruby-menu>li>a {
+
+        padding: 0 11px;
+        font-size: 14px;
+    }
+
+    #topbar .language select {
+        padding: 2px 25px 3px 6px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+}
 
 @media (max-width: 991px) {}
 

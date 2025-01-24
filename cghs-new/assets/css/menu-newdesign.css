@@ -911,7 +911,7 @@ ul.ruby-menu > li.ruby-menu-right {
 
 ul.ruby-menu > li > a {
     display: block; color:rgba(0,0,0,0.75);
-    line-height: 61px;
+   
     padding: 0 14px;
     text-decoration: none;
     font-weight: 500; font-size: 14px;
