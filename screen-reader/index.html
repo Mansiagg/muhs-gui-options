@@ -22,23 +22,33 @@
 <body>
     <h1>Text to Speech Example</h1>
     <div id="content">
-        <p id="text-to-speak">Hello! This is an example of using the Speech Synthesis API to read text aloud on a webpage.</p>
+        <p id="text-to-speak">Hello! This is an example of using the Speech Synthesis API to read text aloud on a webpage. Click again to stop it, and start again when it's stopped.</p>
     </div>
-    <button onclick="speakText()">Speak Text</button>
+    <button id="speak-button" onclick="toggleSpeech()">Speak Text</button>
 
     <script>
-        function speakText() {
-            // Get the text content
-            const text = document.getElementById('text-to-speak').textContent;
-            
-            // Create a new SpeechSynthesisUtterance instance
-            const utterance = new SpeechSynthesisUtterance(text);
-            
-            // Optionally set voice and language
-            utterance.lang = 'en-US'; // You can change this to other languages/voices
-            
-            // Start speaking the text
-            window.speechSynthesis.speak(utterance);
+        let utterance;
+        
+        function toggleSpeech() {
+            // Check if speech is already happening
+            if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
+                // If speech is happening or queued, cancel it
+                window.speechSynthesis.cancel();
+                document.getElementById('speak-button').textContent = 'Speak Text'; // Update button text
+            } else {
+                // If speech is not happening, speak the text
+                const text = document.getElementById('text-to-speak').textContent;
+                utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'en-US';  // You can change this to other languages/voices
+                utterance.rate = 1;        // Speed (1 is normal)
+                utterance.pitch = 1;       // Pitch (1 is normal)
+
+                // Speak the text
+                window.speechSynthesis.speak(utterance);
+
+                // Update button text
+                document.getElementById('speak-button').textContent = 'Stop Speaking';
+            }
         }
     </script>
 </body>
