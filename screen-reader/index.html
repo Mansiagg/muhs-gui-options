@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Synthesis Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #content {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text to Speech Example</h1>
+    <div id="content">
+        <p id="text-to-speak">Hello! This is an example of using the Speech Synthesis API to read text aloud on a webpage.</p>
+    </div>
+    <button onclick="speakText()">Speak Text</button>
+
+    <script>
+        function speakText() {
+            // Get the text content
+            const text = document.getElementById('text-to-speak').textContent;
+            
+            // Create a new SpeechSynthesisUtterance instance
+            const utterance = new SpeechSynthesisUtterance(text);
+            
+            // Optionally set voice and language
+            utterance.lang = 'en-US'; // You can change this to other languages/voices
+            
+            // Start speaking the text
+            window.speechSynthesis.speak(utterance);
+        }
+    </script>
+</body>
+</html>
