@@ -20,15 +20,14 @@
     </style>
 </head>
 <body>
-    <h1>Text to Speech Example</h1>
-    <div id="content">
-        <p id="text-to-speak">Hello! This is an example of using the Speech Synthesis API to read text aloud on a webpage. Click again to stop it, and start again when it's stopped.</p>
-    </div>
+  
+        <p class="text-to-speak">Hello! This is an example of using the Speech Synthesis API to read text aloud on a webpage. Click again to stop it, and start again when it's stopped.</p>
+
     <button id="speak-button" onclick="toggleSpeech()">Speak Text</button>
 
     <script>
         let utterance;
-        
+
         function toggleSpeech() {
             // Check if speech is already happening
             if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
@@ -37,7 +36,7 @@
                 document.getElementById('speak-button').textContent = 'Speak Text'; // Update button text
             } else {
                 // If speech is not happening, speak the text
-                const text = document.getElementById('text-to-speak').textContent;
+                const text = document.querySelector('.text-to-speak').textContent;  // Get text using class
                 utterance = new SpeechSynthesisUtterance(text);
                 utterance.lang = 'en-US';  // You can change this to other languages/voices
                 utterance.rate = 1;        // Speed (1 is normal)
