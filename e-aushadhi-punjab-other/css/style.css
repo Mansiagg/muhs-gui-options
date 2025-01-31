@@ -155,10 +155,9 @@ main {
 
 #services {
 	background: var(--ast-blue);
+	background-repeat: repeat-y;
 	background-image: url('../images/medicines-bg.png');
 	background-position: top right;
-	background-repeat: no-repeat;
-
 	background-attachment: fixed;
 }
 
@@ -228,11 +227,9 @@ main {
 footer {
 	background-color: var(--ast-blue);
 	background-image: url('../images/footer-bg.png');
-	background-attachment:fixed;
-	background-position:center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	background-attachment: fixed;
 
 }
 
@@ -392,7 +389,7 @@ footer .contactdetails  p, footer .contactdetails  a{   color: rgba(255, 255, 25
 } */
 
 #slider .carousel-caption {
-	top: 14%;
+	top: 10%;
 	left: 2%;
 	text-align: left;
 }
@@ -404,14 +401,14 @@ footer .contactdetails  p, footer .contactdetails  a{   color: rgba(255, 255, 25
 }
 
 #slider .carousel-caption p {
-	font-size: 14px;
+	font-size: 15px;
     line-height: 25px;
     width: 46%;
 }
 
 .rightimage {
 	z-index: 999;
-	top: 110px;
+	top: 70px;
 	left: 0; 
 	right:0; margin:  0 auto;
 	text-align: center;
@@ -446,8 +443,8 @@ footer .contactdetails  p, footer .contactdetails  a{   color: rgba(255, 255, 25
 	z-index: 9999;
     width: 360px;
     margin: 0 auto;
-    right: 4px;
-    top: 69px;
+	right: 24px;
+    top: 39px;
     background: #ffffff;
     /* background: linear-gradient(90deg, rgba(236, 136, 35, 0.95) 0%, rgba(237, 137, 35, 0.95) 29%, rgba(241, 139, 36, 0.95) 60%, rgba(244, 141, 36, 0.95) 82%, rgba(246, 142, 37, 0.95) 100%); */
     border-radius: 5px;
