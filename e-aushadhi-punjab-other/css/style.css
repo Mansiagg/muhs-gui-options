@@ -81,7 +81,8 @@ p {
 }
 
 .logo h2 {
-	color: var(--ast-orange)
+	color: var(--ast-orange); padding-top: 3px;
+	font-size: 14px;
 }
 
 .main-menu {
