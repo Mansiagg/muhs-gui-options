@@ -78,14 +78,19 @@ jQuery(document).ready(function($){
 // });
 
 $(window).scroll(function () {
-	console.log($(window).scrollTop())
+	console.log($(window).scrollTop());
 	if ($(window).scrollTop() > 63) {
-	  $('.main-menu').addClass('sticky');
+	  $('header').addClass('sticky');
+	} else {
+	  $('header').removeClass('sticky');
 	}
-	if ($(window).scrollTop() < 64) {
-	  $('.main-menu').removeClass('sticky');
+  
+	// Ensure body overflow remains hidden
+	if ($('body').css('overflow') === 'hidden') {
+	  $('body').css('overflow', 'hidden');
 	}
   });
+  
 
 var btn = $('#button');
 $(window).scroll(function() {
