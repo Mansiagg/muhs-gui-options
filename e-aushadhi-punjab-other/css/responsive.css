@@ -114,9 +114,12 @@
         font-size: 12px;
     }
 
-    #header-form img {
-        top: -9px;
+    #header-form .loginbg {
+        top: 1px;
+        width: 14%;
+        left: -42px ;
     }
+    
 
     #about .aboutus .punchline {
         font-size: 17px;
