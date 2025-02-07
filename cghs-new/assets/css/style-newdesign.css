@@ -984,6 +984,11 @@ footer .logos img {
     font-weight: 500;
     font-size: 0.845rem;
     padding: 0px 14px;
+   }
+
+.navbar-nav .nav-item:hover > a  {
+    border-bottom:1px solid #62ac5f;
+
 
 }
 
@@ -1000,7 +1005,7 @@ footer .logos img {
     display: block;
     visibility: visible;
     opacity: 1;
-    transform: translateY(6px);
+    transform: translateY(0px);
 
 }
 
@@ -1012,7 +1017,7 @@ footer .logos img {
     transition: opacity 0.3s ease, transform 0.3s ease;
     visibility: hidden;
     opacity: 0;
-
+  
 }
 
 .navbar-nav .nav-item .dropdown-menu li a {
