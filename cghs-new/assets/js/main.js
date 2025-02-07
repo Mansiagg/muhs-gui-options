@@ -27,23 +27,6 @@
     });
 
 
-    // Hero Header carousel
-    // $(".header-carousel").owlCarousel({
-    //     items: 1,
-    //     autoplay: true,
-    //     smartSpeed: 500,
-    //     center: false,
-    //     dots: false,
-    //     loop: true,
-    //     margin: 0,
-    //     nav : true,
-    //     navText : [
-    //         '<span class="material-symbols-outlined">chevron_left</span>',
-    //         '<span class="material-symbols-outlined">chevron_right</span>'
-    //     ]
-    // });
-
-
     $(document).ready(function(){
         // Initialize WOW.js
         new WOW().init();
@@ -67,12 +50,7 @@
     
       
       });
-  // Trigger WOW animations when the carousel changes
-//   owl.on('changed.owl.carousel', function(event) {
-//     // Trigger WOW.js to reset and run the animations
-//     new WOW().init();
-//   });
-
+  
       var owl = $('.logo-carousel');
       owl.owlCarousel({
         items: 7, // adjust number of items per slide
