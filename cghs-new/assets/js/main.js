@@ -53,18 +53,24 @@
   
       var owl = $('.logo-carousel');
       owl.owlCarousel({
-        items: 7, // adjust number of items per slide
+        items: 5, // adjust number of items per slide
         loop: true,
         smartSpeed: 700,
         center: false,
         dots: false,
         autoplay: true,
         margin: 0,
-      nav : true,
+        nav : true,
       navText : [
           '<span class="material-symbols-outlined">chevron_left</span>',
           '<span class="material-symbols-outlined">chevron_right</span>'
-      ]
+      ],
+      responsive: {
+        0: { items: 1 },
+        600: { items: 3 },
+        1000: { items: 4},
+        1200: { items: 5}
+    }
       });
 
 
@@ -97,7 +103,18 @@ $(window).scroll(function () {
     
   });
   
+  document.addEventListener("click", function (event) {
+    const navbar = document.getElementById("navbarWithDropdown");
+    const navbarToggler = document.getElementById("navbarToggler");
 
+    // Check if the clicked area is NOT inside the navbar or the toggler
+    if (!navbar.contains(event.target) && !navbarToggler.contains(event.target)) {
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+            toggle: false
+        });
+        bsCollapse.hide(); // Hide the navbar if clicked outside
+    }
+});
 
 
 })(jQuery);

@@ -316,6 +316,7 @@ header .all-logins span {
 .multiplepdflist span {
     color: red;
 }
+.multiplepdflist ul li{ padding:0 5px ;}
 
 .sticky {
     top: 0;
@@ -629,7 +630,7 @@ header .all-logins span {
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails h2 {
     color: #323141;
-    font-size: 25px;
+    font-size: 1.63rem;
 }
 
 .header-carousel .header-carousel-item .carousel-caption.ministerdetails h3 {
@@ -690,28 +691,28 @@ header .all-logins span {
         object-fit: cover;
     }
 
-    .header-carousel .owl-prev,
-    .header-carousel .owl-next {
-        top: 40px !important;
-    }
 
-    .header-carousel .owl-prev {
-        left: 65%;
-    }
 }
+.logo-carousel .owl-nav {
+    display: block !important; 
+}
+.logo-carousel .owl-prev, .logo-carousel .owl-next {
+    width: 25px;
+    height: 25px;
+    padding: 18px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
+    background: transparent;
 
-
-.logo-carousel .owl-nav.disabled {
-    display: block !important;
 }
 
 .logo-carousel .owl-prev {
-    left: -20px;
+    left:-30px;
 
 }
 
 .logo-carousel .owl-next {
-    right: -20px;
+    right: -30px;
 }
 
 /*** Header Carousel End ***/
@@ -984,10 +985,10 @@ footer .logos img {
     font-weight: 500;
     font-size: 0.845rem;
     padding: 0px 14px;
-   }
+}
 
-.navbar-nav .nav-item:hover > a  {
-    border-bottom:1px solid #62ac5f;
+.navbar-nav .nav-item:hover>a {
+    border-bottom: 1px solid #62ac5f;
 
 
 }
@@ -1017,7 +1018,7 @@ footer .logos img {
     transition: opacity 0.3s ease, transform 0.3s ease;
     visibility: hidden;
     opacity: 0;
-  
+
 }
 
 .navbar-nav .nav-item .dropdown-menu li a {
