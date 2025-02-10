@@ -141,10 +141,11 @@
 
     .navbar-toggler[aria-expanded="true"] .close-icon {
         display: inline-block;
-        position: absolute;
-        top: -76px;
-        right: 0;
+        position: fixed;
+        top: 5px;
+        right: 7px;
         transition: 0.3s ease-in-out;
+        z-index: 9999999;
     }
 
     .navbar-nav .nav-item .dropdown-menu {
@@ -198,11 +199,39 @@
     .navbar-nav .nav-item .dropdown-menu {
         padding: 10px 10px;
     }
+    
+
+    #slider .cghsbanner .carousel-caption p { font-size: 13px;}
+    .footer-links li+li {
+        padding: 0 0px;
+    }
+
+    .footer-links li {
+        border-right: 0;
+    }
+    .all-logins span {
+        display: none;
+    }
+
+    .loginbuttton span {
+        display: none;
+    }
+    .loginbuttton {
+         padding: 0 2px;}
 
 }
 
 
 @media (max-width: 768px) {
+
+    .all-logins br {
+        display: none;
+    }
+
+    header .all-logins a {
+        border: 0;
+    }
+
 
     .navbar-toggler {
         border: 0;
@@ -213,14 +242,7 @@
         padding: 0;
     }
 
-    .all-logins span {
-        display: none;
-    }
-
-    .loginbuttton span {
-        display: none;
-    }
-
+  
     .loginbuttton {
         padding: 0 6px;
         text-decoration: none;
@@ -232,21 +254,7 @@
         font-size: 11px;
     }
 
-    .footer-links li+li {
-        padding: 0 0px;
-    }
-
-    .footer-links li {
-        border-right: 0;
-    }
-
-}
-
-@media (max-width: 500px) {
-    #button {
-        bottom: 200px;
-    }
-
+    
     #slider .carousel-caption h1 {
         font-size: 15px;
     }
@@ -276,6 +284,14 @@
     .header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji h2 {
         font-size: 19px;
     }
+   
+
+}
+
+@media (max-width: 500px) {
+    #button {
+        bottom: 200px;
+    }
 
     .owl-nav {
         display: none;
@@ -289,15 +305,7 @@
     .logo-carousel .owl-next {
         right: 0;
     }
-
-    .all-logins br {
-        display: none;
-    }
-
-    header .all-logins a {
-        border: 0;
-    }
-
+  
     #page p {
         font-size: 0.8rem;
         color: rgba(0, 0, 0, 0.8);
