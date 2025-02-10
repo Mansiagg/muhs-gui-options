@@ -289,6 +289,13 @@
 }
 
 @media (max-width: 500px) {
+    #topbar .language select {
+        padding: 2px 23px 3px 9px;
+        font-size: 11px;
+    }
+    .loginbuttton {
+        font-size: 12px;
+    }
     #button {
         bottom: 200px;
     }
