@@ -296,9 +296,14 @@
     .loginbuttton {
         font-size: 12px;
     }
-    #button {
-        bottom: 200px;
-    }
+    .fixed-buttons {
+        position: fixed;
+        right: 5px;
+        top: 37%; }
+        #button {
+            bottom: 116px;
+            right: 8px;
+        }
 
     .owl-nav {
         display: none;
