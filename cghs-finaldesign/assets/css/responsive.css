@@ -1,0 +1,332 @@
+@media (min-width:1500px) and (max-width:1800px) {
+    .navbar-nav .nav-item>a span {
+        font-size: 24px;
+
+    }
+  
+}
+
+@media (min-width: 1400px) {}
+
+@media (min-width:1280px) and (max-width:1450px) {
+    .owl-prev {
+        right: 30px;
+        top: 42%;
+    }
+
+    .shareSocial.call {
+        top: 37%;
+    }
+
+    .loginbuttton {
+
+        line-height: 15px;
+        padding: 3px 11px;
+        max-height: 40px;
+
+    }
+
+    .logo h1 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1280px) {
+
+    .navbar-nav .nav-item>a {
+        color: rgba(0, 0, 0, 0.75);
+        font-weight: 500;
+        font-size: 0.75rem;
+        padding: 0px 14px;
+
+    }
+
+
+    .logo h1 {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    header .all-logins a {
+        font-size: 11px;
+    }
+
+    .shareSocial.mail {
+        top: 20%;
+
+    }
+
+    .shareSocial.call {
+        top: 26%;
+
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji {
+        top: 34%;
+    }
+}
+
+/* @media (min-width: 992px) {
+
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+      
+     }
+} */
+
+
+
+
+@media (min-width:992px) and (max-width:1200px) {
+
+    .navbar-nav .nav-item>a {
+        color: rgba(0, 0, 0, 0.75);
+        font-weight: 500;
+        font-size: 0.71rem;
+        padding: 0px 6px !important;
+    }
+
+    .logo h1 {
+        font-size: 0.68rem;
+    }
+
+    .logo h2 {
+        font-size: 11px;
+    }
+
+    .logo h3 {
+        font-size: 11px;
+    }
+
+    .loginbuttton {
+
+        padding: 0 6px;
+        font-size: 11px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    header .all-logins a {
+        line-height: 17px;
+        font-size: 11px;
+    }
+
+    #topbar .language select {
+        padding: 2px 25px 3px 6px;
+    }
+
+    .footer-links a {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler .close-icon {
+        display: none;
+    }
+
+    .navbar-toggler .close-icon:focus-visible {
+        border: 0;
+        outline: 0;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+        display: none;
+    }
+
+    .navbar-toggler[aria-expanded="true"] .close-icon {
+        display: inline-block;
+        position: fixed;
+        top: 5px;
+        right: 7px;
+        transition: 0.3s ease-in-out;
+        z-index: 9999999;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu {
+        display: none;
+    }
+
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: rgba(0, 0, 0, 0.9);
+        box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999999;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-nav .nav-item>a {
+        color: rgba(255, 255, 255, 0.9);
+        font-weight: 500;
+        font-size: 0.845rem;
+        padding: 10px 14px;
+
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link {
+        color: rgba(255, 255, 255, 0.9);
+    }
+
+    .navbar-nav .nav-item>a span {
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    .dropdown-menu .dropdown-item {
+        white-space: normal;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu li a {
+        padding: 5px 0px;
+        font-size: 13px;
+    }
+
+    .navbar-nav .nav-item .dropdown-menu {
+        padding: 10px 10px;
+    }
+    
+
+    #slider .cghsbanner .carousel-caption p { font-size: 13px;}
+    .footer-links li+li {
+        padding: 0 0px;
+    }
+
+    .footer-links li {
+        border-right: 0;
+    }
+    .all-logins span {
+        display: none;
+    }
+
+    .loginbuttton span {
+        display: none;
+    }
+    .loginbuttton {
+         padding: 0 2px;}
+
+}
+
+
+@media (max-width: 768px) {
+
+    .all-logins br {
+        display: none;
+    }
+
+    header .all-logins a {
+        border: 0;
+    }
+
+
+    .navbar-toggler {
+        border: 0;
+        position: absolute;
+        top: -56px;
+        right: 3px;
+        z-index: 999999999;
+        padding: 0;
+    }
+
+  
+    .loginbuttton {
+        padding: 0 6px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .socialboxes p {
+        font-size: 11px;
+    }
+
+    
+    #slider .carousel-caption h1 {
+        font-size: 15px;
+    }
+
+    #slider .cghsbanner .carousel-caption h3 {
+        font-size: 13px;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails {
+        padding-left: 85px;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails h2 {
+
+        font-size: 16px;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails b {
+        font-size: 16px;
+
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails h3 {
+        font-size: 15px;
+    }
+
+    .header-carousel .header-carousel-item .carousel-caption.ministerdetails.modiji h2 {
+        font-size: 19px;
+    }
+   
+
+}
+
+@media (max-width: 500px) {
+    #topbar .language select {
+        padding: 2px 23px 3px 9px;
+        font-size: 11px;
+    }
+    .loginbuttton {
+        font-size: 12px;
+    }
+    .fixed-buttons {
+        position: fixed;
+        right: 5px;
+        top: 37%; }
+        #button {
+            bottom: 116px;
+            right: 8px;
+        }
+
+    .owl-nav {
+        display: none;
+    }
+
+    .logo-carousel .owl-prev {
+        left: 0;
+
+    }
+
+    .logo-carousel .owl-next {
+        right: 0;
+    }
+  
+    #page p {
+        font-size: 0.8rem;
+        color: rgba(0, 0, 0, 0.8);
+        text-align: justify;
+        line-height: 25px;
+    }
+    .news-categories ul li a {
+            font-size: 0.8rem;
+    }
+
+
+}
