@@ -1,0 +1,14 @@
+{
+    "en": {
+        "welcome": "Welcome to UX4G",
+        "description": "This is a multilingual support demo."
+    },
+    "hi": {
+        "welcome": "यूएक्स4जी में आपका स्वागत है",
+        "description": "यह बहुभाषी समर्थन डेमो है।"
+    },
+    "bn": {
+        "welcome": "UX4G-এ স্বাগতম",
+        "description": "এটি একটি বহুভাষিক সহায়তা ডেমো।"
+    }
+}
