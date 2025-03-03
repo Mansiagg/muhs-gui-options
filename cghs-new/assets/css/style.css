@@ -145,8 +145,6 @@ header .all-logins span {
     font-size: 14px;
 }
 
-
-
 #kpis {
     position: absolute;
     width: 66%;
@@ -577,8 +575,6 @@ header .all-logins span {
 }
 
 
-
-
 .header-carousel .header-carousel-item .carousel-caption {
     position: absolute;
     height: max-content;
@@ -760,7 +756,7 @@ footer .logos img {
 }
 
 .disclaimer {
-    font-size: 14px;
+    font-size: 14px;    
     color: rgba(255, 255, 255, 1);
 }
 
