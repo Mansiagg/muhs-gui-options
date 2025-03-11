@@ -274,6 +274,9 @@
 
     .mobile-menu-area {
         display: block;
+        position: absolute;
+        top: -9px;
+        right: -1px;
     }
 
     .header-top-bar .punchline {
@@ -549,13 +552,6 @@
         padding: 5px;
         margin-right: 11px;
     }
-
-    .mobile-menu-area .container {
-        width: 336px;
-
-    }
-
-
     #about h2 {
         font-size: 33px;
     }
