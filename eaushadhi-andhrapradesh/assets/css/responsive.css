@@ -72,6 +72,14 @@
 }
 
 @media (max-width: 991px) {
+
+    #slider {
+             padding: 57px 0px 86px 0px;
+    }
+
+    #header-form {
+        margin: 0px 0 auto auto; }
+
     .navbar-toggler .close-icon {
         display: none;
     }
