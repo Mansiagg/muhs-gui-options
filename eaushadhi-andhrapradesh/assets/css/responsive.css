@@ -13,38 +13,53 @@
         font-size: 21px;
         line-height: 23px;
     }
+
     .logo h2 {
         font-size: 17px;
     }
+
     .logo h3 {
-        font-size: 19px; }
+        font-size: 19px;
+    }
 
     .navbar-nav .nav-item>a {
         font-size: 0.95rem;
     }
+
     .navbar-nav {
         padding: 0 72px;
-}
+    }
+
+    #slider p {
+        font-size: 16px;
+    }
 
 }
 
 @media (min-width:1200px) and (max-width:1280px) {
 
+
+    #slider p {
+        font-size: 16px;
+    }
+
     .navbar-nav .nav-item>a {
         font-size: 0.95rem;
 
     }
 
     .navbar-nav {
-            padding: 0 72px;
+        padding: 0 72px;
     }
 
     .logo h1 {
         font-size: 21px;
         line-height: 23px;
     }
+
     .logo h3 {
-        font-size: 19px; }
+        font-size: 19px;
+    }
 
 }
 
@@ -82,11 +97,12 @@
 @media (max-width: 991px) {
 
     #slider {
-             padding: 57px 0px 86px 0px;
+        padding: 57px 0px 86px 0px;
     }
 
     #header-form {
-        margin: 0px 0 auto auto; }
+        margin: 0px 0 auto auto;
+    }
 
     .navbar-toggler .close-icon {
         display: none;
