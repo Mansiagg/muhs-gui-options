@@ -227,8 +227,8 @@ header {
 
 #slider p {
     margin: 8px 0px 20px 0px;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 17px;
+    line-height: 26px;
     text-align: justify;
     transition: .5s;
     display: block;
@@ -250,16 +250,16 @@ header .all-logins span {
 }
 
 .logo h1 {
-    font-size: 19px;
-    line-height: 21px;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 .logo h2 {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .logo h3 {
-    font-size: 16px;
+    font-size: 17px;
     padding-top: 4px;
     background: linear-gradient(to right, #ff6014, #046a38, #046a38, #046a38);
     -webkit-background-clip: text;

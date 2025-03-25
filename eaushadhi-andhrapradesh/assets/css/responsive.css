@@ -6,9 +6,36 @@
 
 }
 
-@media (min-width: 1400px) {}
+@media (min-width:1400px) and (max-width:1499px) {
 
-@media (min-width:1280px) and (max-width:1450px) {
+    .logo h1 {
+        font-size: 23px;
+        line-height: 29px;
+    }
+
+    .logo h2 {
+        font-size: 19px;
+    }
+
+    .logo h3 {
+        font-size: 18px;
+    }
+
+    .navbar-nav .nav-item>a {
+        font-size: 1.1rem;
+    }
+
+    #slider p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    #services p.servicescontent {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1399px) {
     .logo h1 {
         font-size: 21px;
         line-height: 23px;
