@@ -67,24 +67,25 @@
 @media (min-width:992px) and (max-width:1200px) {
 
     .navbar-nav .nav-item>a {
-        color: rgba(0, 0, 0, 0.75);
-        font-weight: 500;
-        font-size: 0.71rem;
-        padding: 0px 6px !important;
+        font-size: 0.89rem;
+        padding: 13px 16px !important;
     }
 
-    .logo h1 {
-        font-size: 0.68rem;
+    .navbar-nav {
+        background: rgba(238, 53, 57, 0.9);
+        border-radius: 50px;
+        padding: 0 60px;
+    }
+
+    #slider .banner-text h1,
+    #slider h2 {
+        font-size: 56px;
+        line-height: 55px;
     }
 
     .logo h2 {
-        font-size: 11px;
+        font-size: 0.89rem;
     }
-
-    .logo h3 {
-        font-size: 11px;
-    }
-
 
     p {
         font-size: 11px;
