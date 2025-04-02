@@ -275,6 +275,29 @@ $(document).ready(function () {
         return false;
     })
 });
+
+
+var owl = $('.thrust-carousel');
+owl.owlCarousel({
+  items: 5, // adjust number of items per slide
+  loop: true,
+  smartSpeed: 700,
+  center: false,
+  dots: false,
+  autoplay: true,
+  margin: 0,
+  nav : true,
+navText : [
+    '<i class="fa-solid fa-arrow-left"></i>',
+    '<i class="fa-solid fa-arrow-right"></i>'
+],
+responsive: {
+  0: { items: 1 },
+  600: { items: 3 },
+  1000: { items: 4},
+  1200: { items: 5}
+}
+});
 $(window).scroll(function () {
 
     /*---- FADE SLIDESHOW -----*/
