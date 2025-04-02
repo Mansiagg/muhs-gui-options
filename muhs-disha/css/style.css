@@ -1313,7 +1313,7 @@ textarea:focus {
 }
 footer .footer-shadow{   
     left: 10px;
-    top: -125px;
+    top: -215px;
     content: "";
     height: 300px;
     width: 300px;
