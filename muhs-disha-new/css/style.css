@@ -799,7 +799,7 @@ a:hover {
 }
 
 .slider .parallax-slider .caption p {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
     line-height: 30px;
     font-size: 17px;
     transition: all .7s;
