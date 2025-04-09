@@ -1185,10 +1185,12 @@ js-zoom-gallery,
 
 .quote-block p {
     color: #feae01;
-    font-size:25px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 700;
  }
- .quote-block .icon {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+ .quote-block .icon {box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+background: rgba(255,255,255,0.8);
+}
 
 /*=====================
      15.CONTACT
@@ -1600,7 +1602,7 @@ footer .footer-shadow{
 #thrust-areas .item figcaption {
     position: absolute;
     z-index: 9999;
-    top: 55%;
+    top: 65%;
     -webkit-transition: all .3slinear;
     transition: all .3slinear;
 }
