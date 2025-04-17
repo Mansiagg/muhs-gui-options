@@ -784,6 +784,7 @@ a:hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity .5s, visibility .5s;
+    margin-bottom: 10px;
 }
 
 .slider .parallax-slider .caption .dis {
