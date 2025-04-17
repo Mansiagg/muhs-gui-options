@@ -1464,10 +1464,10 @@ footer .footer-shadow{
 }
 
 #about .punchline h3 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: "Monomakh", system-ui;
-    font-weight: 400;
-    font-style: normal;
+    font-weight: 300;
+    font-style: normal; line-height: 25px;
 }
 
 #about .punchline  h3 span{
