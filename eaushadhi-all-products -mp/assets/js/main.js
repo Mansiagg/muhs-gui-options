@@ -225,6 +225,27 @@ window.onload = function() {
   });
 
   
+var owl = $('.gallery');
+owl.owlCarousel({
+  items: 4, // adjust number of items per slide
+  loop: true,
+  smartSpeed: 700,
+  center: false,
+  dots: false,
+  autoplay: true,
+  margin: 0,
+  nav : true,
+navText : [
+    '<i class="fa-solid fa-arrow-left"></i>',
+    '<i class="fa-solid fa-arrow-right"></i>'
+],
+responsive: {
+  0: { items: 1 },
+  600: { items: 2},
+  1000: { items: 3},
+  1200: { items: 4}
+}
+});
  
   /**
    * Animation on scroll

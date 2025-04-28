@@ -785,7 +785,8 @@ header .loginbtn a {
     background-position: top center;
     background-repeat: repeat-x;
     position: relative;
-    ;
+    margin-top: -40px;
+    z-index: 99;
 
 }
 
@@ -927,3 +928,49 @@ header .loginbtn a {
 .circulars .offcanvas body {overflow: scroll !important;}
 .circulars .btn-primary{ background: #ff4534; border-color: #ffffff;position: absolute;
     right: 0; border-radius: 0;}
+#gallery h5{
+    font-size: 25px;
+    color: #282828;
+}
+#gallery h5:before {
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    width: 26px;
+    height: 2px;
+    background-color: #232323;
+}
+#gallery h5:after {
+    content: "";
+    position: absolute;
+    left:3%;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background-color: #4ac4f3;
+}
+#gallery .gallery .owl-prev {
+    right:60px;
+}
+#gallery .gallery .owl-next {
+    right:5px;
+}
+#gallery .gallery .owl-prev, #gallery .gallery .owl-next {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -30px;   
+    transform: translateY(-50%);
+    padding: 20px 20px;
+    border-radius: 40px;
+    /* border: 1px solid var(--bs-primary); */
+    background: rgba(255, 255, 255, 1);
+    color: var(--bs-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
