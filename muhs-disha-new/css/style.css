@@ -151,7 +151,7 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 10%;
+    width: 60%;
     border: 0px;
     height: 100%;
     overflow: hidden;
@@ -1456,7 +1456,7 @@ footer .footer-shadow{
     }
 }
 
-#about .bgimage {
+.bgimage {
     z-index: -1;
 }
 
@@ -1612,7 +1612,7 @@ footer .footer-shadow{
 #thrust-areas .punchline{ background: #02218f; }
 #thrust-areas .item .bg-gradient-gray-light-dark-transparent {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 35, 41, .99)), to(transparent));
-    background-image: linear-gradient(to top, rgba(32, 35, 41, .99) 0, transparent 100%);
+    background-image: linear-gradient(to top, rgba(0, 20, 59, 0.99) 0, transparent 100%);
     z-index: 9;
 }
 #thrust-areas .item figcaption {
@@ -1675,7 +1675,7 @@ footer .footer-shadow{
         position: absolute;
         top: 100%; width: 100%;
         transform: translateY(50px);
-        transition: all .3scubic-bezier(.645,.045,.355,1);
+        transition: all .3s cubic-bezier(.645,.045,.355,1);
         transition-delay: .3s;
         transition-duration: .6s;
         visibility: hidden;
@@ -1690,4 +1690,29 @@ footer .footer-shadow{
       display: flex;
     }
   }
-  
+  .pagecontent {} 
+  .banner{
+height:382px; 
+}
+.rounded-custom {
+    border-radius: 1rem !important;
+}
+#bod .team-box{box-shadow: 0 .125rem .3rem -0.0625rem rgba(12, 8, 0, .03), 0 .275rem .75rem -0.0625rem rgba(12, 8, 0, .06) !important;
+min-height:200px;background: #fafafa; border: 1px solid #eeeeee;
+}
+#bod .team-box p{ color: #737373; }
+#bod .team-box h3{      font-size: 1.2rem; color:rgba(0, 0, 0, 0.8) }
+#bod .team-box .icon-box i {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size:19px;
+}
+#bod .team-box .icon-box {
+    background-color: rgba(23, 92, 255, .2);
+}
+.chairperson h2{ font-size:1.7rem;}
+.chairperson h3{ font-size:1.6rem;}
+.chairperson .chairperson-detail p { background-color: #efefef; padding: 6px 30px 6px 8px; width: max-content; border-radius: 5px; color: rgba(0, 0, 0, 1);}
+.chairperson  p{ color:rgba(0, 0, 0, .7); z-index: 99999999;}

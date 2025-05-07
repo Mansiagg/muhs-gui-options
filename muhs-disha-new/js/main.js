@@ -298,6 +298,9 @@ responsive: {
   1200: { items: 5}
 }
 });
+
+
+
 $(window).scroll(function () {
 
     /*---- FADE SLIDESHOW -----*/
