@@ -1866,3 +1866,9 @@ td {
     background-color: #4caf50;
     color: white;
 }
+#calendar .event-title {
+    display: block;
+    font-size: 0.7em;
+    color: #555;
+    margin-top: 4px;
+  }
