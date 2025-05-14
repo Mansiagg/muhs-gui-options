@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- Responsive Style Css -->
     <link rel="stylesheet" href="css/responsive.css" />
-</head>
+ </head>
 
 <body>
 
@@ -233,6 +233,145 @@
 <h4 class="text-center px-5 lh-base">One of our focus areas for capacity building, 3D printing is transforming the way we diagnose, plan and treat patients.<br>Unlock the power of 3D technology in healthcare by attending our workshops.</h2>
 
                </div>
+               <div id="calendar">
+<div class="controls mt-5 m-auto text-center">
+  <select id="monthSelect"></select>
+  <select id="yearSelect"></select>
+</div>
+
+<table class="mx-auto mt-3">
+  <thead>
+    <tr>
+      <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+    </tr>
+  </thead>
+  <tbody id="calendarBody"></tbody>
+</table>
+
+<button class="download-button mt-3 p-0 mx-auto d-flex align-items-center justify-content-center">
+    <div class="docs d-flex align-items-center d-flex align-items-center">  <i class="fa-solid fa-arrow-right pe-3"></i>
+  Register Now
+    </div>
+</button>
+</div>
+<script>
+  const monthSelect = document.getElementById('monthSelect');
+  const yearSelect = document.getElementById('yearSelect');
+  const calendarBody = document.getElementById('calendarBody');
+
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  // Define marked dates (format: 'YYYY-MM-DD')
+  const markedDates = [
+    '2025-05-01',
+    '2025-05-08',
+    '2025-05-15',
+    '2025-05-17',
+    '2025-12-25',
+    '2025-01-01'
+  ];
+
+  function populateSelectors() {
+    // Populate month select
+    monthNames.forEach((month, index) => {
+      const option = document.createElement('option');
+      option.value = index;
+      option.textContent = month;
+      monthSelect.appendChild(option);
+    });
+
+    // Populate year select (range: 1900–2100)
+    for (let year = 1900; year <= 2100; year++) {
+      const option = document.createElement('option');
+      option.value = year;
+      option.textContent = year;
+      yearSelect.appendChild(option);
+    }
+
+    // Set current date as default
+    const today = new Date();
+    monthSelect.value = today.getMonth();
+    yearSelect.value = today.getFullYear();
+
+    renderCalendar(today.getFullYear(), today.getMonth());
+  }
+
+  function renderCalendar(year, month) {
+    calendarBody.innerHTML = '';
+
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+    let row = document.createElement('tr');
+    let day = 1;
+
+    // Fill initial empty cells
+    for (let i = 0; i < firstDay; i++) {
+      const cell = document.createElement('td');
+      row.appendChild(cell);
+    }
+
+    // Fill in days
+    for (let i = firstDay; i < 7; i++) {
+      const cell = document.createElement('td');
+      const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      cell.textContent = day;
+
+      if (markedDates.includes(dateStr)) {
+        cell.classList.add('marked');
+      }
+
+      const today = new Date();
+      if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+        cell.classList.add('today');
+      }
+
+      row.appendChild(cell);
+      day++;
+    }
+
+    calendarBody.appendChild(row);
+
+    // Continue filling rows
+    while (day <= daysInMonth) {
+      row = document.createElement('tr');
+      for (let i = 0; i < 7 && day <= daysInMonth; i++) {
+        const cell = document.createElement('td');
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        cell.textContent = day;
+
+        if (markedDates.includes(dateStr)) {
+          cell.classList.add('marked');
+        }
+
+        const today = new Date();
+        if (day === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+          cell.classList.add('today');
+        }
+
+        row.appendChild(cell);
+        day++;
+      }
+      calendarBody.appendChild(row);
+    }
+  }
+
+  // Event listeners
+  monthSelect.addEventListener('change', () => {
+    renderCalendar(parseInt(yearSelect.value), parseInt(monthSelect.value));
+  });
+
+  yearSelect.addEventListener('change', () => {
+    renderCalendar(parseInt(yearSelect.value), parseInt(monthSelect.value));
+  });
+
+  // Initialize
+  populateSelectors();
+</script>
+
      
             
             </section>
