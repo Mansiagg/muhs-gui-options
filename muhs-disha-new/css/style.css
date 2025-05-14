@@ -1466,7 +1466,6 @@ footer .footer-shadow{
 
 #about .punchline h3 {
     font-size: 1.1rem;
-    font-family: "Monomakh", system-ui;
     font-weight: 300;
     font-style: normal; line-height: 25px;
 }
@@ -1476,7 +1475,7 @@ footer .footer-shadow{
     background-clip: text; font-weight: 800;
     -webkit-text-fill-color: transparent;}
 #about .punchline .icon {
-    width: 250px;
+    width: 216px;
     height: 100px;
     background-image: linear-gradient(135deg, transparent 45%, #464646 45%, #464646 55%, transparent 0);
     background-size: 5px 5px;
@@ -1486,8 +1485,7 @@ footer .footer-shadow{
     text-align: justify;
     color: rgba(0, 0, 0, 0.78);
     line-height: 26px;
-    margin-bottom: 14px;
-}
+    }
 
 #about .main{
     width:280px;
@@ -1495,7 +1493,7 @@ footer .footer-shadow{
     border:1px solid #CCC;
     position:relative;
     top:102px;
-    left: -14px; right: 0;
+    left: -24px; right: 0;
     margin:auto;
     border-radius:50%; background-image: url('../img/about.jpg'); background-repeat: no-repeat;
     background-position: center center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 60px 0 rgba(0, 0, 0, 0.19);
@@ -1528,7 +1526,7 @@ footer .footer-shadow{
   }
   
 
-  #achievements {background: url(../img/slider-img-5.jpg) no-repeat center center fixed; margin-top:40px;}
+  #achievements {background: url(../img/slider-img-5.jpg) no-repeat center center fixed; margin-top:115px;}
   #achievements .numbers .box p{    font-size: 1.15rem;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
