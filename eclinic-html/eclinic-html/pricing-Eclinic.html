@@ -1,0 +1,681 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sushrut Clinic</title>
+    <meta name="description" content="">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="assets/img/logo.png" rel="icon">
+    <!-- <link href="assets/vendor/aos/aos.css" rel="stylesheet"> -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+
+    <style>
+        .pricing-card {
+            border-radius: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --bs-card-border-width: 8px;
+        }
+        .pricing-header {
+            /* background: aliceblue;
+            flex: 1 1 auto;
+            padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+            border-radius: inherit; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            background: #F0FFF0; background: linear-gradient(to bottom, #F0FFF0 0%, #E1F0E1 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0FFF0), color-stop(100%, #E1F0E1)); background: -webkit-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -moz-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -o-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -ms-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0FFF0', endColorstr='#E1F0E1', GradientType=0); border: 1px solid #D2E1D2; box-shadow: inset 0 1px 0 #FFFFFF; -webkit-box-shadow: inset 0 1px 0 #FFFFFF; -moz-box-shadow: inset 0 1px 0 #FFFFFF;
+        }
+
+        
+        /* .pricing-head h2{
+            margin-bottom: 0;
+        } */
+        .pricing-card:hover {
+            transform: translateY(-20px);
+            transition:1.5s;
+        }
+        
+        .pricing-card h2 {
+            color: #333;
+            font-size: 1.5rem;
+        }
+        .pricing-card p {
+            color: #666;
+            font-size: 1rem;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 2rem;
+        }
+        .pricing-card li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            font-size: 1rem;
+        }
+        .pricing-card li:last-child {
+            border-bottom: none;
+        }
+        .pricing-card .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 0.5rem;
+        }
+        .pricing-card .btn:hover {
+            opacity: 0.8;
+        }
+        .pricing-card .most-popular {
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 0.5rem; border: 2px solid #007bff;
+        }
+        .pricing-card .btn:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        /* Heading */
+        .heading {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .heading {
+                font-size: 2.5rem;
+            }
+        }
+        .card-feat {
+            background: #F0FFF0; background: linear-gradient(to bottom, #F0FFF0 0%, #E1F0E1 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F0FFF0), color-stop(100%, #E1F0E1)); background: -webkit-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -moz-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -o-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); background: -ms-linear-gradient(top, #F0FFF0 0%, #E1F0E1 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F0FFF0', endColorstr='#E1F0E1', GradientType=0); border: 1px solid #D2E1D2; box-shadow: inset 0 1px 0 #FFFFFF; -webkit-box-shadow: inset 0 1px 0 #FFFFFF; -moz-box-shadow: inset 0 1px 0 #FFFFFF;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            
+        }
+        .check-smal-img{
+            width: 30px;
+            height: 30px;
+        }
+        .li-pt{
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Start of header area -->
+        <header class="header-area header-wrapper">
+            <div class="container-fluid" id="sticky-header" ">
+                <div class=" full-width-mega-dropdown">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-xl-2 col-md-6 col-sm-5 col-5"> <a href="index.html">
+                            <div class="logo"> <img src="assets/img/newlogo.png" class="img-fluid"> </div>
+                        </a> </div>
+                    <div class="col-lg-9 col-xl-7 col-md-1 col-1 d-flex justify-content-end">
+                        <nav id="primary-menu">
+                            <ul class="main-menu menu-eff">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#features">Features</a></li>
+                                <li><a href="#services">Services</a></li>
+                                <li><a href="#pricingID">Pricing</a></li>
+                                <li><a href="#clientele">Our Clients</a></li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div
+                        class="col-lg-12 col-xl-3 col-md-5 col-sm-6 col-6  d-flex align-items-center justify-content-end">
+                        <div class="buttons px-4 py-2 me-2 mt-0"><a href="" data-bs-toggle="modal"
+                                data-bs-target="#myModal">Get Started</a></div>
+                        <div class="buttons px-4 py-2 mt-0"><a href="" data-bs-toggle="offcanvas"
+                                data-bs-target="#registration">Register/Login</a></div>
+
+
+                        <div class="register offcanvas offcanvas-end" id="registration">
+
+                            <button type="button" class="btn-close float-end mt-2" data-bs-dismiss="offcanvas"></button>
+
+                            <iframe src="registration.html" title="registration"></iframe>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <!-- mobile-menu-area start -->
+    <div class="mobile-menu-area fix d-block d-lg-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav id="dropdown">
+                        <ul>
+                            <li><a href="index.html"><i class="fa-solid fa-house-user"></i>Home</a> </li>
+                            <li><a href="#about"><i class="fa fa-circle-info"></i>About Us</a></li>
+                            <li><a href="#services"> <i class="fa fa-notes-medical"></i>Services</a> </li>
+                            <li><a href="pricing.html"> <i class="fa fa-indian-rupee-sign"></i>Pricing</a> </li>
+                            <li><a href="#clientele"><i class="fa-regular fa-handshake"></i>Our Clients</a> </li>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--mobile menu area end-->
+    </header>
+    <!-- End of header area -->
+    <!-- Page Sections Starts Here-->
+    <main id="page">
+        <div class="pageimage"><img src="assets/img/doctor.png" /></div>
+        <section id="pagecontent" class="pagecontent">
+            <div class="container-fluid">
+                <div class="row m-0">
+                    <div class="pagetitle mt-3 text-center">
+                        <h1>Practices and OP Clinics</h1>
+                        <h2 class="mt-2">Simplify Your OP Clinic Operations with Our Powerful HMIS Software</h2>
+                        <a class="btn btn-lg requestdemo px-3 py-2" href="#" target="_blank"> <span>Schedule a free
+                                demo</span> </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="p-0 bannersection">
+            <div class="container p-2">
+                <b>Target Audience</b>: Doctors, OP clinic owners, Ayush Clinics, Homeopath and Physiotherapists and
+                medical professionals
+            </div>
+
+
+            </div>
+        </section>
+
+        <!-- ======= Services Section ======= -->
+        <section id="services" class="services p-5 m-0 bg-white">
+            <div class="icon"><img src="assets/img/clinic-page-icon.png" /></div>
+            <div class="row  d-flex align-items-center">
+                <div class="col-md-4" data-aos="fade-right">
+                    <div class="text">
+                        <h5>We’re covering all the <br> <b>Interactive features</b></h5>
+                    </div>
+                </div>
+                <div class="col-md-5" data-aos="fade-left">
+                    <p class="text">
+                        <strong>eSushrut@Clinic</strong> is a visionary, state-of-the-art, and interconnected/HMS that
+                        offers
+                        valuable, actionable, and tailored data to a wide range of healthcare facilities.
+                    </p>
+                </div>
+            </div>
+            <div class="row mx-4 mt-5 features">
+                <div class="col-md-6 mb-4">
+                    <div class="features-box py-4 px-5">
+                        <h3 class="mb-3">Reduce Paperwork & Errors by ABHA and Other initiatives</h3>
+                        <ul>
+                            <li><b>ABDM M1-M2-M3 integration:</b> Eliminate manual data entry and ensure accurate
+                                billing with seamless integration with ABHA services. <b><a>( Schedule a demo)</a></b>
+                            </li>
+                            <li><b>Manage your crown in smart and digital way by ABHA based Queue Management System and
+                                    Share patient details bha Scan-and-Share</b></li>
+                            <li><b>Automated patient registration: </b>Streamline patient intake with pre-filled forms
+                                and data capture. <b><a href="">See demo</a></b></li>
+                            <li><b>Digital appointment scheduling:</b> Manage appointments easily with online booking
+                                and reminders. </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="features-box py-4 px-5">
+                        <h3 class="mb-3">Boost Patient Engagement</h3>
+                        <ul>
+                            <li><b>Secure doctor-patient messaging:</b> Send and receive messages directly within the
+                                platform. <b><a> (Experience demo)</a></b></li>
+                            <li><b>Automated appointment reminders:</b> Reduce missed appointments with personalized
+                                notifications. <b><a>(View sample)</a></b> </li>
+                            <li><b>Patient portal access:</b> Empower patients to manage appointments, records, and lab
+                                results. <b><a> (Explore demo)</a></b></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="features-box py-4 px-5">
+                        <h3 class="mb-3">Optimize Clinic Workflow</h3>
+                        <ul>
+                            <li><b>Real-time patient flow management:</b> Track patient progress and avoid wait times.
+                                (Interactive simulation)</li>
+                            <li><b>Detailed electronic medical records (EMR):</b> Access comprehensive patient data
+                                instantly.Secure storage of medical histories, diagnoses, treatments, and lab results.
+                                <b><a>(Detailed sample)</a></b>
+                            </li>
+                            <li><b>Automated billing OP Billings and configurable invoicing:</b> Detailed billing
+                                statements for outpatient visits.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="features-box py-4 px-5">
+                        <h3 class="mb-3">Subscription Flexibility</h3>
+                        <ul>
+                            <li><b>Compare plans:</b> Choose the plan that best fits your clinic's size and needs.
+                                <b><a>(Interactive comparison chart)</a></b>
+                            </li>
+                            <li><b>Start a free trial:</b> Experience the software firsthand, risk-free. <b><a>(Sign up
+                                        now)</a></b></li>
+                            <li><b>Talk to an expert:</b> Discuss your specific needs and find the perfect
+                                solution.<b><a> (Schedule a call)</a></b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services Section -->
+
+
+        <!-- Pricing Section -->
+
+        <div class="container mt-5" id="pricingID">
+        <div style="margin-bottom: 4%;">
+            <h3 class="title text-center ">Get 3 Months Free When You Register Before January 31st, 2025!</h3>
+        </div>
+             
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="title ">
+                        <h5 >Features and services of OP Clinic</h5>
+                    </div>
+                    <div class="card-feat">
+                        
+                        <ul>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Registration and OP Doctor Desk with order management for smooth patient care.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Billing (OP) for efficient financial handling.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Mobile Apps for both Android and iOS to enable easy access and management.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">User Roles (RBAC) to ensure secure, role-based access control.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Cloud Disaster Recovery and Elastic Cloud Support for data security and scalability.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Robust Data Privacy/Security measures for patient confidentiality.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Patient Feedback Management to enhance service quality.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">MIS Operational Reports for data-driven decision-making.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Appointment Management for smooth scheduling.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Track and manage drug stock levels and distribution.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Enter lab test results offline and print reports, while maintaining patient data and test records.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Display real-time data visualizations and insights for monitoring key performance metrics.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Customize website branding and design.</li>
+                          <li class="li-pt"><img class="check-smal-img" src="assets/img/green_check.png">Rebrand and personalize mobile app visuals.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card pricing-card">
+                        <div class="pricing-header">
+                            <h2>Premium</h2> 
+                        </div>
+                        <div class="card-body">
+                            <ul>
+                                <p>Our eClinic SaaS offers flexible pricing plans to suit various healthcare needs. Whether you're a small clinic or a large hospital, we provide scalable solutions with features.</p>
+                            
+                            </ul>
+                            
+                            <ul>
+                                <p>STARTING AT</p>
+                                <h5>Rs.299/Month per Clinic</h5>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Get Started Now   <img src="Image\arrow_circle_right.png" style="/*! height: 10%; */width: 10%;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" style="margin-top: 4%;">
+                    <h3>COMMING SOON</h3>
+
+
+
+                </div>
+            </div>
+
+            <div class="row">
+                
+            </div>        
+            
+
+         <!-- Pricing Section -->
+         
+    </main>
+    <!-- Contact Section -->
+    <section id="quotation" class="mt-3 mb-3" data-aos="fade-down">
+        <div class="triangles d-flex align-items-center"> <img src="assets/img/triangles.png" /> </div>
+        <div class="map"> <img src="assets/img/dotted-map.jpg" /> </div>
+        <div class="container-fluid pt-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="quotetext justify-align-center " data-aos="fade-left">
+                        <p class="float-end m-0">Looking for Service </p> <span class="float-end pt-3"><i
+                                class="fa-solid fa-chevron-right"></i>Let’s Work
+                            Together</span>
+                    </div>
+                </div>
+                <div class="col-md-8 ps-5"> <a class="cbutton" href="#myModalDemo" data-bs-toggle="modal"   data-bs-target="#myModalDemo"><i class="fa-solid fa-phone"></i><span
+                    class="ps-4">Schedule Demo</span> </a> <a class="cbutton" href="#"> <i
+                            class="fa-solid fa-envelope" href="#pricingID"></i><span class="ps-4">Pricing</span></a>  <a
+                            class="cbutton" href="#aYQ" data-bs-toggle="modal"   data-bs-target="#aYQ"><i class="fa-solid fa-handshake"></i><span
+                                class="ps-4">Ask Your Query</span></a> </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Page Sections End Here-->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="phone-img"><img src="assets/img/contactimg.png" /></div>
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 footer-contact col-xs-12"> <a href="index.html">
+                            <h3>Center For Development of<br> advanced Computing</h3> <img
+                                src="assets/img/cdac-footer-logo.png" />
+                        </a> </div>
+                    <div class="col-lg-4 col-md-6 col-12 footer-links ps-6">
+                        <h4>Contact Info</h4>
+                        <div class="info"> <a href="tel:1800-1800-000"> <i class="fa fa-mobile-screen-button"
+                                    aria-hidden="true"></i> 1800-1800-000</a>
+                            <p>Mon-Fri: 9:00 - 5:30</p>
+                        </div>
+                        <div class="info"> <a href="mailto:helpdesk@cdac.in"><i class="fa fa-envelope"
+                                    aria-hidden="true"></i> helpdesk@cdac.in</a>
+                            <p>Best Support</p>
+                        </div>
+                        <div class="info"><i class="fa fa-map-marker" aria-hidden="true"></i>Anusandhan Bhawan,<br>
+                            C-56/1, Sector-62, Noida - 201309,<br> Uttar Pradesh (India) <p>Noida Office Location</p>
+                        </div>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 footer-links mcenter">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li> <a href="#services">Services</a></li>
+                            <li> <a href="pricing.html">Pricing</a></li>
+                            <li> <a href="#clientele">Clients</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright"> &copy; Copyright Center For Development OF ADVANCED COMPUTING - 2023. All Rights
+                    Reserved. <a href="terms-conditions.html">Terms & Conditions</a> and <a
+                        href="privacy-policy.html">Privacy Policy</a> </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"> <i class="fa-solid fa-house-user"></i> <span class="scrollup-label">Top</span> </a>
+    <!-- Theme Setting-->
+    <div class="settingstoggle"> <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#theme-settings"> <img src="assets/img/settings-animated.gif"> </button> </div>
+
+
+    <div class="offcanvas offcanvas-end" id="theme-settings">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title">Heading</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <p>Some text lorem ipsum.</p>
+            <button class="btn btn-secondary" type="button">A Button</button>
+        </div>
+    </div>
+
+    <!-- The Login Pop Up Modal -->
+    <div class="modal fade modaldesign" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container pb-2 " id="keyfeatures">
+                        <div class="row">
+                            <div class="col col-xl-12">
+                                <h5 class="pt-5 mb-5 d-flex align-items-center justify-content-center">The Simplest <i
+                                        class="fa-solid fa-circle px-2"></i>Modern <i
+                                        class="fa-solid fa-circle px-2"></i> Smarter Software</h5>
+                                <div class="row">
+                                    <div class="col-8 col-md-8 col-sm-8 col-xl-8 col-lg-8 col-xxl-8 aos-init aos-animate"
+                                        data-aos="fade-up">
+                                        <div class="contact-formtop border-0 px-4 py-5 mb-5 text-center">
+                                            <h3>Start your free trial!</h3>
+                                            <form>
+                                                <p class="text-center ">Experience the power of our HMIS solution
+                                                    firsthand.</p>
+                                                <div class="mt-4 form-outline"> <input type="text" id=""
+                                                        class="form-control form-control-lg" placeholder="Name"><i
+                                                        class="fa-regular fa-user"></i> </div>
+                                                <div class="mt-3 form-outline"> <input type="email" id=""
+                                                        class="form-control form-control-lg" placeholder="Email"> <i
+                                                        class="fa-regular fa-envelope"></i> </div>
+                                                <div class="form-outline mt-3"> <input type="number" id=""
+                                                        class="form-control form-control-lg"
+                                                        placeholder="Phone Number"><i
+                                                        class="fa-solid fa-mobile-screen-button"></i></div>
+                                                <div class="mt-3"> <button class="py-2 btn" type="button"
+                                                        style="width: 100%;">Submit</button> </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-md-4 col-sm-4 col-xl-4 col-lg-4 col-xxl-4 aos-init aos-animate"
+                                        data-aos="fade-left">
+                                        <div class="iconboxes ms-3 mt-4 ">
+                                            <div class="iconboxes ms-3 mt-4">
+                                                <div class="box mb-4 text-center "> <i
+                                                        class="fa-solid fa-shield-halved p-2  rounded-1 mb-2"></i>
+                                                    <p>Fully Secure</p>
+                                                </div>
+                                                <div class="box mb-4  text-center"> <i
+                                                        class="fa-solid fa-arrows-rotate p-2 rounded-1 mb-2"></i>
+                                                    <p>Regular Updates</p>
+                                                </div>
+                                                <div class="box mb-4  text-center"> <i
+                                                        class="fa-solid fa-mobile-screen-button p-2 rounded-1 mb-2"></i>
+                                                    <p>Universal App</p>
+                                                </div>
+                                                <div class="box mb-4  text-center"> <i
+                                                        class="fa-solid fa-headset p-2 rounded-1 mb-2"></i>
+                                                    <p>Support</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--end modal body-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade modaldesign" id="aYQ" role="dialog" aria-hidden="true">
+		        <div class="modal-dialog">
+		            <div class="modal-content" style="width: fit-content;">
+		               
+		                <div class="modal-body">
+		                    <div class="container pb-2 " id="">
+		                        <!-- <div class="row"> -->
+		                            <div class="col col-xl-12">
+		                                    <div class="col-8 col-md-8 col-sm-8 col-xl-8 col-lg-8 col-xxl-8 aos-init aos-animate"
+		                                        data-aos="fade-up">
+		                                        <div class="contact-formtop border-0 px-4 py-5 mb-5 " style="text-align: right;">
+		                                            <h3>Ask your Query</h3>
+		                                            <form style="width: 26rem;margin-top: 20%;">
+														  <!-- Name input -->
+														  <div data-mdb-input-init class="form-outline mb-4">
+														    <input type="text" name="varUserName" id="varUserName" class="form-control" placeholder="Name" maxlength="20" onkeypress="return validateAlphaNumWithUnderscoreOnly(this,event);" autocomplete="off"/>
+														    
+														  </div>
+														
+														<!-- Mobile input -->
+														  <div data-mdb-input-init class="form-outline mb-4">
+														    <input type="tel" id="form4Example2" class="form-control" placeholder="Mobile" maxlength="10" data-validation="mandatory,mobile,positiveNumeric"/>
+														    
+														  </div>
+														
+														  <!-- Email input -->
+														  <div data-mdb-input-init class="form-outline mb-4">
+														    <input type="email" id="form4Example2" class="form-control" placeholder="Email address"/>
+														    
+														  </div>
+														
+														  <!-- Message input -->
+														  <div data-mdb-input-init class="form-outline mb-4">
+														    <textarea class="form-control" id="form4Example3" rows="4"placeholder="Message" style="height: 100px;"></textarea>
+														    
+														  </div>
+														
+														  <!-- Checkbox -->
+														  <div class="form-check d-flex justify-content-center mb-4">
+														    <input
+														      class="form-check-input me-2"
+														      type="checkbox"
+														      value=""
+														      id="form4Example4"
+														      checked
+														    />
+														    <label class="form-check-label" for="form4Example4">
+														      Send me a copy of this message
+														    </label>
+														  </div>
+														
+														  <!-- Submit button -->
+														  <div class="form-check d-flex justify-content-center mb-4">
+															<button data-mdb-ripple-init="" type="button" class="py-2 btn ">Send</button>
+														  </div>
+														</form>
+                                        </div>
+		                                    </div>
+		                                 
+		                                </div>
+		                            </div>
+		                        </div>
+		                        
+		                    </div>
+		                </div>
+		            </div>
+                    <div class="modal fade modaldesign" id="myModalDemo" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                               
+                                <div class="modal-body">
+                                    <div class="container pb-2 " id="">
+                                        <div class="row">
+                                            <div class="col col-xl-12">
+                                                <!-- <h5 class="pt-5 mb-5 d-flex align-items-center justify-content-center">The Simplest <i
+                                                        class="fa-solid fa-circle px-2"></i>Modern <i class="fa-solid fa-circle px-2"></i> Smarter Software</h5> -->
+                                                       <!--  <h5 class="pt-5 mb-5 d-flex align-items-center justify-content-center">Free Demo</h5> -->
+                                                <div class="row">
+                                                    <div class="col-8 col-md-8 col-sm-8 col-xl-8 col-lg-8 col-xxl-8 aos-init aos-animate"
+                                                        data-aos="fade-up">
+                                                        <div class="contact-formtop border-0 px-4 py-5 mb-5 text-center">
+                                                            <h3>Request Demo</h3>
+                                                            
+                                                            
+                                                            <form  id="requestDemoID" action="" style="width: 26rem;margin-top: 20%;">
+                                                                  <!-- Name input -->
+                                                                  <div data-mdb-input-init class="form-outline mb-4">
+                                                                    <input type="text" name="varUserName" id="varUserName" class="form-control" placeholder="Name" maxlength="20" onkeypress="return validateAlphaNumWithUnderscoreOnly(this,event);" autocomplete="off"/>
+                                                                    
+                                                                  </div>
+                                                                
+                                                                <!-- Mobile input -->
+                                                                  <div data-mdb-input-init class="form-outline mb-4">
+                                                                    <input type="tel" id="form4Example2" class="form-control" placeholder="Mobile" maxlength="10"data-validation="mandatory,mobile,positiveNumeric"/>
+                                                                    
+                                                                  </div>
+                                                                
+                                                                  <!-- Email input -->
+                                                                  <div data-mdb-input-init class="form-outline mb-4">
+                                                                    <input type="email" id="form4Example2" class="form-control" placeholder="Email address"/>
+                                                                    
+                                                                  </div>
+                                                                
+                                                                  <!-- Message input -->
+                                                                  <div data-mdb-input-init class="form-outline mb-4">
+                                                                    <textarea class="form-control" id="form4Example3" rows="4"placeholder="Message" style="height: 100px;"></textarea>
+                                                                    
+                                                                  </div>
+                                                                
+                                                                  <!-- Checkbox -->
+                                                                  <div class="form-check d-flex justify-content-center mb-4">
+                                                                    <input
+                                                                      class="form-check-input me-2"
+                                                                      type="checkbox"
+                                                                      value=""
+                                                                      id="form4Example4"
+                                                                      checked
+                                                                    />
+                                                                    <label class="form-check-label" for="form4Example4">
+                                                                      Send me a copy of this message
+                                                                    </label>
+                                                                  </div>
+                                                                
+                                                                  <!-- Submit button -->
+                                                                  <button class="btn btn-light shadow-sm rounded-3 px-4 py-2 fs-5 text-dark" id="reqDemoSendID" data-mdb-ripple-init type="button" class="py-2 btn" onclick="return">Send</button>
+                                                                </form>
+                                                </div>
+                                                    </div>
+                                                    <div class="col-4 col-md-4 col-sm-4 col-xl-4 col-lg-4 col-xxl-4 aos-init aos-animate"
+                                                        data-aos="fade-left">
+                                                        <div class="iconboxes ms-3 mt-4 ">
+                                                            <div class="iconboxes ms-3 mt-4" style="padding-top: 16%;">
+                                                            <p class="text-center ">What do you get in the demo ?</p>
+                                                                <div class="box mb-4 text-center "> <i class="fa-solid fa-shield-halved p-2  rounded-1 mb-2"></i>
+                                                                    <p>Introduction of the company over a brief conversation.</p>
+                                                                </div>
+                                                                <div class="box mb-4  text-center"> <i class="fa-solid fa-arrows-rotate p-2 rounded-1 mb-2"></i>
+                                                                    <p>Live demo of our eSushrut Features & Service.</p>
+                                                                </div>
+                                                                <div class="box mb-4  text-center"> <i class="fa-solid fa-mobile-screen-button p-2 rounded-1 mb-2"></i>
+                                                                    <p>Insights into how our product can cater to the needs of yours</p>
+                                                                </div>
+                                                                <div class="box mb-4  text-center"> <i class="fa-solid fa-headset p-2 rounded-1 mb-2"></i>
+                                                                    <p>Support</p>
+                                                                    <a href="tel:1800-1800-000">  1800-1800-000</a>
+                                                                 <p>Mon-Fri: 9:00 - 5:30</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+
+            <!-- jquery latest version -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/menu.js"></script>
+            <script src="assets/vendor/aos/aos.js"></script>
+            <script src="assets/js/main.js"></script>
+</body>
+
+</html>

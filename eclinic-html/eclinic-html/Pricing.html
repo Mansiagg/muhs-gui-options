@@ -1,0 +1,968 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sushrut Clinic</title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+
+        /* Colors: */
+        --unnamed-color-ffffff: #FFFFFF;
+        /* Font/text values */
+        --unnamed-font-family-inter-regular: Inter-Regular;
+        --unnamed-font-style-normal: normal;
+        --unnamed-font-weight-normal: normal;
+        --unnamed-font-size-22: 22px;
+        --unnamed-character-spacing-0: 0px;
+        --unnamed-line-spacing-28: 28px;
+        }
+
+        /* Character Styles */
+        .unnamed-character-style-1 {
+        font-family: var(--unnamed-font-family-inter-regular);
+        font-style: var(--unnamed-font-style-normal);
+        font-weight: var(--unnamed-font-weight-normal);
+        font-size: var(--unnamed-font-size-22);
+        line-height: var(--unnamed-line-spacing-28);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Montserrat;
+        }
+        .montserrat-text-card{
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: #00000099;
+        }
+        .montserrat-text{
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .header {
+            top: 0px;
+            left: 0px;
+            height: 100px;
+            background: #F5F6F8 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .header img {
+            top: 33px;
+            left: 86px;
+            width: 277px;
+            height: 72px;
+            /* UI Properties */
+            background: transparent url('img/Image 1.png') 0% 0% no-repeat padding-box;
+            mix-blend-mode: multiply;
+            opacity: 1;
+        }
+        .about-header{
+            font: var(--unnamed-font-style-normal) normal bold 48px/68px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: left;
+            font: normal normal bold 48px/68px Montserrat;
+            letter-spacing: 0px;
+            color: #2B2B2B;
+        }
+        .nav-container {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        .sign-in {
+            background: transparent linear-gradient(180deg, #62A63F 0%, #1D5329 100%) 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            opacity: 1;
+            /* padding: 10px 20px; */
+            text-decoration: none;
+            width: 120px;
+            height: 47px;
+            color: white;
+            /* letter-spacing: 1px; */
+            justify-content: center;
+            text-align: left;
+            font: normal normal 0px/28px Montserrat;
+            font-size: 16px;
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+        .navbar {
+            margin-bottom: 0; 
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            color: #6c757d;
+            font: normal normal bold 18px/22px Montserrat;
+            opacity: 1;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #000;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #000;
+        }
+        .sign-in:hover {
+            background-color: #45a049;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            /* padding: 50px 20px; */
+        }
+        .main-content .text-content {
+            max-width: 50%;
+        }
+        .main-content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            color: #0009
+        }
+        .features-section {
+            padding: 20px;
+        }
+        .features-section h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 40px; /* Increased margin */
+        }
+        .features-section h1 span {
+            color: #437C35;
+        }
+        .features-section .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .features-section .feature-item i {
+            color: #437C35;
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+        .features-section .feature-item h5 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0;
+        }
+        .features-section .feature-item p {
+            margin: 0;
+            color: #666;
+        }
+        .features-section .feature-item + .feature-item {
+            padding-top: 20px;
+        }
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .header-text {
+            text-align: right;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #666;
+        }
+        .header-text span {
+            color: #437C35;
+        }
+        
+        .card{
+            width: 240px;
+            height: 430px;
+            border: 0;
+        }
+        
+        .card-title{
+            font: var(--unnamed-font-style-normal) normal 600 16px/27px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: left;
+            opacity: 1;
+            margin-top: -12px;
+            color: #0009;
+        }
+        .fa:hover {
+		opacity: 0.7;
+		}
+        .text-social{
+            color: #00000099;
+            opacity: 1;
+            font-size: inherit;
+        }
+		
+		.styleSocial {
+            background: #B4D8AC;
+            color: #000000;
+		    padding: 10px;
+		    width: 50px;
+		    text-align: center;
+		    text-decoration: none;
+		    margin: 5px 2px;
+		    border-radius: 45px;
+		}
+        .styleSocial:hover{
+            opacity: 0.7;
+        }
+        .bg-dot-square {
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 90px;
+            height: 90px;
+            position: unset;
+            opacity: 1;
+            margin-left: 363px;
+            margin-bottom: -95px;
+        }
+        .bg-dot-square-1{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: -59px;
+            margin-bottom: -72px;
+        }
+
+        .bg-dot-square-2{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: -116px;
+            margin-bottom: -58px;
+        }
+        .bg-dot-square-3{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: 237px;
+            margin-top: -51;
+        }
+        .bg-dot-square-4{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: 237px;
+            margin-top: -51;
+        }
+        .service-pricing-section{
+            text-align: center;
+            padding: 50px 20px;
+            background: #F5F6F8;
+        }
+        .service-pricing-box{
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            position: relative;
+            border-radius: 20px;
+            height: 280px;
+        }
+        
+        .service-pricing-box img {
+            margin-bottom: 20px;
+            border-radius: 25px;
+            width: 286px;
+            height: 201px;
+            padding: 20px;
+        }
+        .service-pricing-box h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .service-pricing-box p {
+            font-size: 0.875rem;
+            color: #6c757d;
+            padding: 20px;
+        }
+               
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .footer .social-icons a {
+            font-size: 24px;
+        }
+        .footer .social-icons a:hover {
+            color: #00000099;
+        }
+        .footer .app-links img {
+            width: 150px;
+            margin: 10px 10px 10px 0;
+        }
+        .footer .contact-info i {
+            color: #437C35;
+            margin-right: 10px;
+        }
+        .footer .contact-info a {
+            color: #00000099;
+            text-decoration: none;
+        }
+        .footer .contact-info li {
+            color: #00000099;
+            text-decoration: none;
+            padding: 5;
+            font-size: 1.25rem;
+            display: flex;
+        }
+        .footer .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .footer .footer-bottom {
+            border-top: 1px solid #00000099;
+            padding-top: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer .footer-bottom a {
+            color: #00000099;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+        .footer .pages a {
+            color: #00000099;
+            text-decoration: none;
+        }
+        .footer .pages li {
+            padding: 5;
+            font-size: 1.25rem;
+        }
+
+        .footer .pages a:hover {
+            text-decoration: underline;
+        }
+        .services-header{
+            text-align: center;
+            font: var(--unnamed-font-style-normal) normal bold 34px/68px Montserrat;
+        }
+        .services-header-plan{
+            text-align: center;
+            font: normal normal bold 20px/48px Montserrat;
+            opacity: 1;
+        }
+        .card-price{
+            background: #437C35 0% 0% no-repeat padding-box;
+            border-radius: 20px;
+            width: 450px;
+            opacity: 1;
+        }
+        .card h5{
+            text-align: center;
+            font: normal normal 900 28px/42px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            padding: 10;
+        }
+        .card h6{
+            font: normal normal bold 48px/42px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            padding: 10;
+        }
+        .card li{
+            display: flex; 
+            text-align: left;
+            /* font: normal normal normal 1px/32px Montserrat; */
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+        .card span{
+            width: var(--fa-li-width, 1em);
+        }
+        .card button{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            opacity: 1;
+            margin-left: 140;
+        }
+       
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-content .text-content, .illustration {
+                max-width: 100%;
+            }
+            .info-box {
+                margin: 20px auto;
+            }
+            .pricing-card {
+            border-radius: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --bs-card-border-width: 8px;
+        }
+        .container-feat{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 25px 25px 60px #8FA8BB29;
+            border-radius: 0px 20px 20px 0px;
+            opacity: 1;
+            padding: 20px;
+        }
+    }
+
+    .card {
+  border: none;
+  border-radius: 0;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+@media screen and (min-width: 577px) {
+  .cards-wrapper {
+    display: flex;
+  }
+  .card {
+    margin: 0 0.5em;
+    width: calc(100% / 2);
+  }
+  .image-wrapper {
+    height: 20vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .card:not(:first-child) {
+    display: none;
+  }
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light header">
+        <div class="container-fluid">
+            <img src="assets/img/newLogo.png" alt="E-Sushrut Clinic Logo">
+          
+            <button class="btn fs-4 sign-in d-flex" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+                Sign in
+            </button>
+        </div>
+      </nav>
+    
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="form.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABDM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container mt-5 features-section">
+        <div class="row">
+         <div class="col-md-8">
+
+            <h1>We provide truly prominent<span>Features</span></h1>
+            <div class="container container-feat">
+                <div class="feature-item"> <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h5>Dashboard &amp; Reporting</h5>
+                        <p>Extensive Dashboards And Real Time Statistics For Trend/Pattern Analysis</p>
+                    </div>
+                </div>
+                <div class="feature-item"><i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h5>Electronic Health Records</h5>
+                        <p>Improve Healthcare By Providing Comprehensive Health Information To Providers.</p>
+                    </div>
+                </div>
+                <div class="feature-item"><i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h5>Web Application</h5>
+                        <p>Streamline Your Healthcare Services With Our Cutting-Edge Eclinic Web Application.</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div class="col-md-4 image-section">
+            <div class="col-12 mb-5 header-text">Best in Class <span>Healthcare solutions</span></div>
+          <img alt="Doctor using a laptop with healthcare data visualization on a screen" height="300" src="https://storage.googleapis.com/a1aa/image/fFjY4L1nRqRoJaS7SYep2cb0NxFZ2uDhPq1O3YUlCfHNeo4PB.jpg" width="400"/>
+         </div>
+        </div>
+        <div class="row">
+         
+         
+        </div>
+       </div>
+
+<div class="pricing-section">
+       <div class="row  d-flex align-items-center">
+            <div class="col-md-12" data-aos="fade-right">
+                <div class="text "> 
+                    <h5 class="services-header" style="color: #000000;">Discuss your specific needs and find the right <span style="color: #437C35;">subscription plan.</span> </h5>
+                </div>
+            </div>
+            <div class="col-md-12" data-aos="fade-right">
+                <div class="text "> 
+                    <p class="services-header-plan">Best Plan</p>
+                </div>
+            </div>    
+            <div class="col-md-12" data-aos="fade-right">
+                <div class="card" style="width: 18rem;margin-left: 50px;">
+                    <div class="card-body card-price">
+                        <h5 class="card-title">Premium</h5>
+                        <h6 class="card-subtitle mb-2">₹299</h6>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  OP &amp; ABDM</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  Modules</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  Roles, Configurations &amp; Onboarding</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  Various Platform Integrations and Customizations</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  Data Backup, Security &amp; Recovery</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  Reports &amp; Patient Satisfaction</li>
+                            <li><span class="fa-li"><i class="fa-solid fa-check-circle"></i></span>  User Subscriptions &amp; Charges</li>
+                        </ul>
+                        
+                    <button class="btn btn-lg">
+                        Get Started
+                    </button>
+                    </div>
+                </div>
+            </div>
+    </div>  
+</div>
+
+    <div class="service-pricing-section">
+		<div class="row  d-flex align-items-center">
+            <div class="col-md-12" data-aos="fade-right">
+                <div class="text ">
+                    <h5 class="services-header" style="color: #000000;">We Provide State-Of-The-Art <span style="color: #437C35;">Services</span> </h5>
+                </div>
+            </div>
+        </div>
+<div class="row">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-1-card-3.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-2-card-3.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="cards-wrapper">
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/bootstrap-multiple-items-carousel-slide-3-card-1.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-2.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image-wrapper">
+                  <img src="https://codingyaar.com/wp-content/uploads/multiple-items-carousel-slide-3-card-3.jpg" alt="...">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                    content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  
+
+    <!-- <div class="container carousel slide" id="carouselExampleSlidesOnly" data-ride="carousel">
+            <div class="bg-dot-square-2"></div>
+                  
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <div class="col-md-3 mb-5 col-sm-6">
+                        <div class="service-pricing-box">
+                            <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\dashboard.jpg" />
+                            <h3>
+                                Dashboard
+                            </h3>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Lab Inventory
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Registration
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\abdm.jpg" width="600"/>
+                                <h3>
+                                    ABDM Feature
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Lab Inventory
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Value Added Feature
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Billing
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Past Health Records
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\lab.jpg" width="600"/>
+                                <h3>
+                                    Compliance to Medical Data Standards
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-item">
+                        <div class="col-md-3 mb-5 col-sm-6">
+                            <div class="service-pricing-box">
+                                <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="assets\img\services\opd.jpg" width="600"/>
+                                <h3>
+                                    OPD Services
+                                </h3>
+                            </div>
+                        </div>
+                        
+                    </div><div class="bg-dot-square-3"></div>
+                    
+                                    
+                    </div> 
+                </div> 
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
+                
+            </div>  -->
+        </div>     	
+</div>
+    
+
+
+
+<footer class="footer" style="background: #F5F6F8;">
+    <div class="container">
+     <div class="row text-center text-md-start">
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+        <img src="assets/img/newLogo.png" class="img-fluid mb-3" alt="E-Sushrut Clinic Logo" style="width: 220;height: 57px;mix-blend-mode: multiply;">         
+       <p style="color: #00000099; font-size: 1.05rem;">
+        FOLLOW US ON SOCIAL MEDIA
+       </p>
+       <div class="social-icons">
+        <a href="https://cdac.in/" class="fab fa-facebook styleSocial" ></a>
+		<a href="" class="fab fa-twitter styleSocial" ></a>
+		<a href="" class="fab fa-linkedin styleSocial" ></a>
+		<a href="" class="fab fa-youtube styleSocial" ></a>
+       </div>
+       <div class="app-links mt-3">
+        <a href="#"><img alt="Google Play Store" height="50" src="img\GooglePlay.png" width="150"/></a>
+        <a href="#"><img alt="Apple App Store" height="50" src="img\appStore.png" width="150"/></a>
+       </div>
+      </div>
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+       <h5 style="text-align: left;font: normal normal bold 22px/68px Montserrat;letter-spacing: 0px;color: #000000;opacity: 1;margin-left: 10;">
+        Pages
+       </h5>
+       <ul class="list-unstyled pages">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">ABDM</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Pricing</a></li>
+       </ul>
+      </div>
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+       <h5 style="text-align: left;font: normal normal bold 22px/68px Montserrat;letter-spacing: 0px;color: #000000;opacity: 1;margin-left: 10;">
+        Contact
+       </h5>
+       <ul class="list-unstyled contact-info">
+        <li><i class="fas fa-phone"></i>1800-1800-000</li>
+        <li><i class="fas fa-clock"></i>Mon - Fri: 9:00Am - 5:30Pm</li>
+        <li>
+         <i class="fas fa-envelope"></i><a href="mailto:helpdesk@cdac.in">helpdesk@cdac.in</a></li>
+        <li>
+         <i class="fas fa-map-marker-alt"></i>Anusandhan Bhawan,<br/>C-56/1, Sector-62, Noida - 201309,<br/>Uttar Pradesh (India)<br/>
+        </li>
+        <li><a href="#">Noida Office Location</a></li>
+       </ul>
+      </div>
+      <div class="col-md-3 mt-5 text-center text-md-start">
+        <img alt="CDAC Logo" src="assets\img\cdac-footer-logo.png" width="150" style="/*! padding: ; */height: 200px;width: 200px;" class="img-fluid mb-3 ms-5 mt-4" height="200">
+       <h5 style="text-align: center;font: normal normal 562 17px/32px Montserrat;letter-spacing: 0px;color: #00000099;opacity: 1;">
+        CENTRE FOR DEVELOPMENT OF ADVANCED COMPUTING
+       </h5>
+      </div>
+     </div>
+     <div class="footer-bottom mt-4">
+      <p style="color: #00000099;">
+       © Copyright Center For Development OF ADVANCED COMPUTING - 2023. All Rights Reserved
+      </p>
+      <a href="#">
+       TERMS &amp; CONDITIONS
+      </a>
+      |
+      <a href="#">
+       PRIVACY POLICY
+      </a>
+     </div>
+    </div>
+   </footer>
+
+   <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="profile-icon">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <h4 class="mt-3">Welcome Back</h4>
+            <form class="mt-4">
+                <div class="mb-3 input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-key"></i></span>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-signin w-100">Sign In</button>
+            </form>
+            <p class="mt-3">Don't have an account? <a href="#" class="sign-up-link">Sign Up</a> here.</p>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+
+</body>
+</html>
+
+

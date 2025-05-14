@@ -1,0 +1,1141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sushrut Clinic</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+
+        /* Colors: */
+        --unnamed-color-ffffff: #FFFFFF;
+
+        /* Font/text values */
+        --unnamed-font-family-inter-regular: Inter-Regular;
+        --unnamed-font-style-normal: normal;
+        --unnamed-font-weight-normal: normal;
+        --unnamed-font-size-22: 22px;
+        --unnamed-character-spacing-0: 0px;
+        --unnamed-line-spacing-28: 28px;
+        }
+
+        /* Character Styles */
+        .unnamed-character-style-1 {
+        font-family: var(--unnamed-font-family-inter-regular);
+        font-style: var(--unnamed-font-style-normal);
+        font-weight: var(--unnamed-font-weight-normal);
+        font-size: var(--unnamed-font-size-22);
+        line-height: var(--unnamed-line-spacing-28);
+        letter-spacing: var(--unnamed-character-spacing-0);
+        color: var(--unnamed-color-ffffff);
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Montserrat;
+        }
+        .montserrat-text-card{
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            color: #00000099;
+        }
+        .montserrat-text{
+            font-family: "Montserrat", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .header {
+            top: 0px;
+            left: 0px;
+            /* width: 100%; */
+            height: 100px;
+            /* UI Properties */
+            background: #F5F6F8 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .header img {
+            top: 33px;
+            left: 86px;
+            width: 277px;
+            height: 72px;
+            /* UI Properties */
+            background: transparent url('img/Image 1.png') 0% 0% no-repeat padding-box;
+            mix-blend-mode: multiply;
+            opacity: 1;
+        }
+        .about-header{
+            font: var(--unnamed-font-style-normal) normal bold 48px/68px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: left;
+            font: normal normal bold 48px/68px Montserrat;
+            letter-spacing: 0px;
+            color: #2B2B2B;
+        }
+        .nav-container {
+            background-color: #fff;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+        .nav-links a:hover {
+            color: #007bff;
+        }
+        .sign-in {
+
+            background: transparent linear-gradient(180deg, #62A63F 0%, #1D5329 100%) 0% 0% no-repeat padding-box;
+            border-radius: 12px;
+            opacity: 1;
+            /* padding: 10px 20px; */
+            text-decoration: none;
+            width: 120px;
+            height: 47px;
+            color: white;
+            /* letter-spacing: 1px; */
+            justify-content: center;
+            text-align: left;
+            font: normal normal 0px/28px Montserrat;
+            font-size: 16px;
+            letter-spacing: 0px;
+            opacity: 1;
+        }
+        .navbar {
+            margin-bottom: 0; 
+        }
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            color: #6c757d;
+            font: normal normal bold 18px/22px Montserrat;
+            opacity: 1;
+            transition: color 0.3s;
+        }
+        .navbar-nav .nav-link.active {
+            font-weight: bold;
+            color: #000;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #000;
+        }
+        .sign-in:hover {
+            background-color: #45a049;
+        }
+        .main-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0;
+            /* padding: 50px 20px; */
+        }
+        .main-content .text-content {
+            max-width: 50%;
+        }
+        .main-content h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .main-content p {
+            font-size: 1.2em;
+            color: #0009
+        }
+        .get-started {
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 48px;
+            background: #437C35 0% 0% no-repeat padding-box;
+        }
+        .get-started:hover {
+            background-color: #45a049;
+        }
+        
+        .info-box {
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            /* box-shadow: 15px 15px 60px #8FA8BB3B; */
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 335px;
+            width: 480px;
+            height: 170px;
+            border: 0;
+            opacity: 1;
+        }
+        .info-box:hover{
+            background: #F5F6F8;
+            box-shadow: 15px 15px 60px #8FA8BB3B;
+        }
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            opacity: 0.8;
+        }
+        .info-box ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .info-box ul li i {
+            color: #000000;
+            margin-right: 10px;
+        }
+        .illustration {
+            max-width: 50%;
+        }
+        .illustration img {
+            width: 100%;
+        }
+        .services{
+            background: #F5F6F8 0% 0% no-repeat padding-box;
+            opacity: 1;
+            height: 689px;
+        }
+        .services-header{
+            text-align: center;
+            font: var(--unnamed-font-style-normal) normal bold 38px/68px Montserrat;
+        }
+        .card{
+            width: 240px;
+            height: 430px;
+            border: 0;
+        }
+        .text-about{
+            font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) /32px Montserrat;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #00000099;
+            opacity: 1;
+        }
+        .text-heart-card{
+            text-align: left;
+            font: normal normal 600 28px/68px Montserrat;
+            letter-spacing: 0px;
+            color: #437C35;
+            opacity: 1;
+        }
+        .card-title{
+            font: var(--unnamed-font-style-normal) normal 600 16px/27px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: left;
+            opacity: 1;
+            margin-top: -12px;
+            color: #0009;
+        }
+        .bg-pattern{
+            background-image: radial-gradient(circle at 1px 1px, black 1px, transparent 0);
+            background-size: 40px 40px;
+            background: #D7DEEB 0% 0% no-repeat padding-box;
+            opacity: 1;
+        }
+        .logo-halfimg{
+            mix-blend-mode: multiply;
+            height: 230px;
+            width: 250px;
+            margin-left: 45px;
+            margin-top: 30px;
+        }
+         .container-about{
+            background: #F5F6F8;
+            border-radius: 239px;
+            height: 350px;
+            width: 350px;  
+        }
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 0vh;
+            margin-top: -25px;
+            margin-left: 75px;
+        }
+        .icon-doctor{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 16vh;
+            color: #437c35;
+            font-size: 1.5rem;
+        }
+        .icon-user{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 16vh;
+            color: #437c35;
+            font-size: 1rem;
+            margin-left: -252px;
+            margin-top: -7px;
+        }
+        .icon {
+            background: #437C35 0% 0% no-repeat padding-box;
+            border-radius: 10px;
+            padding: 16px;
+        }
+        .icon i {
+            color: white;
+            font-size: 1rem;
+            margin-left: 0px;
+            margin-top: -2px;
+        }
+        .card-heart{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: -15px 15px 60px #8FA8BB29;
+            border-radius: 20px;
+            opacity: 1;
+            width: 189px;
+            height: 93px;
+            margin-left: -116px;
+            margin-bottom: -75px;
+        }
+        .card-doctor{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: -15px 15px 60px #8FA8BB29;
+            opacity: 1;
+            margin-left: 250px;
+            width: 100px;
+            height: 100px;
+            border: 0;
+            border-radius: 300px;
+            backdrop-filter: blur(12px);
+            margin-top: -48px;
+        }
+        .card-user{
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: -15px 15px 60px #8FA8BB29;
+            border-radius: 20px;
+            opacity: 1;
+            width: 320px;
+            height: 70px;
+            margin-left: 55px;
+        }
+        .card-user-title{
+            font: var(--unnamed-font-style-normal) normal 600 16px/27px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: left;
+            opacity: 1;
+            color: #0009;
+            margin-left: 44px;
+            margin-top: -40px;
+        }
+        .heading-trustedby{
+            font: var(--unnamed-font-style-normal) normal bold 38px/32px Montserrat;
+            letter-spacing: var(--unnamed-character-spacing-0);
+            text-align: center;
+            letter-spacing: 0px;
+            color: #2B2B2B;
+            opacity: 1;
+}
+
+        .about-sec{
+            margin-bottom: 69;
+        }
+         .trusted-by{
+            margin-top: 69;
+         }
+         .fa:hover {
+		opacity: 0.7;
+		}
+        .text-social{
+            color: #00000099;
+            opacity: 1;
+            font-size: inherit;
+        }
+		
+		.styleSocial {
+            background: #B4D8AC;
+            color: #000000;
+		    padding: 10px;
+		    width: 50px;
+		    text-align: center;
+		    text-decoration: none;
+		    margin: 5px 2px;
+		    border-radius: 45px;
+		}
+        .styleSocial:hover{
+            opacity: 0.7;
+        }
+        .bg-dot-square {
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 90px;
+            height: 90px;
+            position: unset;
+            opacity: 1;
+            margin-left: 363px;
+            margin-bottom: -95px;
+        }
+        .bg-dot-square-1{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: -59px;
+            margin-bottom: -72px;
+        }
+
+        .bg-dot-square-2{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: -116px;
+            margin-bottom: -58px;
+        }
+        .bg-dot-square-3{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: 237px;
+            margin-top: -51;
+        }
+        .bg-dot-square-4{
+            background-image: radial-gradient(#D7DEEB 1px, transparent 0);
+            background-size: 15px 15px;
+            background-position: -24px -19px;
+            width: 135px;
+            height: 100px;
+            position: unset;
+            opacity: 1;
+            margin-left: 237px;
+            margin-top: -51;
+        }
+        
+        .services-section {
+            text-align: center;
+            padding: 50px 20px;
+            background: #F5F6F8;
+        }
+        
+        .services-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .services-section h1 span {
+            color: #437C35;
+        }
+        .services-section-p{
+            font-size: 1.25rem;
+            color: #6c757d;
+            padding: 20px;
+            padding-right: 100px;
+            padding-left: 100px;
+        }
+        .service-box {
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            height: 290px;
+        }
+        
+        .service-box:hover {
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 60px 30px 60px #A8BBCA29;
+            border-radius: 20px;
+            opacity: 1;
+        }
+        
+        .service-box h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .service-box p {
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+        .service-circle{
+            clip-path: circle(38px);
+            height: 80;
+            background: #B4D8AC;
+        }
+        .about-circle{
+            height: 300;
+            width: 300;
+            background: #A8BBCA29;
+        }
+        .features-box{
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            position: relative;
+            top: 0;
+            transition: top ease 0.5s;
+            border-radius: 20px;
+            height: 440;
+        }
+        .feature-section{
+            text-align: center;
+            padding: 50px 20px;
+            background: #F5F6F8;
+        }
+        .features-box:hover{
+            background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 60px 30px 60px #A8BBCA29;
+            border-radius: 20px;
+            top: -15px;
+            opacity: 1;
+        }
+        .features-box img {
+            margin-bottom: 20px;
+            border-radius: 20px 20px 0 0;
+            
+        }
+        .features-box h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #333;
+        }
+        .features-box p {
+            font-size: 0.875rem;
+            color: #6c757d;
+            padding: 20px;
+        }
+        
+        .custom-section {
+            padding: 40px 20px;
+        }
+        .icon-box {
+            text-align: center;
+        }
+        .icon-box i {
+            font-size: 40px;
+            color: #28a745;
+            margin-bottom: 10px;
+        }
+        .trusted-by-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+        .trusted-by-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .trusted-by-section .logo {
+            max-width: 150px;
+            margin: 0 auto 10px;
+        }
+        .trusted-by-section .logo-description {
+            font-size: 1rem;
+            color: #666;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+        .footer .social-icons a {
+            font-size: 24px;
+        }
+        .footer .social-icons a:hover {
+            color: #00000099;
+        }
+        .footer .app-links img {
+            width: 150px;
+            margin: 10px 10px 10px 0;
+        }
+        .footer .contact-info i {
+            color: #437C35;
+            margin-right: 10px;
+        }
+        .footer .contact-info a {
+            color: #00000099;
+            text-decoration: none;
+        }
+        .footer .contact-info li {
+            color: #00000099;
+            text-decoration: none;
+            padding: 5;
+            font-size: 1.25rem;
+            display: flex;
+        }
+        .footer .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .footer .footer-bottom {
+            border-top: 1px solid #00000099;
+            padding-top: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer .footer-bottom a {
+            color: #00000099;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+        .footer .pages a {
+            color: #00000099;
+            text-decoration: none;
+        }
+        .footer .pages li {
+            padding: 5;
+            font-size: 1.25rem;
+        }
+
+        .footer .pages a:hover {
+            text-decoration: underline;
+        }
+       
+
+
+.modal-content {
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            background: #f9f9f9;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .profile-icon {
+            background: #ffffff;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .profile-icon i {
+            font-size: 40px;
+            color: #6c757d;
+        }
+        .form-control {
+            border-radius: 10px;
+        }
+        .btn-signin {
+            background-color: #28a745;
+            color: white;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        .btn-signin:hover {
+            background-color: #218838;
+        }
+        .sign-up-link {
+            color: #28a745;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .sign-up-link:hover {
+            text-decoration: underline;
+        }
+        .btn-readmore{
+            color: white;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            display: inline-block;
+            background: #437C35 0% 0% no-repeat padding-box;
+            --bs-btn-active-color: #fff;
+        }
+        .btn-readmore:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-light header">
+        <div class="container-fluid">
+            <img src="assets/img/newLogo.png" alt="E-Sushrut Clinic Logo">
+          
+            <button class="btn fs-4 sign-in d-flex" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+                Sign in
+            </button>
+        </div>
+      </nav>
+    
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="form.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABDM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Pricing.html">Pricing</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content p-0">
+      
+        <div class="text-content p-0">
+            <p class="fw-bold text-start" style="font-family: 'Montserrat', sans-serif; font-size: 44px;line-height: 58px; color: #2B2B2B; opacity: 1; margin-left: 48px;">
+                Clinic Management Software Solutions
+              </p>
+            <div>
+                <div>
+                    <p style="margin-left: 48px;">cloud-based and modern Technologies</p>
+                    <a class="get-started" href="#">Get Started Today</a>
+                </div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-8">
+                     <div class="info-box">
+                        <div class="bg-dot-square"></div>
+                        <ul class="montserrat-text">
+                            <li><i class="fa fa-check-square" aria-hidden="true"></i> 90 + Installations in Clinics</li>
+                            <li><i class="fa fa-check-square" aria-hidden="true"></i> Global Availability of Health Care Solutions</li>
+                            <li><i class="fa fa-check-square" aria-hidden="true"></i> Installations in more than 1500 Labs & Diagnostic</li>
+                            <li><i class="fa fa-check-square" aria-hidden="true"></i> 18 Years of Health-related Experience</li>
+                        </ul>
+                     </div>
+                    </div>
+                   </div>
+            </div>
+        </div>
+        <div class="illustration">
+            <img src="img\bg.png" alt="Illustration of medical professionals using software">
+        </div>
+    </main>
+
+    <div class="feature-section">
+		<div class="row  d-flex align-items-center">
+            <div class="col-md-12" data-aos="fade-right">
+                <div class="text ">
+                    <h5 class="services-header" style="color: #437C35;">Customized Solutions <span style="color: #000;">To Suit Your Requirements</span> </h5>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="bg-dot-square-2"></div>
+            <div class="row mt-4">
+             <div class="col-md-3 mb-5 col-sm-6">
+                <div class="features-box">
+                    <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="img\opclinic.jpg" />
+                    <h3>
+                        Practices &amp; OP Clinics
+                    </h3>
+                    <p>
+                        Web-based EHR technology designed for your independent practice.
+                    </p>
+                   </div>
+			 </div>
+            <div class="col-md-3 mb-5 col-sm-6">
+                <div class="features-box">
+                    <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="img\nursing_home.jpeg" width="600"/>
+                    <h3>
+                        Nursing Homes
+                    </h3>
+                    <p>
+                        An integrated clinic management system that efficiently oversees all hospital operations.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5 col-sm-6">
+                <div class="features-box">
+                    <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="img\pharmacy.jpeg" width="600"/>
+                    <h3>
+                        Pharmacies
+                    </h3>
+                    <p>
+                        A comprehensive pharmacy management system tailored to meet your pharmacy’s requirements.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 mb-5 col-sm-6">
+                <div class="features-box">
+                    <img alt="Doctor consulting with a patient in a clinic" class="card-img-top" height="280" src="img\Laboratory.jpeg" width="600"/>
+                    <h3>
+                        Laboratories
+                    </h3>
+                    <p>
+                        A web-based lab management software that supports modern laboratory operations.
+                    </p>
+                </div>
+                <div class="bg-dot-square-3"></div>
+            </div>
+                            
+			 </div> 
+		    </div> 
+		</div> 	
+</div>
+    
+<!-- About Section -->
+<div class="container custom-section">
+    <div class="row align-items-center">
+        <!-- Logo Section -->
+        <div class="col-md-4 col-sm-6 col-xs-12">  
+            <!-- <div class="container container-about"> -->
+                <!-- <div class="card card-heart" style="width: 14rem;">
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="text-heart-card">18+<h5>
+                            <h5 class="card-title">Years Experience</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="card card-doctor" >
+                    <div class="card-body">
+                        <div class="icon-doctor">
+                            <i class="fas fa-user-md fa-lg" style="color: #437c35;"></i>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="card card-heart" style="width: 12rem;">
+                    <div class="card-body">
+                        <div class="icon-container">
+                            <div class="icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 class="text-heart-card">18+<h5>
+                            <h5 class="card-title">Years Experience</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="ratio ratio-1x1 rounded-circle overflow-hidden  about-circle">
+                    <img class="logo-halfimg" src="assets\img\newLogoHalf.png"/> 
+                </div>
+                <!-- <p class="text "> </p> -->
+                
+                
+        </div>
+        
+        <div class="col-md-8">
+            <div class="bg-dot-square-1"></div>
+            <h5 class="about-header">ABOUT <span style="color: #437C35;">E-SUSHRUT CLINIC</span> </h5>
+            <p class="text text-about pt-3">
+                In a visionary move towards digital health transformation, C-DAC has recently introduced a Software as a Service (SaaS) based solution. This forward-thinking initiative is tailored to serve the unique needs of small clinics, nursing homes, pharmacies, and laboratories. By providing an affordable, accessible, and scalable digital platform, the SaaS-based solution empowers these healthcare providers to access state-of-the-art software and services. This cost-effective approach not only boosts operational efficiency but also enhances the overall quality of patient care. C-DAC's commitment to advancing healthcare technology continues to make a profound impact on healthcare delivery nationwide, facilitating better and more accessible healthcare services for all.
+            </p>
+           
+            <a href="#" class="btn-readmore">Read More</a>
+        </div>
+    </div>
+</div>
+
+<div class="services-section">
+    <div class="bg-dot-square-4"></div>
+    <h1>
+     Top-Notch
+     <span>
+      Services
+     </span>
+    </h1>
+    <p class="services-section-p">
+     eSushrut@Clinic is a visionary, state-of-the-art, and interconnected/HMS that offers valuable, actionable, and tailored data to a wide range of healthcare Services and their users, including administrators, doctors, and even patients.
+    </p>
+    <div class="container">
+        <div class="row">
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\dashboard.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                 Dashboard &amp; Reporting
+                </h3>
+                <p>
+                 Extensive Dashboards and Real time statistics for trend/pattern analysis
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\custom.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                Customization
+                </h3>
+                <p>
+                    Tailor-made eClinic software solution to fit your unique healthcare needs. Customize your system for seamless integration and efficient patient care.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\webapp.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    Web Application
+                </h3>
+                <p>
+                    Streamline your healthcare services with our cutting-edge eClinic web application. Deliver efficient and personalized care conveniently online.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\hl7.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    HL7 and MDDS
+                </h3>
+                <p>
+                    Seamlessly integrate HL7 standards and MDDS protocols into your eClinic software solution for efficient data exchange and medical device interoperability.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\ehr.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    Electronic Health Records
+                </h3>
+                <p>
+                    EHRs are digital patient records that improve healthcare by providing comprehensive health information to providers.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\email.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    SMS and Email Integration
+                </h3>
+                <p>
+                    Integrating SMS and Email enhances communication by allowing messages to be sent through various channels, facilitating efficient interaction with users.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\consultation.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    Consultation
+                </h3>
+                <p>
+                    Get expert consultation on optimizing your eClinic software solution. Enhanced software for improved patient care and operational efficiency.
+                </p>
+               </div>
+         </div>
+         <div class="col-md-3 col-sm-6">
+            <div class="service-box">
+                <div class="container mb-3 service-circle"  ><img src="img\satisfaction.png" alt="" style="height: 50;width: 50;margin-top: 16;"></div>
+                <h3>
+                    Patient Satisfation & Support
+                </h3>
+                <p>
+                    Focus on patient satisfaction and support with our eClinic software solution for a seamless care experience.
+                </p>
+               </div>
+         </div>
+        </div>   
+    </div>     
+</div>    
+
+<div class="container trusted-by-section">
+    <h2>
+     Trusted By
+    </h2>
+    <div class="row justify-content-center">
+     <div class="col-md-4 text-center">
+      <img alt="Logo of Maharastra University of Health Sciences, Nashik" class="logo" height="150" src="assets\img\muhs-logo.png" width="150"/>
+      <p class="logo-description">
+       Maharastra University of Health Sciences, Nashik
+      </p>
+     </div>
+     <div class="col-md-4 text-center">
+      <img alt="Logo of NHPC LIMITED" class="logo" height="150" src="assets\img\nhpc.png" width="150"/>
+      <p class="logo-description">
+       NHPC LIMITED
+      </p>
+     </div>
+     <div class="col-md-4 text-center">
+      <img alt="Logo of Aam Aadmi Clinic, Govt. of Punjab" class="logo" height="150" src="assets\img\aadm-aadmi-clinic-logo.png" width="150"/>
+      <p class="logo-description">
+       Aam Aadmi Clinic, Govt. of Punjab
+      </p>
+     </div>
+    </div>
+   </div>
+
+<section id="trustedby" class="pb-0 mt-5">
+    
+</section>
+
+<footer class="footer" style="background: #F5F6F8;">
+    <div class="container">
+     <div class="row text-center text-md-start">
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+        <img src="assets/img/newLogo.png" class="img-fluid mb-3" alt="E-Sushrut Clinic Logo" style="width: 220;height: 57px;mix-blend-mode: multiply;">  
+       <!-- <img alt="E-Sushrut Clinic Logo" class="img-fluid mb-3" height="150" src="https://storage.googleapis.com/a1aa/image/WTJBltmfsQx9IiNFRv5o0aeXeFDXQekfSI58xKWr0cdqGqufE.jpg" width="150"/> -->
+       
+       <p style="color: #00000099; font-size: 1.05rem;">
+        FOLLOW US ON SOCIAL MEDIA
+       </p>
+       <div class="social-icons">
+        <a href="https://cdac.in/" class="fab fa-facebook styleSocial" ></a>
+		<a href="" class="fab fa-twitter styleSocial" ></a>
+		<a href="" class="fab fa-linkedin styleSocial" ></a>
+		<a href="" class="fab fa-youtube styleSocial" ></a>
+       </div>
+       <div class="app-links mt-3">
+        <a href="#">
+         <img alt="Google Play Store" height="50" src="img\GooglePlay.png" width="150"/>
+        </a>
+        <a href="#">
+         <img alt="Apple App Store" height="50" src="img\appStore.png" width="150"/>
+        </a>
+       </div>
+      </div>
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+       <h5 style="text-align: left;font: normal normal bold 22px/68px Montserrat;letter-spacing: 0px;color: #000000;opacity: 1;margin-left: 10;">
+        Pages
+       </h5>
+       <ul class="list-unstyled pages">
+        <li>
+         <a href="#">
+          About Us
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Services
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          FAQ
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          ABDM
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Resources
+         </a>
+        </li>
+        <li>
+         <a href="#">
+          Pricing
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-md-3 mb-4 mt-5 mb-md-0">
+       <h5 style="text-align: left;font: normal normal bold 22px/68px Montserrat;letter-spacing: 0px;color: #000000;opacity: 1;margin-left: 10;">
+        Contact
+       </h5>
+       <ul class="list-unstyled contact-info">
+        <li>
+         <i class="fas fa-phone">
+         </i>
+         1800-1800-000
+        </li>
+        <li>
+         <i class="fas fa-clock">
+         </i>
+         Mon - Fri: 9:00Am - 5:30Pm
+        </li>
+        <li>
+         <i class="fas fa-envelope">
+         </i>
+         <a href="mailto:helpdesk@cdac.in">
+          helpdesk@cdac.in
+         </a>
+        </li>
+        <li>
+         <i class="fas fa-map-marker-alt">
+         </i>
+         Anusandhan Bhawan,
+         <br/>
+         C-56/1, Sector-62, Noida - 201309,
+         <br/>
+         Uttar Pradesh (India)
+         <br/>
+         </li><li>         <a href="#">
+          Noida Office Location
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-md-3 mt-5 text-center text-md-start">
+        <img alt="CDAC Logo" src="assets\img\cdac-footer-logo.png" width="150" style="/*! padding: ; */height: 200px;width: 200px;" class="img-fluid mb-3 ms-5 mt-4" height="200">
+       <h5 style="text-align: center;font: normal normal 562 17px/32px Montserrat;letter-spacing: 0px;color: #00000099;opacity: 1;">
+        CENTRE FOR DEVELOPMENT OF ADVANCED COMPUTING
+       </h5>
+      </div>
+     </div>
+     <div class="footer-bottom mt-4">
+      <p style="color: #00000099;">
+       © Copyright Center For Development OF ADVANCED COMPUTING - 2023. All Rights Reserved
+      </p>
+      <a href="#">
+       TERMS &amp; CONDITIONS
+      </a>
+      |
+      <a href="#">
+       PRIVACY POLICY
+      </a>
+     </div>
+    </div>
+   </footer>
+
+   <div class="modal fade" id="signInModal" tabindex="-1" aria-labelledby="signInModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="profile-icon">
+                <i class="bi bi-person-circle"></i>
+            </div>
+            <h4 class="mt-3">Welcome Back</h4>
+            <form class="mt-4">
+                <div class="mb-3 input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text bg-white"><i class="bi bi-key"></i></span>
+                    <input type="password" class="form-control" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-signin w-100">Sign In</button>
+            </form>
+            <p class="mt-3">Don't have an account? <a href="#" class="sign-up-link">Sign Up</a> here.</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<script>
+    // // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+    // window.onscroll = function() {scrollFunction()};
+    
+    // function scrollFunction() {
+    //   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    //     document.getElementById("navbar").style.padding = "30px 10px";
+    //     document.getElementById("logo").style.fontSize = "25px";
+    //   } else {
+    //     document.getElementById("navbar").style.padding = "80px 10px";
+    //     document.getElementById("logo").style.fontSize = "35px";
+    //   }
+    // }
+    </script>
+</html>

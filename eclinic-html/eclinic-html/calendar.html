@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FullCalendar with Year, Month, and Date Change</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.2.0/fullcalendar.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <div>
+    <!-- Controls for selecting year, month, and date -->
+    <label for="yearSelect">Year: </label>
+    <select id="yearSelect">
+      <!-- Years will be populated dynamically -->
+    </select>
+
+    <label for="monthSelect">Month: </label>
+    <select id="monthSelect">
+      <!-- Months will be populated dynamically -->
+    </select>
+
+    <label for="dateSelect">Date: </label>
+    <select id="dateSelect">
+      <!-- Dates will be populated dynamically -->
+    </select>
+
+    <button id="applyDate">Apply Date</button>
+  </div>
+
+  <div id="calendar"></div>
+
+  <script>
+    var calendarEl = document.getElementById('calendar');
+    var date = new Date();
+    
+    var formattedDate = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2);
+
+    var threeYearsFromNow = new Date(date);
+    threeYearsFromNow.setFullYear(date.getFullYear() + 3); 
+    threeYearsFromNow.setMonth(11);
+    threeYearsFromNow.setDate(32);
+
+    var formattedEndOfThirdYear = threeYearsFromNow.getFullYear() + '-' + ('0' + (threeYearsFromNow.getMonth() + 1)).slice(-2) + '-' + ('0' + threeYearsFromNow.getDate()).slice(-2);
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialDate: formattedDate,
+      validRange: {
+        start: formattedDate,
+        end: formattedEndOfThirdYear
+      },
+      height: 500,
+      width: 750,
+      navLinks: false,
+      selectable: true,
+      selectAllow: function(selectInfo) {
+        var events = calendar.getEvents().filter(function(event) {
+          var eventDate = new Date(event.start);
+          return (
+            eventDate.toDateString() === selectInfo.start.toDateString() &&
+            event.allDay
+          );
+        });
+
+        if (events.length > 0) {
+          alert('You Already selected Holiday OR Leave On This Date!');
+          window.location = window.location;
+          return false; 
+        } else {
+          return true;
+        }
+      },
+      eventContent: function(arg) {
+        var imageUrl = arg.event.extendedProps.imageUrl;
+        var eventTitle = arg.event.title;
+
+        if (imageUrl) {
+          var containerEl = document.createElement('div');
+          var imageElement = document.createElement('img');
+          imageElement.src = imageUrl;
+          imageElement.style.width = '66px';
+          imageElement.style.height = '30px';
+
+          containerEl.appendChild(imageElement);
+          containerEl.addEventListener('click', function(event) {
+            event.stopPropagation();
+          });
+          return { domNodes: [containerEl] };
+        } else {
+          let italicEl = document.createElement('i');
+          italicEl.innerHTML = eventTitle;
+          let arrayOfDomNodes = [italicEl];
+          return { domNodes: arrayOfDomNodes };
+        }
+      },
+      selectMirror: true,
+      select: function(arg) {
+        $('#eventModal').modal('show');
+      },
+      eventClick: function(arg) {
+        if (confirm('Are you sure you want to delete this event?')) {
+          console.log("deleteEvent" + JSON.stringify(arg))
+          deleteEventOfDoctorDayWiseLeave(arg);
+        }
+      },
+      editable: true,
+      dayMaxEvents: true,
+    });
+
+    calendar.render();
+
+    // Populate the year, month, and date selectors
+    function populateSelectors() {
+      // Populate Year Selector (last 3 years and next 3 years)
+      var currentYear = date.getFullYear();
+      var yearSelect = document.getElementById('yearSelect');
+      for (var i = currentYear - 3; i <= currentYear + 3; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        yearSelect.appendChild(option);
+      }
+
+      // Populate Month Selector
+      var monthSelect = document.getElementById('monthSelect');
+      for (var i = 0; i < 12; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = new Date(currentYear, i).toLocaleString('default', { month: 'long' });
+        monthSelect.appendChild(option);
+      }
+
+      // Populate Date Selector
+      var dateSelect = document.getElementById('dateSelect');
+      for (var i = 1; i <= 31; i++) {
+        var option = document.createElement('option');
+        option.value = i;
+        option.textContent = i;
+        dateSelect.appendChild(option);
+      }
+    }
+
+    // When user selects a date, update the calendar
+    document.getElementById('applyDate').addEventListener('click', function() {
+      var selectedYear = document.getElementById('yearSelect').value;
+      var selectedMonth = document.getElementById('monthSelect').value;
+      var selectedDate = document.getElementById('dateSelect').value;
+
+      // Set the new date for the calendar view
+      var newDate = new Date(selectedYear, selectedMonth, selectedDate);
+      calendar.gotoDate(newDate);
+    });
+
+    // Initialize the selectors
+    populateSelectors();
+  </script>
+</body>
+</html>
