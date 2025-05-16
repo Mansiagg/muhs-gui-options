@@ -1318,7 +1318,7 @@ textarea:focus {
     background-size: auto;
     padding: 70px 0 20px 0;
 }
-
+.footer p{ color: rgba(255,255,255,0.6); }
 footer .footer-shadow {
     left: 10px;
     top: -215px;
@@ -1866,17 +1866,54 @@ td {
     background-color: #4caf50;
     color: white;
 }
+
 #calendar .event-title {
     display: block;
     font-size: 0.7em;
     color: #555;
     margin-top: 4px;
-  }
+}
 
-#calendar  .event-title a {
+#calendar .event-title a {
     text-decoration: none;
     color: #333;
-  }
+}
+
 #calendar .event-title a:hover {
     text-decoration: underline;
-  }
+}
+
+
+#scroll {
+    height: 17%;
+    z-index: 99;
+
+}
+
+#scroll a span {
+    width: 40px;
+    height: 92px;
+    -webkit-transform: rotate(0deg) translate(0, 0);
+    webkit-animation: scroll 2s infinite;
+    animation: scroll 2s infinite;
+    box-sizing: border-box;
+    background: url(../img/scroll.png);
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: rotate(0deg) translate(0, 0);
+    }
+
+    20% {
+        -webkit-transform: rotate(0deg) translate(0px, 10px);
+    }
+
+    40% {
+        -webkit-transform: rotate(0deg) translate(0, 0);
+    }
+}
+
+.scrolled-offset {
+    margin-top: 42px;
+}
