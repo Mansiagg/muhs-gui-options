@@ -49,7 +49,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #686767;
+    color: #363636;
     margin: 0;
     line-height: 1.8;
 }
@@ -1546,7 +1546,9 @@ footer .footer-shadow {
         transform: rotate(360deg) translate(-140px) rotate(-360deg);
     }
 }
-
+.company .vision{    background: linear-gradient(150deg, rgba(26, 44, 121, 0.9) 60%, rgba(251, 182, 52, 0.9) 100%) !important;}
+.company .vision p{ font-size: 1.2rem; }
+.company .vision h3{ font-size: 2em; }
 
 #achievements {
     background: url(../img/slider-img-5.jpg) no-repeat center center fixed;
@@ -1917,3 +1919,4 @@ td {
 .scrolled-offset {
     margin-top: 42px;
 }
+.content p{ text-align: justify;}
