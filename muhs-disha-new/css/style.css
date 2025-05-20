@@ -46,8 +46,8 @@ body {
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+   
+    font-size:1.03rem;
     font-weight: 400;
     color: #363636;
     margin: 0;
@@ -893,6 +893,9 @@ a:hover {
     margin-top: 25px;
     padding-left: 25px;
     position: relative;
+    font-size: 1.15rem;
+    line-height: 25px;
+    
 }
 
 .company .content ul li:after {
