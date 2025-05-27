@@ -1553,7 +1553,7 @@ footer .footer-shadow {
 
 #achievements {
     background: url(../img/slider-img-5.jpg) no-repeat center center fixed;
-    margin-top: 115px;
+    margin-top: 65px;
 }
 
 #achievements .numbers .box p {
@@ -1816,7 +1816,7 @@ footer .footer-shadow {
 }
 
 .chairperson h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .chairperson .chairperson-detail p {
@@ -1894,13 +1894,11 @@ td {
 }
 
 #scroll a span {
-    width: 40px;
-    height: 92px;
-    -webkit-transform: rotate(0deg) translate(0, 0);
+    display: inline-block; /* or 'block' if needed */
+  -webkit-transform: rotate(0deg) translate(0, 0);
     webkit-animation: scroll 2s infinite;
     animation: scroll 2s infinite;
     box-sizing: border-box;
-    background: url(../img/scroll.png);
 }
 
 @-webkit-keyframes scroll {
