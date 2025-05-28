@@ -7,7 +7,7 @@ function hidePreloader() {
   
 }
 // Automatically hide after 5 seconds as a fallback
-setTimeout(hidePreloader, 10000);
+setTimeout(hidePreloader, 8000);
 
 
 const backToTopButton = document.getElementById('backToTop');
