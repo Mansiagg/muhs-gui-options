@@ -22,9 +22,8 @@
 }
 
 @media (max-width:767px) {
-
-   
-}
+ .box{ border: 1px solid #efefef !important; margin-bottom: 10px ;}
+   .chakrapage .tab-pane>h2 {   font-size: 1.2rem; }}
 
 @media (min-width:577px) and (max-width:633px) {
  
@@ -32,10 +31,12 @@
 }
 
 @media (min-width:500px) and (max-width:576px) {
-   
+    .box{ border: 1px solid #efefef !important; margin-bottom: 10px ;}
 }
 
 @media (min-width:300px) and (max-width:499px) {
+
+    .box{ border: 1px solid #efefef !important; margin-bottom: 10px ;}
 
   
 }
