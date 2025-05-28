@@ -129,8 +129,8 @@ p.text {
 }
 
 .chakrapage .tab-pane>p {
-    color: rgba(0, 0, 0, 0.8);
-    font-weight: 300;
+       color: rgba(0, 0, 0, 0.68);
+    font-weight: 400;
     font-size: 0.9rem;
     background: #f9f9f9;
     padding: 20px;
@@ -178,8 +178,9 @@ p.text {
 }
 
 .chakrapage p {
-    font-weight: 300;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 0.68);
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 footer {
@@ -355,4 +356,15 @@ footer {
 .progressdetails .details img {
     height: 150px;
     object-fit: contain;
+}
+.contact-details { width: max-content;}
+.contact-details h3 {
+    font-size: 1rem;
+}
+
+.contact-details i { background:rgba(13,116,185,0.1) ;color:#0d74b9; font-size: 20px; padding: 15px; border-radius: 5px;}
+.chakrapage .tabs .nav-tabs .nav-link {
+   font-size: 15px ;
+    margin-right: 8px;
+    padding: 8px 7px;
 }
