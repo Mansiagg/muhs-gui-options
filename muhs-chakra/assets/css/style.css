@@ -223,3 +223,25 @@ color: #032e42; font-weight:600}
         z-index: -1;
     }
 
+.progress-far  h3{ font-size: 1.3rem; color:#02183C;}
+.progressdetails .details { background: #f6f6f6;margin-bottom: 20px;}
+
+ .progressdetails .details  .number{  background-color: #02183C;
+    padding: 7px 10px 10px 8px;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 32px;
+    height: 33px;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    top: 32px;
+}
+
+.content{  padding-left: 61px;}
+
+.content h2{ font-size: 1.11rem;}
+.details img {
+  height: 150px;
+  object-fit: contain;
+}
