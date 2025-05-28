@@ -94,7 +94,7 @@ height: 100vh;
 }
 .chakrapage .boxcontent .box p{padding: 4px; font-weight: 300;
     color: rgba(0, 0, 0, 0.88);}
-    .chakrapage .tab-pane>h2{ font-size:1.7rem;  }
+    .chakrapage .tab-pane>h2{ font-size:1.5rem;  }
 .chakrapage .tab-pane>p{    color: rgba(0, 0, 0, 0.8);
     font-weight: 300;
     font-size: 0.9rem;    background: #f9f9f9;
@@ -241,7 +241,7 @@ color: #032e42; font-weight:600}
 .content{  padding-left: 61px;}
 
 .content h2{ font-size: 1.11rem;}
-.details img {
+ .progressdetails .details img {
   height: 150px;
   object-fit: contain;
 }
