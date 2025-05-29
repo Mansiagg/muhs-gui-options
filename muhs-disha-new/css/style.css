@@ -519,7 +519,7 @@ a:hover {
 
 .cominfo {
     background: rgba(3, 3, 4, 0.3);
-    min-height: 106px;
+   min-height: 98px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 19px;
 }
