@@ -2040,3 +2040,16 @@ td {
 .photogallery .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+ .nav-tabs .nav-link.active { font-size: 1.2rem;}
+.tab-pane ul li { position: relative;padding-left: 30px;}
+.tab-pane ul li:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 1px solid #999;
+    border-radius: 50%;
+    position: absolute;
+     left: 20px;
+    top: 12px;
+}
