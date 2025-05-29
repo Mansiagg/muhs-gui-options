@@ -300,13 +300,3 @@ responsive: {
 });
 
 
-
-$(window).scroll(function () {
-
-    /*---- FADE SLIDESHOW -----*/
-    var scrolled = $(this).scrollTop();
-    $('.slider .caption').css({
-        'transform': 'translate3d(0, ' + -(scrolled * 0.20) + 'px, 0)',
-        'opacity': 1 - scrolled / 600
-    });
-});
