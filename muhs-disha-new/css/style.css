@@ -222,7 +222,7 @@ a:hover {
     transition: all 0.7s cubic-bezier(1, 0, 0.55, 1);
     transition-delay: 2s;
 }
-
+.integrated-approach {position: absolute; top:-30px; left:0px;filter: drop-shadow(0 0 0.75rem rgb(194, 194, 194));}
 /*======================
      04.BUTTONS
 ========================*/
@@ -1576,7 +1576,7 @@ footer .footer-shadow {
 
 #achievements {
     background: url(../img/slider-img-5.jpg) no-repeat center center fixed;
-    margin-top: 65px;
+ 
 }
 
 #achievements .numbers .box p {
