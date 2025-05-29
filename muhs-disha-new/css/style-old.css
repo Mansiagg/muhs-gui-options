@@ -800,7 +800,7 @@ a:hover {
 }
 
 .slider .parallax-slider .caption h2 {
-    font-size:25px;
+    font-size: 52px;
     font-weight: 700;
     letter-spacing: 1px;
     color: #fff;
@@ -813,27 +813,28 @@ a:hover {
 .slider .parallax-slider .caption .dis {
     margin-top: 10px;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     transition: all .7s;
     position: relative;
-     opacity: 0;
+    padding-left: 80px;
+    opacity: 0;
     visibility: hidden;
     transform: translateY(20px);
     transition-delay: .2s;
 }
 
 .slider .parallax-slider .caption p {
-      color: rgba(255, 255, 255, 0.8);
-    line-height: 39px;
-    font-size: 25px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    font-size: 17px;
     transition: all .7s;
     position: relative;
     transform: translateY(20px);
-    transition-delay: .2s; font-weight: 500;
+    transition-delay: .2s;
 }
 
 
-/* .slider .parallax-slider .caption .dis:after {
+.slider .parallax-slider .caption .dis:after {
     content: '';
     width: 60px;
     height: 1px;
@@ -841,7 +842,7 @@ a:hover {
     position: absolute;
     left: 0;
     top: 50%;
-} */
+}
 
 .slider .parallax-slider .caption .dis:hover .char {
     -webkit-animation: fadeIn 0.4s cubic-bezier(0.3, 0, 0.7, 1) both;

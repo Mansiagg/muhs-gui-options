@@ -42,13 +42,7 @@
         left: 15px;
     }
 
-    .company .content h4 br {
-        display: none;
-    }
-
-    .company .img {
-        margin-top: 10px;
-    }
+   
 
     .js-zoom-gallery {
         bottom: auto;
@@ -56,12 +50,18 @@
         right: 10px;
     }
 
-    .work-slider .content .img-content {
-        left: 20px;
-    }
+  
 }
 
 @media screen and (max-width: 767px) {
+
+    .logo img {width: 272px;}
+    .download-button { display: none;}
+    .cominfo {
+    min-height: 65px;
+    line-height: 18px;
+}
+.navbar  { position: absolute; top: 0; right: 5px;}
     h1 {
         font-size: 35px;
     }
@@ -70,16 +70,9 @@
         font-size: 20px;
     }
 
-    .top-navbar {
-        padding: 10px 0;
-    }
-
+    
     .section-head h3 {
         font-size: 24px;
-    }
-
-    .work-slider .swiper-slide {
-        padding: 0px 10px 30px;
     }
 
     .menu-wrapper .menu-links .main-menu > li {
@@ -111,37 +104,7 @@
         padding: 0 30px;
     }
 
-    .extra-title, .company .content h4 {
-        font-size: 30px;
-    }
-
-    .company .imgsec .imgtwo {
-        display: none;
-    }
-
-    .company .imgsec .imgone:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.3);
-    }
-
-    .company .imgsec .exp {
-        right: 30px;
-        position: absolute;
-        bottom: 30px;
-        color: #fff;
-        padding: 0;
-        z-index: 2;
-    }
-
-        .company .imgsec .exp h6 {
-            color: #eee;
-        }
-
+   
     .progress-wrap {
         right: 20px;
         bottom: 20px;
@@ -177,28 +140,26 @@
                 padding: 0;
             }
 
-    .testimonials .swiper-container .swiper-slide {
-        padding: 20px !important;
-    }
-
-        .testimonials .swiper-container .swiper-slide::after {
-            display: none;
-        }
-
-    .author-info {
-        text-align: left !important;
-    }
-    .circle-follow,.circle{
-        display:none;
-    }
+ 
 }
 
 @media(max-width:640px) {
-    .quote-block .content h2 {
-        font-size: 20px;
-        line-height: 25px;
-        font-weight: 600;
-    }
+
+
+    #about .main {
+    width: 170px;
+    height: 180px;
+  
+    top: 52px;
+    left: -24px;
+ 
+}
+    .quote-block p {
+
+    font-size: 22px;
+    line-height: 30px;
+}
+   
 
     .section-head h3, .services-section .items h5 {
         font-size: 20px;
@@ -279,55 +240,7 @@
         display: none;
     }
 
-    .work-slider .swiper-button-next,
-    .work-slider .swiper-button-prev {
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-        font-size: 16px;
-    }
-
-    .work-slider .swiper-button-next {
-        right: 15px;
-    }
-
-    .work-slider .swiper-button-prev {
-        left: 15px;
-    }
-
-    .work-slider .content .cont h6 {
-        letter-spacing: 2px;
-    }
-
-    .work-slider .content .cont h4 {
-        font-size: 20px;
-    }
-
-    .work-slider .content .cont {
-        width: 100%;
-        text-align: center;
-        left: 0;
-        bottom: 20px;
-    }
-
-    .company .img .icon {
-        width: 70px;
-        height: 70px;
-        line-height: 90px;
-    }
-
-        .company .img .icon svg {
-            width: 60px;
-        }
-
-    .company .img .exp h2 {
-        font-size: 55px;
-    }
-
-    .extra-title, .company .content h4 {
-        font-size: 22px;
-    }
-
+  
     .contact-block .content h2 {
         font-size: 20px;
         line-height: 26px;
