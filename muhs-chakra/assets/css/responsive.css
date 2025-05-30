@@ -8,7 +8,12 @@
 
 }
 
-
+@media (min-width:1199px) and (max-width:1366px) 
+{
+    .chakrapage .tabs .nav-tabs .nav-link {
+    font-size: 0.818rem;
+    padding: 7px 4px;
+}}
 
 @media (min-width:991px) and (max-width:1199px) {
 
