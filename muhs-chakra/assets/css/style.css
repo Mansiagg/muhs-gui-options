@@ -523,5 +523,5 @@ img.demo {
 .investor-benefits h2 {
     font-size: 1.2rem;
 }
-.modal-dialog { max-width:60% !important; margin: 0 auto !important;}
+.modal-dialog { max-width:100% !important; margin: 0 auto !important;}
 .impact.multicolorboxes .col-md-4{ cursor: pointer;}
