@@ -108,10 +108,12 @@ p.text {
 .nav-tabs .nav-link.active {
     background: #f17e16 !important;
     color: #ffffff !important;
-    font-size: 16px; border-radius: 0;
+    font-size: 16px;
+    border-radius: 0;
 }
+
 .chakrapage .tabs .nav-tabs .nav-link {
-       font-size: 0.92rem;
+    font-size: 0.92rem;
     padding: 8px 5px;
 }
 
@@ -133,7 +135,7 @@ p.text {
 }
 
 .chakrapage .tab-pane>p {
-       color: rgba(0, 0, 0, 0.68);
+    color: rgba(0, 0, 0, 0.68);
     font-weight: 400;
     font-size: 0.9rem;
     background: #f9f9f9;
@@ -174,7 +176,7 @@ p.text {
 
 .chakrapage .impact h4,
 .stakeholderbenefits .listing h2 {
-font-size: 1.1rem;
+    font-size: 1.1rem;
     line-height: 28px;
 }
 
@@ -222,7 +224,7 @@ footer {
 }
 
 .authorities .member {
-    padding: 35px 20px 25px;
+    padding: 35px 19px 25px;
     overflow: visible;
     border: 1px solid #efefef;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -363,32 +365,46 @@ footer {
     height: 150px;
     object-fit: contain;
 }
-.contact-details { width: max-content;}
+
+.contact-details {
+    width: max-content;
+}
+
 .contact-details h3 {
     font-size: 1rem;
 }
 
-.contact-details i { background:rgba(13,116,185,0.1) ;color:#0d74b9; font-size: 20px; padding: 15px; border-radius: 5px;}
+.contact-details i {
+    background: rgba(13, 116, 185, 0.1);
+    color: #0d74b9;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
 
 
-.photogallery .row > .column {
+.photogallery .row>.column {
     padding: 0 8px;
-  }
-  
-  .photogallery  .row:after {
+}
+
+.photogallery .row:after {
     content: "";
     display: table;
     clear: both;
-  }
-    .photogallery  img { cursor: pointer;}
-  /* Create four equal columns that floats next to eachother */
-  .photogallery .column {
+}
+
+.photogallery img {
+    cursor: pointer;
+}
+
+/* Create four equal columns that floats next to eachother */
+.photogallery .column {
     float: left;
     width: 25%;
-  }
-  
-  /* The Modal (background) */
-  .photogallery  .modal {
+}
+
+/* The Modal (background) */
+.photogallery .modal {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -399,43 +415,43 @@ footer {
     height: 100%;
     overflow: auto;
     background-color: black;
-  }
-  
-  /* Modal Content */
-  .photogallery .modal-content {
+}
+
+/* Modal Content */
+.photogallery .modal-content {
     position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
     width: max-content;
     max-width: 1200px;
-  }
-  
-  /* The Close Button */
-  .photogallery .close {
+}
+
+/* The Close Button */
+.photogallery .close {
     color: white;
     position: absolute;
     top: 10px;
     right: 25px;
     font-size: 35px;
     font-weight: bold;
-  }
-  
-  .photogallery.close:hover,
-  .photogallery .close:focus {
+}
+
+.photogallery.close:hover,
+.photogallery .close:focus {
     color: #999;
     text-decoration: none;
     cursor: pointer;
-  }
-  
-  /* Hide the slides by default */
-  .photogallery .mySlides {
+}
+
+/* Hide the slides by default */
+.photogallery .mySlides {
     display: none;
-  }
-  
-  /* Next & previous buttons */
-  .photogallery .prev,
-  .photogallery .next {
+}
+
+/* Next & previous buttons */
+.photogallery .prev,
+.photogallery .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -449,46 +465,63 @@ footer {
     border-radius: 0 3px 3px 0;
     user-select: none;
     -webkit-user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .photogallery .next {
+}
+
+/* Position the "next button" to the right */
+.photogallery .next {
     right: 0;
-    border-radius: 3px 0 0 3px; background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .photogallery .prev {
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.photogallery .prev {
     left: -5px;
-    border-radius: 3px 0 0 3px; background-color: rgba(0, 0, 0, 0.8);
-  }
-    
-  /* Number text (1/3 etc) */
-  .photogallery .numbertext {
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.photogallery .numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
 
-  img.demo {
+img.demo {
     opacity: 0.6;
-  }
-  
-  .photogallery .active,
-  .photogallery  .demo:hover {
+}
+
+.photogallery .active,
+.photogallery .demo:hover {
     opacity: 1;
-  }
-  
-  .photogallery img.hover-shadow {
+}
+
+.photogallery img.hover-shadow {
     transition: 0.3s;
-  }
-  
+}
+
 .photogallery .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  .p-impact h3{font-size: 1.3rem;}
-.p-impact  .number{  font-size:18px; font-weight:bold; margin:5px 0; width: max-content;
-padding:5px; text-align: center; background-color: #efefef;}
+}
 
-.investor-benefits h2 {font-size: 1.2rem;}
+.p-impact h3 {
+    font-size: 1.3rem;
+}
+
+.p-impact .number {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    width: max-content;
+    padding: 5px;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.investor-benefits h2 {
+    font-size: 1.2rem;
+}
+.modal-dialog { max-width:60% !important; margin: 0 auto !important;}
+.impact.multicolorboxes .col-md-4{ cursor: pointer;}
