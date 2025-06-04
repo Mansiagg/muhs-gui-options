@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -534,4 +535,532 @@ img.demo {
     font-size: 1.2rem;
 }
 .modal-dialog { max-width:75% !important; margin: 0 auto !important;}
+=======
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    padding: 0 !important;
+}
+
+a {
+    color: #064490;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%
+}
+
+ul {
+    list-style: none
+}
+
+p.text {
+    font-size: 15px;
+    color: #3c3c3c;
+    line-height: 25px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+/* Fullscreen preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF1ED;
+    /* Optional: to give a background while loading */
+    z-index: 9999;
+    /* Ensure it's on top */
+    overflow: hidden;
+
+
+}
+
+#preloader-video {
+    max-width: 100%;
+    max-height: 100%;
+
+
+}
+
+.page-title {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    background-image: url('../images/chakra.jpg');
+    position: relative;
+    background-blend-mode: multiply;
+    z-index: 99;
+    min-height: 323px;
+}
+
+.chakra h2 {
+    font-size: 1.6rem;
+}
+
+.chakra .programdescs h2 {
+    font-size: 1.2rem;
+}
+
+.chakra .programdescs h3,
+.chakra .programdescs h4 {
+    font-size: 1.2rem;
+    background: #fda211;
+    width: max-content;
+}
+
+.chakrapage {
+    box-shadow: 0 0 0 0 #ffffff;
+}
+
+.chakrapage .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: #f17e16 !important;
+    color: #ffffff !important;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.chakrapage .tabs .nav-tabs .nav-link {
+    font-size: 0.92rem;
+    padding: 8px 5px;
+}
+
+.chakrapage .boxcontent .box {
+    background: transparent;
+    min-height: 585px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+}
+
+.chakrapage .boxcontent .box p {
+    padding: 4px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.88);
+}
+
+.chakrapage .tab-pane>h2 {
+    font-size: 1.5rem;
+}
+
+.chakrapage .tab-pane>p {
+    color: rgba(0, 0, 0, 0.68);
+    font-weight: 400;
+    font-size: 0.9rem;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.chakrapage .boxcontent .title-section .heading {
+    font-size: 1.1rem;
+    line-height: 22px;
+}
+
+.chakrapage ul li {
+    border-bottom: 1px solid #e3e3e3;
+    padding: 6px 0;
+    font-size: 0.85rem;
+    text-align: left;
+    line-height: 25px;
+    list-style: none;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.chakrapage ul li:last-child {
+    border: none;
+}
+
+.chakrapage ul li i {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    color: #104cba;
+    font-size: 11px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.chakrapage .impact h4,
+.stakeholderbenefits .listing h2 {
+    font-size: 1.1rem;
+    line-height: 28px;
+}
+
+.list-view img.departmentimg {
+    margin-left: 40px !important
+}
+
+.chakrapage p {
+    color: rgba(0, 0, 0, 0.68);
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+footer {
+    background: linear-gradient(90deg, #1e357b 0, #2989d8 50%, #77b7fe);
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999999999;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 12px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#backToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#backToTop:hover {
+    background-color: #555;
+    transform: translateY(-3px);
+}
+
+.authorities .member {
+    padding: 35px 19px 25px;
+    overflow: visible;
+    border: 1px solid #efefef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    /* background:rgba(0, 0, 0, 0.01);*/
+    background: #fcfcfc;
+    min-height: 298px;
+}
+
+.team .member .member-img {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 140px;
+    /* border: 1px solid #ccc; */
+}
+
+.authorities .member .member-info h4 {
+    line-height: 24px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+    color: #032e42;
+    font-weight: 600
+}
+
+.authorities .member .member-info span {
+    font-size: 1rem;
+}
+
+.member-info {
+    background: #efef;
+    border-radius: 13px;
+    padding: 15px 2px;
+}
+
+.member .awards-symbol {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 34px;
+    text-align: center;
+    z-index: 999999;
+}
+
+.member .awards-symbol img {
+    height: 138px;
+    width: 170px;
+}
+
+.stakeholderbenefits .listing .icon,
+.impact .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 10px;
+}
+
+.multicolorboxes .box .icon img {
+    width: 42px;
+}
+
+.multicolorboxes .box:first-child .icon {
+    background: rgba(111, 66, 93, 0.1);
+}
+
+.multicolorboxes .box:nth-child(2) .icon {
+    background-color: rgba(60, 196, 123, .1);
+}
+
+.multicolorboxes .box:nth-child(3) .icon {
+    background-color: rgba(249, 92, 111, .1);
+}
+
+.multicolorboxes .box:nth-child(4) .icon {
+    background-color: #fff1b4
+}
+
+.multicolorboxes .box:nth-child(5) .icon {
+    background-color: #c9f1ff
+}
+
+.multicolorboxes .box:nth-child(6) .icon {
+    background-color: #e2e9f3
+}
+
+
+.team:after {
+    background-color: #f5f8f9;
+    content: "";
+    display: block;
+    max-width: 1420px;
+    position: absolute;
+    height: 120px;
+    border-radius: 20px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    z-index: -1;
+}
+
+.progress-far h3 {
+    font-size: 1.3rem;
+    color: #02183C;
+}
+
+.progressdetails .details {
+    background: #f6f6f6;
+    margin-bottom: 20px;
+}
+
+.progressdetails .details .number {
+    background-color: #02183C;
+    padding: 7px 10px 10px 8px;
+    border-radius: 50%;
+    color: #ffffff;
+    width: 32px;
+    height: 33px;
+    text-align: center;
+    position: absolute;
+    left: 25px;
+    top: 23px;
+}
+
+.content {
+    padding-left: 61px;
+}
+
+.content h2 {
+    font-size: 1.11rem;
+}
+
+.progressdetails .details img {
+    height: 150px;
+    object-fit: contain;
+}
+
+.contact-details {
+    width: max-content;
+}
+
+.contact-details h3 {
+    font-size: 1rem;
+}
+
+.contact-details i {
+    background: rgba(13, 116, 185, 0.1);
+    color: #0d74b9;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.photogallery .row>.column {
+    padding: 0 8px;
+}
+
+.photogallery .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.photogallery img {
+    cursor: pointer;
+}
+
+/* Create four equal columns that floats next to eachother */
+.photogallery .column {
+    float: left;
+    width: 25%;
+}
+
+/* The Modal (background) */
+.photogallery .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 35px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.photogallery .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: max-content;
+    max-width: 1200px;
+}
+
+/* The Close Button */
+.photogallery .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.photogallery.close:hover,
+.photogallery .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.photogallery .mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.photogallery .prev,
+.photogallery .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.photogallery .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.photogallery .prev {
+    left: -5px;
+    border-radius: 3px 0 0 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.photogallery .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.photogallery .active,
+.photogallery .demo:hover {
+    opacity: 1;
+}
+
+.photogallery img.hover-shadow {
+    transition: 0.3s;
+}
+
+.photogallery .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.p-impact h3 {
+    font-size: 1.3rem;
+}
+
+.p-impact .number {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+    width: max-content;
+    padding: 5px;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.investor-benefits h2 {
+    font-size: 1.2rem;
+}
+.modal-dialog { max-width:75% !important; margin: 0 auto !important;}
+>>>>>>> edff050a3a3ea675d09ecb3afb9f1dd088f7586c
 .impact.multicolorboxes .col-md-4{ cursor: pointer;}
