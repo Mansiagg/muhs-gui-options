@@ -2,13 +2,29 @@
    
 }
 
-@media (min-width:1200px) and (max-width:1400px) {
+@media (min-width:1300px) and (max-width:1400px) {
 
-
-
+ .chakrapage .tabs .nav-tabs .nav-link {
+    font-size: 0.818rem;
+    padding: 7px 5px;
 }
 
+}
+@media (min-width:1199px) and (max-width:1299px)  {
 
+ .chakrapage .tabs .nav-tabs .nav-link {
+   font-size: 0.77rem;
+    padding: 7px 4px;
+}
+}
+@media (min-width:1199px) and (max-width:1366px) 
+{
+   
+.authorities .member .member-info h4 {
+    line-height: 21px;
+    font-size: 0.9rem;}
+
+}
 
 @media (min-width:991px) and (max-width:1199px) {
 
