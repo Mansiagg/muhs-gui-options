@@ -189,7 +189,7 @@ p.text {
     line-height: 28px;
     color: #1a0dab; cursor: pointer;
 }
-
+.p-impact h4{color: rgba(0, 0, 0, 0.85) !important;}
 .list-view img.departmentimg {
     margin-left: 40px !important
 }
