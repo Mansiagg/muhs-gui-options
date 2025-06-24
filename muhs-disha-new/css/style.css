@@ -1808,13 +1808,15 @@ footer .footer-shadow {
 
 #bod .team-box {
     box-shadow: 0 .125rem .3rem -0.0625rem rgba(12, 8, 0, .03), 0 .275rem .75rem -0.0625rem rgba(12, 8, 0, .06) !important;
-    min-height: 200px;
+    min-height: 206px;
     background: #fafafa;
     border: 1px solid #eeeeee;
+    margin-bottom: 76px;
+
 }
 
 #bod .team-box p {
-    color: #737373;
+    color: #737373; text-align: center;
 }
 
 #bod .team-box h3 {
@@ -1831,9 +1833,18 @@ footer .footer-shadow {
 }
 
 #bod .team-box .icon-box {
-    background-color: rgba(23, 92, 255, .2);
+    /* background-color: rgba(23, 92, 255, .2); */
+    margin: -70px 0;
+
 }
 
+#bod .team-box .icon-box img
+ {
+       width: 131px;
+    height: 128px;
+    padding: 0;
+    border: 2px solid #4f6aaf;
+}
 .chairperson h2 {
     font-size: 1.7rem;
 }
