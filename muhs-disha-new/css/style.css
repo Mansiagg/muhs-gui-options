@@ -2088,7 +2088,7 @@ td {
     top: 12px;
 }
 .contact-info { min-height: 225px;}
-#hackathontext { z-index: 99;top: 103px;  left:0 ;  } 
+#hackathontext { z-index: 99;top: 103px;  } 
 #hackathontext p{ font-size: 2rem;}
 .text-shadow {
 	background:rgba(0,0,0,0.2);
