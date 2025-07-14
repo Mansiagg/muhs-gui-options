@@ -2088,19 +2088,17 @@ td {
     top: 12px;
 }
 .contact-info { min-height: 225px;}
-#hackathontext { z-index: 99;top: 103px;  } 
-#hackathontext p{ font-size: 2rem;}
+#hackathontext { z-index: 99;top: 103px;} 
+#hackathontext a{background:rgba(0,0,0,0.2);  letter-spacing: 0.05em; border: 1px solid rgba(255, 255, 255, 0.6); padding: 10px 5px; width: max-content;} 
+#hackathontext a>h3{ font-size:2rem; line-height: 25px;}
+
 .text-shadow {
-	background:rgba(0,0,0,0.2);
+	
     /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent; border-top: 0 !important;
-	-webkit-text-stroke: #ffffff;
-	-webkit-text-stroke-width: 1px;
+
 	text-shadow: 2px 2px 50px #fab92c;
 	transition: all 0.5s ease-in-out; text-align: left;
-  
-	letter-spacing: 0.05em; border: 1px solid rgba(255, 255, 255, 0.6); padding: 10px 5px;
-	animation: flicker 0.5s ease-in-out infinite alternate;
+  	animation: flicker 0.5s ease-in-out infinite alternate;
 
 	&:hover {
 		color: #fff;
