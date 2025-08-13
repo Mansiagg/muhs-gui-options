@@ -535,3 +535,8 @@ img.demo {
 }
 .modal-dialog { max-width:75% !important; margin: 0 auto !important;}
 .impact.multicolorboxes .col-md-4{ cursor: pointer;}
+
+#tenders a{white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: keep-all;}
+#tenders h3{font-size: 15px; line-height: 25px;}
