@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Mooli&family=Poppins:wght@100;300;400;500;600;700;800&display=swap');
+
+
+body {
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+	font-size: 0.845rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	margin-bottom: .5rem;
+	line-height: 1.2;
+	color: inherit;
+}
+
+:root {
+		--ast-brightblue: rgb(31, 113, 250);
+	
+}
+
+.form-wrapper {
+	background: #edf1f5;
+	position: relative;
+	min-height: 500px;
+}
+
+.form-wrapper .card {
+	margin-bottom: 20px;
+	box-shadow: 0 .75rem 1.5rem #12263f08;
+	border-radius: 6px;
+}
+
+.form-wrapper h1 {
+	position: relative;
+	font-weight: 500;
+	font-size: 1.06rem;
+}
+
+.form-wrapper h2 {
+	font-size: 15px;
+	margin: 0 0 7px 0;
+	font-weight: 500;
+}
+
+.formtable {
+	background-image: linear-gradient(to right, rgba(31, 113, 250, 0.1), transparent);
+	border: 1px dashed rgba(31, 113, 250, 0.1);
+}
+
+.form-wrapper h3 {
+	font-size: 16px;
+	background-image: linear-gradient(to right, rgba(31, 113, 250, 0.1), transparent);
+}
+
+.formtable h4 {
+	font-size: 16px;
+
+}
+
+.table th {
+	font-weight: 600;
+	color: rgba(0, 0, 0, 0.79)
+}
+
+.form-wrapper .form-control {
+	font-size: .88rem;
+	font-weight: 400;
+}
+
+.form-select {
+	color: #212529;
+	min-height: 38px;
+	display: initial;
+	padding: .375rem 2.25rem .375rem .75rem;
+	-moz-padding-start: calc(.75rem - 3px);
+	font-size: .86rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right .75rem center;
+	background-size: 16px 12px;
+	border: 1px solid #d3d3d3;
+	border-radius: .25rem;
+	transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	appearance: none;
+	background: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e);
+
+}
+
+.form-check-input[type=checkbox] {
+	border-radius: 2px;
+	--bs-form-check-bg: rgb(240, 242, 248);
+	flex-shrink: 0;
+	width: 1.35em;
+	height: 1.35em;
+	margin-top: 0.075em;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: var(--bs-form-check-bg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	border: 1px solid var(--bs-border-color);
+	transition: background-color 0.15s ease-in-out, background-position 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	border-radius: 2px;
+}
+
+.form-check-input:checked[type=checkbox] {
+	--bs-form-check-bg-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e);
+}
+
+.form-check-input:checked {
+	background-color: var(--bs-primary);
+	border-color: var(--bs-primary);
+}
+
+.badge {
+	line-height: 1.5;
+	padding: 5px 10px;
+	font-size: 0.75rem;
+	font-weight: 500;
+}
+
+.bg-process {
+	background-color: rgba(255, 119, 0, 0.1) !important;
+	color: rgb(255, 119, 0);
+}
+
+.bg-completed {
+	background-color: rgba(0, 92, 20, 0.1) !important;
+	color: rgba(0, 92, 20, 1);
+}
+
+.form-wrapper .buttons .btn {
+	font-size: 0.86rem;
+}
+
+.form-wrapper .btn {
+	font-size: 0.7rem;
+	border-radius: 3px;
+	box-shadow: 0 5px 10px #e4e3e3;
+}
+
