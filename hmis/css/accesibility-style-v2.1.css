@@ -145,7 +145,8 @@
   max-width: 70px; 
   transition:  all 400ms;
   color: var(--color-white);
-  background-color: var(--color-dark-blue-1);
+background: #1b1a70;
+background: linear-gradient(90deg,rgba(27, 26, 112, 1) 0%, rgba(44, 44, 212, 1) 35%, rgba(235, 176, 10, 1) 100%);
   text-align: left;
 }
 
