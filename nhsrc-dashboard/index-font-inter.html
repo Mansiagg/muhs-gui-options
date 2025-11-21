@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>NHSRC - SaQsham</title>
+  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/style-inter.css">
+  <link rel="stylesheet" href="assets/css/sidebar.css">
+  <link rel="stylesheet" href="assets/css/accesibility-style-v2.1.css">
+  <!-- DataTables CSS -->
+  <link href="https://cdn.datatables.net/1.13.8/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+
+  <!-- Buttons extension -->
+  <link href="https://cdn.datatables.net/buttons/2.4.2/css/buttons.bootstrap5.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+        <a class="navbar-brand brand-logo fw-semibold" href="index.html"><img src="assets/images/favicon.png"
+            alt="logo" /> SaQsham</a>
+
+
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/favicon.png" alt="logo" /></a>
+
+        <div class="navbar-menu-wrapper p-0">
+          <button class="navbar-toggler navbar-toggler align-self-center p-0 border-0" type="button"
+            data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+        </div>
+        </button>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <div class="d-flex align-items-center">
+          <span id="session-timer"><span class="fw-semibold">Session Time Remaining:</span> 19Min : 50Sec</span>
+        </div>
+        <ul class="navbar-nav navbar-nav-right">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="mdi mdi-email-outline"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+              <h6 class="p-3 mb-0">Messages</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/face1.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                  <p class="text-gray mb-0"> 1 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/face1.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                  <p class="text-gray mb-0"> 15 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="assets/images/face1.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                  <p class="text-gray mb-0"> 18 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-bs-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="count-symbol bg-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end navbar-dropdown preview-list"
+              aria-labelledby="notificationDropdown">
+              <h6 class="p-3 mb-0">Notifications</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="mdi mdi-calendar"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                  <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="mdi mdi-cog"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                  <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="mdi mdi-link-variant"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                  <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+            </div>
+          </li>
+          <li class="nav-item nav-logout d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-power"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-settings d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-format-line-spacing"></i>
+            </a>
+          </li>
+          <li class="nav-item d-none d-lg-block full-screen-link">
+            <a class="nav-link">
+              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            </a>
+          </li>
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="assets/images/face1.jpg" alt="image">
+                <span class="availability-status online"></span>
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-black">Welcome Shruti</p>
+              </div>
+            </a>
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+            </div>
+          </li>
+
+ <li class="nav-item nav-logout d-none d-lg-block">
+
+<button id="uw-widget-custom-trigger" class="uw-widget-custom-trigger bg-transparent border-1 rounded-circle" aria-label="Accessibility Widget"
+        data-uw-trigger="true" aria-haspopup="dialog">   <i class="mdi mdi-human"></i></button>
+
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="container-fluid page-body-wrapper">
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <span class="menu-title">Dashboard</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
+              <span class="menu-title">HR Management</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/ui-features/buttons.html">Mision Director List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/ui-features/dropdowns.html">Provisional User List</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <span class="menu-title">Services</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+              <span class="menu-title">Reports</span>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+            <div class="collapse" id="forms">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/forms/basic_elements.html">Form Elements</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+              <span class="menu-title">Charts</span>
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+            <div class="collapse" id="charts">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              <span class="menu-title">Tables</span>
+              <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <span class="menu-title">User Pages</span>
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi-lock menu-icon"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/samples/login.html"> Login </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/samples/register.html"> Register </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/samples/error-404.html"> 404 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pages/samples/error-500.html"> 500 </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="docs/documentation.html" target="_blank">
+              <span class="menu-title bg-gradient-primary px-2 py-3 text-white rounded">Download User Manual</span>
+              <i class="mdi mdi-file-document-box menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header d-flex align-items-center justify-content-between">
+            <h3 class="page-title">
+              <span class="page-title-icon bg-gradient-primary text-white me-2">
+                <i class="mdi mdi-account-check"></i>
+              </span> Assessor Selection
+            </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Services</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Accessor Selection</li>
+              </ol>
+            </nav>
+          </div>
+
+
+          <div class="row">
+
+            <!-- Filter Form Panel -->
+            <div class="card mb-4">
+              <div class="card-body py-2">
+                <div class="row g-3">
+
+                  <!-- Year -->
+                  <div class="col-md-3 col-sm-6">
+                    <label for="gstrYear" class="form-label">Year (FY)</label>
+                    <select id="gstrYear" name="gstrYear" class="form-select">
+                      <option value="2025-04-01#2026-03-31">2025 - 2026</option>
+                      <option value="2024-04-01#2025-03-31">2024 - 2025</option>
+                      <option value="2023-04-01#2024-03-31">2023 - 2024</option>
+                      <option value="2022-04-01#2023-03-31">2022 - 2023</option>
+                    </select>
+                  </div>
+
+                  <!-- State -->
+                  <div class="col-md-3 col-sm-6">
+                    <label for="gnumStatecode" class="form-label">State</label>
+                    <select id="gnumStatecode" name="gnumStatecode" class="form-select" onchange="getDistrictList()">
+                      <option value="35">Andaman & Nicobar</option>
+                      <option value="28">Andhra Pradesh</option>
+                      <option value="12">Arunachal Pradesh</option>
+                      <option value="18">Assam</option>
+                      <option value="10">Bihar</option>
+                      <option value="4">Chandigarh</option>
+                      <option value="22">Chhattisgarh</option>
+                      <option value="26">Dadra & Nagar Haveli</option>
+                      <option value="25">Daman & Diu</option>
+                      <option value="7">Delhi</option>
+                      <option value="30">Goa</option>
+                      <option value="24">Gujarat</option>
+                      <option value="6">Haryana</option>
+                      <option value="2">Himachal Pradesh</option>
+                      <option value="1">Jammu & Kashmir</option>
+                      <option value="20">Jharkhand</option>
+                      <option value="29">Karnataka</option>
+                      <option value="32">Kerala</option>
+                      <option value="37">Ladakh</option>
+                      <option value="31">Lakshadweep</option>
+                      <option value="23">Madhya Pradesh</option>
+                      <option value="27">Maharashtra</option>
+                      <option value="14">Manipur</option>
+                      <option value="17">Meghalaya</option>
+                      <option value="15">Mizoram</option>
+                      <option value="13">Nagaland</option>
+                      <option value="21">Odisha</option>
+                      <option value="34">Puducherry</option>
+                      <option value="3">Punjab</option>
+                      <option value="8">Rajasthan</option>
+                      <option value="11">Sikkim</option>
+                      <option value="33">Tamil Nadu</option>
+                      <option value="36">Telangana</option>
+                      <option value="16">Tripura</option>
+                      <option value="9">Uttar Pradesh</option>
+                      <option value="5">Uttarakhand</option>
+                      <option value="19">West Bengal</option>
+                    </select>
+                  </div>
+
+                  <!-- District -->
+                  <div class="col-md-3 col-sm-6">
+                    <label for="numDistId" class="form-label">District</label>
+                    <select id="numDistId" name="numDistId" class="form-select">
+                      <option value="0">All</option>
+                      <option value="273">East Garo Hills</option>
+                      <option value="657">East Jaintia Hills</option>
+                      <option value="274">East Khasi Hills</option>
+                      <option value="656">North Garo Hills</option>
+                      <option value="276">Ri Bhoi</option>
+                      <option value="277">South Garo Hills</option>
+                      <option value="663">South West Garo Hills</option>
+                      <option value="658">South West Khasi Hills</option>
+                      <option value="278">West Garo Hills</option>
+                      <option value="275">West Jaintia Hills</option>
+                      <option value="279">West Khasi Hills</option>
+                    </select>
+                  </div>
+
+                  <!-- Status -->
+                  <div class="col-md-3 col-sm-6">
+                    <label for="gnumSelStatus" class="form-label">Status</label>
+                    <select id="gnumSelStatus" name="gnumSelStatus" class="form-select">
+                      <option value="1">Selection Pending</option>
+                      <option value="2">Selection Inprocess</option>
+                      <option value="0">Selection Done</option>
+                    </select>
+                  </div>
+
+                  <!-- Filter Icon -->
+                  <!-- <div class="col-md-2 text-end">
+                <i class="fa fa-filter fs-4 text-primary"
+                   role="button"
+                   data-bs-toggle="collapse"
+                   data-bs-target="#filter-summary">
+                </i>
+            </div> -->
+
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Collapsed Summary -->
+            <div id="filter-summary" class="collapse">
+              <div class="card border-primary">
+                <div class="card-body py-2">
+                  <div class="row">
+                    <div class="col-md-11">
+                      <label>
+                        Year : <span class="text-success">2025 - 2026</span> &nbsp;
+                        State : <span class="text-success">Meghalaya</span> &nbsp;
+                        Status : <span class="text-success">Selection Done</span> &nbsp;
+                        District : <span class="text-success">All</span>
+                      </label>
+                    </div>
+                    <div class="col-md-1 text-end">
+                      <i class="fa fa-filter fs-4 text-primary" role="button" data-bs-toggle="collapse"
+                        data-bs-target="#filter-summary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="table-responsive mb-3">
+              <table class="table table-striped table-bordered dataTable w-100" id="example"
+                aria-describedby="tableListing_info">
+                <thead>
+                  <tr class="bg-primary" role="row">
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="Application No.: activate to sort column ascending">Application No.</th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="Facility Name: activate to sort column ascending">Facility Name</th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="NIN ID: activate to sort column ascending">NIN ID</th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="State: activate to sort column ascending">State</th>
+                    <th  class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="District: activate to sort column ascending">District</th>
+                   
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="Mode/Program: activate to sort column ascending">Mode/Program</th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="Assessment Date: activate to sort column ascending">Assessment Date</th>
+                    <th class="sorting" tabindex="0"
+                      aria-controls="tableListing" rowspan="1" colspan="1"
+                      aria-label="QPS Approval Date: activate to sort column ascending">Approval Date</th>
+                   
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="rowId_0" role="row" class="odd selectedRow">
+                  <td></td>
+                    <td>SCN2511100000074_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId1" value="0"><input type="hidden" id="grpAssessment1" value="">
+                    <td>SC GUPTAPARA</td>
+                    <td>1573588777</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>South Andamans</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>09-Dec-2025 To 09-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+                    
+                    <!-- <td>
+                      <div class="btn-group open"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511100000074,213500000037,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000037,2511100000074,0,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511100000074,213500000037)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511100000074,213500000037,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                  <tr id="rowId_1" role="row" class="even">
+                        <td class=""></td>
+                    <td>SCN2511100000078_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId2" value="0"><input type="hidden" id="grpAssessment2" value="">
+                    <td>SC TEYLRABAD</td>
+                    <td>7121535269</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>South Andamans</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>08-Dec-2025 To 08-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+                    
+                    <!-- <td>
+                      <div class="btn-group"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511100000078,213500000020,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000020,2511100000078,1,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511100000078,213500000020)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511100000078,213500000020,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                  <tr id="rowId_2" role="row" class="odd">
+                      <td class=""></td>
+                    <td>SCN2511070000078_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId3" value="0"><input type="hidden" id="grpAssessment3" value="">
+                    <td>SC KAKANA</td>
+                    <td>3776422440</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>Nicobars</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>05-Dec-2025 To 05-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+<!--                     
+                    <td>
+                      <div class="btn-group"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511070000078,213500000074,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000074,2511070000078,2,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511070000078,213500000074)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511070000078,213500000074,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                  <tr id="rowId_3" role="row" class="even">
+                      <td class=""></td>
+                    <td>SCN2511060000068_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId4" value="0"><input type="hidden" id="grpAssessment4" value="">
+                    <td>SC ARONG</td>
+                    <td>3718883220</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>Nicobars</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>04-Dec-2025 To 04-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+                    
+                    <!-- <td>
+                      <div class="btn-group"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511060000068,213500000069,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000069,2511060000068,3,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511060000068,213500000069)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511060000068,213500000069,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                  <tr id="rowId_4" role="row" class="odd">
+                      <td class=""></td>
+                    <td>SCN2511080000009_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId5" value="0"><input type="hidden" id="grpAssessment5" value="">
+                    <td>SC BIG LAPATHY</td>
+                    <td>8835563670</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>Nicobars</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>03-Dec-2025 To 03-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+                    
+                    <!-- <td>
+                      <div class="btn-group"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511080000009,213500000156,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000156,2511080000009,4,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511080000009,213500000156)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511080000009,213500000156,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                  <tr id="rowId_5" role="row" class="even">
+                      <td class=""></td>
+                    <td>SCN2511070000076_01</td> <input type="hidden"
+                      id="gstrCombinedUniqueId6" value="0"><input type="hidden" id="grpAssessment6" value="">
+                    <td>SC KINYUKA</td>
+                    <td>5545846833</td>
+                    <td>Andaman &amp; Nicobar </td>
+                    <td>Nicobars</td>
+                    
+                    <td>Virtual / NQAS</td>
+                    <td>02-Dec-2025 To 02-Dec-2025</td>
+                    <td>18-Nov-2025</td>
+                    
+                    <!-- <td>
+                      <div class="btn-group"><button onclick="return false;" class="btn btn-inverse btn-sm"><i
+                            class="ace-icon fa fa-share bigger-110"></i>Action</button><button data-toggle="dropdown"
+                          class="btn btn-inverse btn-sm dropdown-toggle" aria-expanded="true"><span
+                            class="bigger-110 ace-icon fa fa-caret-down icon-only"></span></button>
+                        <ul class="dropdown-menu dropdown-danger">
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="CertificationCell(2511070000076,213500000102,1)">Select</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessorDetail(213500000102,2511070000076,5,1)">Assessor Details</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="showAssessmentTimeline(2511070000076,213500000102)">TimeLine</a></li>
+                          <li><a href="#" style="cursor: pointer;"
+                              onclick="viewApplication(2511070000076,213500000102,1)">Application Details</a></li>
+                        </ul>
+                      </div>
+                    </td> -->
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Card View Container -->
+            <div id="cardView" class="row">
+
+            </div>
+
+
+
+            <!-- CARD VIEW -->
+
+
+          </div>
+          <!-- content-wrapper ends -->
+
+          <footer class="footer">
+            <div class="d-flex justify-content-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 <a href="#"
+                  target="_blank">NHSRC - SaQsham</a>. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Designed and Developed by
+                CDAC</span>
+            </div>
+          </footer>
+
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+
+    <!-- accessibility panel -->
+    <div class="uwaw uw-light-theme gradient-head uwaw-initial paid_widget" id="uw-main">
+      <div class="relative second-panel">
+        <h3>Accessibility Options</h3>
+        <div class="uwaw-close" onclick="closeMain()"></div>
+      </div>
+      <div class="uwaw-body">
+        <div class="h-scroll">
+          <div class="uwaw-features">
+            <div class="uwaw-features__item reset-feature" id="featureItem_sp"> <button id="speak"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__icon"> <span class="ux4g-icon icon-speaker"> </span> </span>
+                <span class="uwaw-features__item__name">Text To Speech</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon_sp" style="display: none">
+                </span> </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem"> <button id="btn-s9"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__icon"> <span class="ux4g-icon icon-bigger-text"> </span>
+                </span><span class="uwaw-features__item__name">Bigger Text</span>
+                <div class="uwaw-features__item__steps reset-steps" id="featureSteps">
+                  <!-- Steps span tags will be dynamically added here -->
+                </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon"
+                  style="display: none"> </span>
+              </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-st"> <button id="btn-small-text"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__icon"> <span class="ux4g-icon icon-small-text"> </span>
+                </span><span class="uwaw-features__item__name">Small Text</span>
+                <div class="uwaw-features__item__steps reset-steps" id="featureSteps-st">
+                  <!-- Steps span tags will be dynamically added here -->
+                </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-st"
+                  style="display: none"> </span>
+              </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-lh"> <button id="btn-s12"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__icon"> <span class="ux4g-icon icon-line-hight"> </span>
+                </span> <span class="uwaw-features__item__name">Line Height</span>
+                <div class="uwaw-features__item__steps reset-steps" id="featureSteps-lh">
+                  <!-- Steps span tags will be dynamically added here -->
+                </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-lh"
+                  style="display: none"> </span>
+              </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-ht"> <button id="btn-s10"
+                onclick="highlightLinks()" class="uwaw-features__item__i"
+                data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader"
+                aria-pressed="false"> <span class="uwaw-features__item__icon"> <span
+                    class="ux4g-icon icon-highlight-links"> </span>
+                </span> <span class="uwaw-features__item__name">Highlight Links</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht" style="display: none">
+                </span> </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-ts"> <button id="btn-s13"
+                onclick="increaseAndReset()" class="uwaw-features__item__i"
+                data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader"
+                aria-pressed="false"> <span class="uwaw-features__item__icon"> <span
+                    class="ux4g-icon icon-text-spacing"> </span>
+                </span> <span class="uwaw-features__item__name">Text Spacing</span>
+                <div class="uwaw-features__item__steps reset-steps" id="featureSteps-ts">
+                  <!-- Steps span tags will be dynamically added here -->
+                </div> <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ts"
+                  style="display: none"> </span>
+              </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-df"> <button id="btn-df"
+                onclick="toggleFontFeature()" class="uwaw-features__item__i"
+                data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader"
+                aria-pressed="false"> <span class="uwaw-features__item__icon"> <span
+                    class="ux4g-icon icon-dyslexia-font"> </span>
+                </span> <span class="uwaw-features__item__name">Dyslexia Friendly</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-df" style="display: none">
+                </span> </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-hi"> <button id="btn-s11"
+                onclick="toggleImages()" class="uwaw-features__item__i"
+                data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader"
+                aria-pressed="false"> <span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-hide-images">
+                  </span>
+                </span> <span class="uwaw-features__item__name">Hide Images</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-hi" style="display: none">
+                </span> </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-Cursor"> <button id="btn-cursor"
+                onclick="toggleCursorFeature()" class="uwaw-features__item__i"
+                data-uw-reader-content="Enable the UserWay screen reader" aria-label="Enable the UserWay screen reader"
+                aria-pressed="false"> <span class="uwaw-features__item__icon"> <span class="ux4g-icon icon-cursor">
+                  </span> </span>
+                <span class="uwaw-features__item__name">Cursor</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-cursor"
+                  style="display: none"> </span> </button> </div>
+            <div class="uwaw-features__item reset-feature" id="featureItem-ht-dark"> <button id="dark-btn"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__name"> <span class="light_dark_icon"> <input type="checkbox"
+                      class="light_mode uwaw-featugres__item__i" id="checkbox" /> <label for="checkbox"
+                      class="checkbox-label">
+                      <!-- <i class="fas fa-moon-stars"></i> --> <i class="fas fa-moon-stars"> <span
+                          class="ux4g-icon icon-moon"></span> </i> <i class="fas fa-sun"> <span
+                          class="ux4g-icon icon-sun"></span> </i> <span class="ball"></span>
+                    </label> </span> <span class="uwaw-features__item__name">Light-Dark</span> </span>
+                <span class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ht-dark"
+                  style="display: none; pointer-events: none"> </span> </button> </div>
+            <!-- Invert Colors Widget -->
+            <div class="uwaw-features__item reset-feature" id="featureItem-ic"> <button id="btn-invert"
+                class="uwaw-features__item__i" data-uw-reader-content="Enable the UserWay screen reader"
+                aria-label="Enable the UserWay screen reader" aria-pressed="false"> <span
+                  class="uwaw-features__item__icon"> <span class="ux4g-icon icon-invert"> </span> </span>
+                <span class="uwaw-features__item__name">Invert Colors</span> <span
+                  class="tick-active uwaw-features__item__enabled reset-tick" id="tickIcon-ic" style="display: none">
+                </span> </button> </div>
+          </div>
+        </div> <!-- Reset Button -->
+      </div>
+      <div class="reset-panel"> <!-- copyright accessibility bar -->
+        <div class="copyrights-accessibility"> <button class="btn-reset-all" id="reset-all" onclick="resetAll()">
+            <span class="reset-icon"> </span> <span class="reset-btn-text">Reset All Settings</span> </button>
+        </div>
+      </div>
+    </div><!-- accessibility panel end-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/weights-v1.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.8/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.8/js/dataTables.bootstrap5.min.js"></script>
+
+    <!-- Buttons -->
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.bootstrap5.min.js"></script>
+
+    <!-- Export dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.colVis.min.js"></script>
+
+    <!-- <script>
+    $(document).ready(function () {
+        $('#example').DataTable({
+            responsive: true,
+            lengthChange: true,
+            autoWidth: false,
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print', 'colvis'
+            ]
+        }).buttons().container().appendTo('#example_wrapper .col-md-6:eq(0)');
+    });
+</script> -->
+
+    <!-- <script>
+$(document).ready(function () {
+    var table = $('#example').DataTable({
+        dom: '<"d-flex justify-content-between align-items-center"fB>rtip',
+        buttons: ['copy', 'csv', 'excel', 'pdf', 'print', 'colvis'],
+        scrollY: "calc(100vh - 250px)",  // Adjust height based on browser space
+        scrollCollapse: true,
+        paging: false,                   // enable paging with fixed header
+        fixedHeader: true,
+        responsive: true
+    });
+});
+</script> -->
+
+    <script>
+  $(document).ready(function () {
+    var table = $('#example').DataTable({
+        dom: '<"d-flex justify-content-between align-items-center"fB>rtip',
+        buttons: [
+            'copy', 'excel', 'pdf', 'print', 'colvis',
+            {
+                text: 'Card View', className: 'buttons-card-view',
+                action: function () {
+                    toggleCardView();
+                }
+            }
+        ],
+        columnDefs: [
+            {
+                targets: 0,
+                orderable: false,
+                className: 'select-checkbox',
+                render: function () {
+                    return '<input type="checkbox" class="row-select">';
+                }
+            }
+        ],
+        order: [[1, 'asc']],
+        scrollY: "calc(100vh - 250px)",
+        scrollCollapse: true,
+        paging: true,
+        fixedHeader: true
+    });
+
+    // Select All Checkbox
+    $('#selectAll').on('click', function () {
+        var rows = table.rows({ 'search': 'applied' }).nodes();
+        $('input.row-select', rows).prop('checked', this.checked);
+    });
+
+    // Manage Select-All Based on Row Check
+    $('#example tbody').on('change', 'input.row-select', function () {
+        if (!this.checked) {
+            $('#selectAll').prop('checked', false);
+        } else if ($('.row-select:checked').length === $('.row-select').length) {
+            $('#selectAll').prop('checked', true);
+        }
+    });
+
+    // ---- Card View Code ----
+    function toggleCardView() {
+        var isTableVisible = $('#example').is(':visible');
+
+        if (isTableVisible) {
+            $('#example').hide();
+            $('#cardView').empty().show();
+
+            table.rows({ search: "applied" }).every(function () {
+                var data = this.data();
+                $('#cardView').append(`
+                    <div class="col-md-4">
+                      <div class="data-card">
+                        <h6>${data[1]}</h6>
+                        <p><span class="fw-semibold">Facility Name:</span> ${data[1]}</p>
+                        <p><span class="fw-semibold">NIN ID:</span> ${data[2]}</p>
+                        <p><span class="fw-semibold">State:</span> ${data[3]}</p>
+                        <p><span class="fw-semibold">District:</span> ${data[4]}</p>
+                        <p><span class="fw-semibold">Mode/Program:</span> ${data[6]}</p>
+                        <p><span class="fw-semibold">Assessment Date:</span> ${data[7]}</p>
+                        <p><span class="fw-semibold">QPS Approval Date:</span> ${data[8]}</p>
+                        <p><span class="fw-semibold">Status:</span> ${data[9]}</p>
+                        <p><span class="fw-semibold">Action:</span> ${data[10]}</p>
+                      </div>
+                    </div>
+                `);
+            });
+
+            table.button('.buttons-card-view').text('Table View');
+        } else {
+            $('#cardView').hide();
+            $('#example').show();
+            $('.buttons-card-view').text('Card View');
+        }
+    }
+});
+
+    
+    </script>
+    <script src="assets/js/misc.js"></script>
+
+</body>
+
+</html>
