@@ -5,7 +5,7 @@ background: #f8f9fb;
   -webkit-transition: background 0.25s ease;
   -moz-transition: background 0.25s ease;
   -ms-transition: background 0.25s ease;
-     border-bottom: 1px solid var(--bs-border-color);
+  
 }
 .navbar .navbar-brand {
   width: 110px;
@@ -19,6 +19,7 @@ background: #232e51;
   width: 260px;
   box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .04);
     border-right: 1px solid var(--bs-border-color);
+       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
    
 }
 @media (max-width: 991px) {
@@ -58,6 +59,7 @@ background: #232e51;
   padding-left: 24px;
   padding-right: 24px;
   width: calc(100% - 260px);
+     border-bottom: 1px solid var(--bs-border-color);
   
 }
 @media (max-width: 991px) {
