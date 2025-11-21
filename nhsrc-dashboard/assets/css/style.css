@@ -132,3 +132,6 @@ table td{ font-size: 0.87rem; }
 .select-checkbox {
     text-align: center;
 }
+#session-timer {
+    color: rgba(0, 0, 0, 0.8);
+}
