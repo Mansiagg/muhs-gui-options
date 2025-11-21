@@ -105,7 +105,7 @@ html {
 }
 
 .content-wrapper {
-  background: #f2edf3;
+  background: #ffffff;
   padding: 5rem 2.25rem;
   width: 100%;
   -webkit-flex-grow: 1;
@@ -119,9 +119,9 @@ p { font-size: 0.89rem; margin-bottom: 8px ; color:rgba(0,0,0,0.8)}
 .dataTables_wrapper .dt-buttons { float: left; margin-right: 10px; }
 .dataTables_filter { float: right; }
 
-table{    font-size: 0.93rem;}
-table th{font-weight: 600; font-size: 0.87rem; color: rgba(0, 0, 0, 0.8) !important; vertical-align: middle;}
-table td{ font-size: 0.87rem; }
+table{   }
+table th{font-weight: 600; font-size: 0.86rem; color: rgba(0, 0, 0, 0.8) !important; vertical-align: middle;}
+table td{ font-size: 0.86rem; }
 
 .btn.btn-secondary {    background: transparent;
     color: rgba(0, 0, 0, 0.8);
@@ -132,3 +132,5 @@ table td{ font-size: 0.87rem; }
 .select-checkbox {
     text-align: center;
 }
+
+#session-timer{ color:rgba(0, 0, 0, 0.9)}
