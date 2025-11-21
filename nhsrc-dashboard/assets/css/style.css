@@ -47,7 +47,7 @@ html {
 
 /* Footer */
 .footer {
-  background: #f2edf3; z-index: 9999;
+  background: #f2edf3;
   color: color(dark);
   border-top: 1px solid #e7dee9;
   padding: 20px 1rem;
@@ -56,9 +56,7 @@ html {
   -webkit-transition: all 0.25s ease;
   -ms-transition: all 0.25s ease;
   font-size: calc(0.875rem - 0.05rem);
-  position: fixed;
-    bottom: 0;
-    width:100%;
+
  }
 .footer a {
   color: #ed7419;
