@@ -591,6 +591,7 @@ background: #232e51;
 
 
 }
+.sidebar .nav .nav-item:hover .nav-link .menu-title  { color:rgba(0, 0, 0, 0.9) !important}
 .sidebar .nav .nav-item .nav-link .badge {
   margin-right: auto;
   margin-left: 1rem;
