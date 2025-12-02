@@ -109,5 +109,104 @@
   
   });
 
-  
+  $(document).ready(function () {
+    var table = $('#example').DataTable({
+        dom: '<"d-md-flex d-block justify-content-between align-items-center"fB>rtip',
+        responsive: true,
+        buttons: [
+            'copy', 'excel', 'pdf', 'print', 'colvis',
+            {
+                text: 'Card View', className: 'buttons-card-view',
+                action: function () {
+                    toggleCardView();
+                }
+            }
+        ],
+        columnDefs: [
+            {
+                targets: 0,
+                orderable: false,
+                className: 'select-checkbox',
+                render: function () {
+                    return '<input type="checkbox" class="row-select">';
+                }
+            }
+        ],
+        order: [[1, 'asc']],
+        scrollY: "calc(100vh - 250px)",
+        scrollCollapse: true,
+        paging: true,
+        fixedHeader: true
+    });
+
+    // Window resize works for CTRL- / CTRL+
+    $(window).on('resize', function () {
+        table.columns.adjust().responsive.recalc();
+    });
+
+    // Sidebar collapse/expand fix
+    document.getElementById('sidebar')
+        .addEventListener('transitionend', function (e) {
+            if (e.propertyName === 'transform' || e.propertyName === 'width') {
+                setTimeout(function () {
+                    table.columns.adjust().responsive.recalc();
+                }, 50);
+            }
+        });
+
+    
+});
+    // Select All Checkbox
+    $('#selectAll').on('click', function () {
+        var rows = table.rows({ 'search': 'applied' }).nodes();
+        $('input.row-select', rows).prop('checked', this.checked);
+    });
+
+    // Manage Select-All Based on Row Check
+    $('#example tbody').on('change', 'input.row-select', function () {
+        if (!this.checked) {
+            $('#selectAll').prop('checked', false);
+        } else if ($('.row-select:checked').length === $('.row-select').length) {
+            $('#selectAll').prop('checked', true);
+        }
+    });
+
+    // ---- Card View Code ----
+    function toggleCardView() {
+        var isTableVisible = $('#example').is(':visible');
+
+        if (isTableVisible) {
+            $('#example').hide();
+            $('#cardView').empty().show();
+
+            table.rows({ search: "applied" }).every(function () {
+                var data = this.data();
+                $('#cardView').append(`
+                    <div class="col-md-4">
+                      <div class="data-card">
+                        <h6>${data[1]}</h6>
+                        <p><span class="fw-semibold">Facility Name:</span> ${data[1]}</p>
+                        <p><span class="fw-semibold">NIN ID:</span> ${data[2]}</p>
+                        <p><span class="fw-semibold">State:</span> ${data[3]}</p>
+                        <p><span class="fw-semibold">District:</span> ${data[4]}</p>
+                        <p><span class="fw-semibold">Mode/Program:</span> ${data[6]}</p>
+                        <p><span class="fw-semibold">Assessment Date:</span> ${data[7]}</p>
+                        <p><span class="fw-semibold">QPS Approval Date:</span> ${data[8]}</p>
+                        <p><span class="fw-semibold">Status:</span> ${data[9]}</p>
+                        <p><span class="fw-semibold">Action:</span> ${data[10]}</p>
+                      </div>
+                    </div>
+                `);
+            });
+
+            table.button('.buttons-card-view').text('Table View');
+        } else {
+            $('#cardView').hide();
+            $('#example').show();
+            $('.buttons-card-view').text('Card View');
+        }
+    }
+});
+
+
 })(jQuery);

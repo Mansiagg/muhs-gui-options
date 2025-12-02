@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title key='user-mgmt-app-login'>User Management Application</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="sb-admin-2.css" rel="stylesheet">
+<link href="all.min.css" rel="stylesheet">
+
+<style>
+    body { background: #E2C8B1;
+background: linear-gradient(90deg,rgb(255, 229, 207) 0%, rgba(180, 156, 132, 1) 50%, rgba(142, 117, 96, 1) 100%);}
+
+.loginbox{    border-radius: 40px;
+    border: 7px solid #ffffff;
+    background: rgba(255, 255, 255, 0.8);}
+
+
+.col-md-offset-4 {
+	margin-left: 33.33333333%;
+	margin-top: -83px;
+}
+
+.btn-success {
+	color: #fff;
+	background-color: #5c91b8;
+	border-color: #4c84ae;
+}
+
+.btn-success:hover {
+	color: #fff;
+	background-color: #444b9d;
+	border-color: #394C84;
+}
+
+body {
+	
+	 font-family: "Poppins", sans-serif;
+			/* align-items: center; */
+	
+	
+}
+
+.login-container {
+	background-color: white;	width: 55%;
+	/* border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+
+	max-width: 825px;
+	height: 80%;
+	margin-top: 100px; */
+}
+
+.logo {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.logo-placeholder {
+    background-color: transparent; 
+    width: auto;  
+    height: auto;  
+    box-shadow: none;  
+}
+
+.logo-placeholder img {
+max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  color: white;
+  padding-right: 20px;
+  filter: brightness(0) invert(1);
+}
+.app-title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.features {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 40px;
+}
+
+.features li {
+	padding: 12px 0;
+	font-size: 16px;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 5px;
+}
+
+.features li:before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #4CAF50;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.right-section {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+.login-header {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.login-header h2 {
+	color: #1e5799; font-size: 1.15rem
+	}
+
+.login-header p {
+	color: #666;
+	font-size: 0.9rem;
+}
+
+.form-group {
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.form-control:focus {
+	border-color: #1e5799;
+	box-shadow: 0 0 0 0.2rem rgba(30, 87, 153, 0.25);
+}
+
+.captcha-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.captcha-image {
+	width: 145px;
+	height: 50px;
+	background-color: #f0f0f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-family: 'Courier New', monospace;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 5px;
+	color: #333;
+}
+
+.captcha-refresh {
+	cursor: pointer;
+	margin-left: 15px;
+	color: #1e5799;
+	font-size: 20px;
+	transition: transform 0.3s;
+}
+
+.captcha-refresh:hover {
+	transform: rotate(90deg);
+}
+
+.login-btn {
+    /* background-image: linear-gradient(to bottom, #cc4608, #a15f40); */
+background: #785c48;
+	border: none;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 50px;
+	margin-top: 10px;
+	transition: background-color 0.3s;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.login-btn:hover {
+	background-color: #623b14;
+	color: white;
+}
+
+.error-message {
+	color: #d9534f;
+	font-size: 14px;
+	margin-top: 5px;
+	display: none;
+}
+
+.loading-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+	display: none;
+}
+
+.loading-content {
+	background-color: white;
+	padding: 30px;
+	border-radius: 8px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	max-width: 350px;
+	width: 90%;
+}
+
+.loading-content i {
+	color: #1e5799;
+	margin-bottom: 15px;
+}
+
+.loading-content p {
+	color: #333;
+	font-weight: 500;
+}
+	.language-selector {
+ 
+}
+
+.language-box {
+ 
+    padding: 8px 15px;
+    border-radius: 5px;
+
+}
+
+.language-box select {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px;
+}
+@media ( max-width : 768px) {
+	.login-container {
+		flex-direction: column;
+	}
+	.left-section, .right-section {
+		width: 55%;
+		min-height: auto;
+	}
+	.left-section {
+		padding: 30px 20px;
+	}
+	.right-section {
+		padding: 30px 20px;
+	}
+
+}
+
+
+
+</style>
+
+
+
+</head>
+
+<!-- <body onload="disableBackButton(),document.forms[0].userId.focus();"
+	onUnload="noBack();"
+	 style="background-image:"> -->
+	<body> 
+    
+
+
+	<!-- <div class="login-container w-75 shadow rounded-3 overflow-hidden"> -->
+	<div class="container-fluid" style="height:100vh;background: url(background.png); background-repeat: no-repeat; background-position: top left;  "> 
+		<div class="row" style="position: absolute; right: ;">
+		<div class="col-md-5 col-xl-5 col-xxl-5 col-lg-5">
+		<div class="language-selector d-flex align-items-end justify-content-end">
+    <div class="language-box">
+        <span key="language" style="color: rgba(255, 255, 255, 0.8); font-size: 0.8rem;">Select Language</span> 
+        <select name="selectLanguage" id="selectLanguage" onchange="setLanguage(this.value)">
+            <option key="english" value="english" selected>English</option>
+            <option key="hindi" value="hindi">Hindi</option>
+        </select>
+    </div>
+</div>
+
+	<script>
+function setLanguage(lang) {
+    alert("Selected language: " + lang);
+}
+</script>
+
+
+<div class="loginbox px-5 py-3 w-75 m-auto mt-5">
+
+	 <img src="icon.png"  class="mx-auto d-block" style="margin-top:-50px; text-shadow: 1px 1px 2px white, 0 0 25px white, 0 0 5px white;"/> 
+
+	<div class="heading d-flex justify-content-center align-items-center mb-1 mt-2" >
+  
+ 
+   <div class="animated-text">  <h1 class="fw-bold text-center mb-3">User Management Application</h1> </div> 
+  
+</div>
+
+<div class="login-header mt-4">
+   
+						<h2 class="fw-semibold text-start mb-0">Login</h2>
+						<p class="text-start mb-1 mt-2">Enter your credentials to access your account</p>
+					</div>
+					<div class="panel-body">
+						<form id="loginForm" action="login" method="post" class="pb-3">
+							<div class="form-group position-relative">
+								<i class="fa-regular fa-envelope position-absolute text-center p-2"></i>
+								<input class="form-control" placeholder="User ID" name="userId"
+									type="text">
+                                		<div class="error-message" id="userIdError"></div>
+							</div>
+							<div class="form-group position-relative">
+								<input class="form-control" placeholder="Password" name="pass"
+									type="password">
+									<i class="fa-solid fa-unlock position-absolute text-center p-2"></i>
+								<div class="error-message" id="passwordError"></div>
+							</div>
+
+							<div id='captchaDiv' class="captcha-container">
+								<div class="captcha-image">
+									<img id="imageid"
+									
+										src="/UserAdmin_Mgmt/servlets/CaptchaServlet">
+								</div>
+								<i class="fas fa-redo-alt captcha-refresh"
+									onclick="captchaReset()"></i>
+							</div>
+
+							<div class="form-group">
+								<input type="text" class="form-control"
+									placeholder="Enter Captcha" autocomplete="off"
+									name="varCaptcha" id="varCaptcha" maxlength="10"
+									onkeyup="validateOnEnter(event);">
+								<div class="error-message" id="captchaError"></div>
+							</div>
+
+							<a href="#" onclick="validateFunc();" class="login-btn mb-5">
+								Login </a>
+
+							<div class="normalMsg" id="normalMsg"></div>
+							<input type="hidden" name="mode" value=""> <input
+								type="hidden" name="salt"
+								value="<%=TokenConfig.GenerateSecureRandomNumber(request)%>">
+						</form>
+					</div>
+
+</div>
+					
+				
+			</div>
+		</div>
+	</div>	
+
+	<div class="loading-overlay" id="loadingOverlay">
+		<div class="loading-content">
+			<i class="fas fa-spinner fa-spin fa-3x"></i>
+			<p class="mt-3">Fetching Details. Please Wait!</p>
+		</div>
+	</div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Robust Custom Preloader (Debug-friendly)</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;color:#111}
+
+    .preloader{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:18px;background:#fff;z-index:9999;transition:opacity .45s ease,visibility .45s ease;opacity:1;visibility:visible}
+    .preloader.hide{opacity:0;visibility:hidden;pointer-events:none}
+
+    .spinner{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;position:relative;background:linear-gradient(135deg,#f3f4f6 0%, #e9eef8 50%, #dbeafe 100%);box-shadow:0 6px 20px rgba(20,40,80,0.08)}
+    .spinner::before{content:'';position:absolute;inset:6px;border-radius:50%;background:conic-gradient(#2563eb 0deg, #60a5fa 120deg, transparent 120deg 360deg);animation:spin 1.05s linear infinite}
+    .spinner .dot{width:12px;height:12px;border-radius:50%;background:#2563eb;position:relative;z-index:2;box-shadow:0 6px 14px rgba(37,99,235,0.25);transform:translateY(-38px)}
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .label{font-size:14px;color:#0f172a;opacity:.95}
+    .sub{font-size:12px;color:#475569;opacity:.85}
+    .progress-wrap{width:240px;height:8px;border-radius:999px;background:#eef2ff;overflow:hidden}
+    .progress{height:100%;width:0%;background:linear-gradient(90deg,#60a5fa,#2563eb);transition:width .2s linear}
+
+    .page{min-height:100%;display:flex;align-items:center;justify-content:center;padding:40px;background:linear-gradient(180deg,#f8fafc,#fff)}
+    .card{width:min(880px,92%);padding:40px;border-radius:12px;background:#fff;box-shadow:0 10px 30px rgba(15,23,42,0.06);text-align:center}
+
+    @media (max-width:420px){.spinner{width:64px;height:64px}.progress-wrap{width:180px}}
+
+    /* debug */
+    .debug{position:fixed;left:12px;bottom:12px;background:#111;color:#fff;padding:8px 10px;border-radius:8px;font-size:12px;z-index:10001}
+  </style>
+</head>
+<body>
+
+  <div id="preloader" class="preloader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"><div class="dot"></div></div>
+    <div class="label">Loading…</div>
+    <div class="progress-wrap" aria-hidden="true"><div id="progress" class="progress" style="width:0%"></div></div>
+    <div class="sub">If this never hides, open devtools console to see debug logs.</div>
+    <button id="debug-hide" style="margin-top:10px;padding:6px 10px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;cursor:pointer">Force hide (debug)</button>
+  </div>
+
+  <main class="page" id="main-content" aria-hidden="true">
+    <div class="card">
+      <h1>Welcome — Page Loaded</h1>
+      <p style="color:#475569;margin-top:8px">This demo includes robust load-detection & fallbacks. Replace with your real site.</p>
+    </div>
+  </main>
+
+  <div id="debug-log" class="debug" aria-hidden="true">Preloader: waiting...</div>
+
+  <script>
+    (function(){
+      const preloader = document.getElementById('preloader');
+      const progress = document.getElementById('progress');
+      const main = document.getElementById('main-content');
+      const debug = document.getElementById('debug-log');
+      const debugHideBtn = document.getElementById('debug-hide');
+
+      function log(msg){
+        try{ console.log('[PRELOADER]', msg); debug.textContent = 'Preloader: ' + msg; }
+        catch(e){}
+      }
+
+      // Safety: ensure preloader can be forcibly hidden for debugging
+      debugHideBtn.addEventListener('click', hidePreloader);
+
+      let pct = 0, animRunning = true, rafId = null;
+      function step(){
+        pct = Math.min(99, pct + Math.random()*6);
+        progress.style.width = pct + '%';
+        if(pct < 99 && animRunning) rafId = requestAnimationFrame(step);
+      }
+      rafId = requestAnimationFrame(step);
+
+      let hidden = false;
+      function hidePreloader(reason){
+        if(hidden) return;
+        hidden = true;
+        log('hiding — reason: ' + (reason || 'unknown'));
+        try{ animRunning = false; cancelAnimationFrame(rafId); }catch(e){}
+        progress.style.width = '100%';
+        setTimeout(()=>{ preloader.classList.add('hide'); main.removeAttribute('aria-hidden'); }, 220);
+      }
+
+      // Primary: if window 'load' fires
+      window.addEventListener('load', ()=>{ log('window.load fired'); hidePreloader('window.load'); });
+
+      // If DOMContentLoaded fired earlier (SPA or inline script) — handle it
+      document.addEventListener('DOMContentLoaded', ()=>{ log('DOMContentLoaded fired'); });
+
+      // If document.readyState is already 'complete' (script run after load)
+      if(document.readyState === 'complete'){
+        log('document.readyState === complete at script run');
+        hidePreloader('readyState complete');
+      }
+
+      // Fallback: hide after X ms (useful if load never fires due to blocked resources)
+      const FALLBACK_MS = 5000; // 5s — change as needed
+      const fallbackTimer = setTimeout(()=>{
+        if(!hidden){ log('fallback timeout'); hidePreloader('fallback timeout'); }
+      }, FALLBACK_MS);
+
+      // Extra heuristic for SPA apps: if window.fetch has completed useful tasks
+      // This is optional and non-invasive: watches for the page to become 'interactive' for 1s
+      let interactiveSince = null;
+      const interactiveCheck = setInterval(()=>{
+        if(document.readyState === 'interactive' || document.readyState === 'complete'){
+          if(!interactiveSince) interactiveSince = Date.now();
+          if(Date.now() - interactiveSince > 900 && !hidden){ log('interactive for 900ms'); hidePreloader('interactive stable'); clearInterval(interactiveCheck); }
+        }
+      }, 250);
+
+      // If there is a JS error thrown globally, log it (but do not auto-hide here)
+      window.addEventListener('error', (ev)=>{ log('global error: ' + (ev.message || ev.type || 'error')); });
+      window.addEventListener('unhandledrejection', (ev)=>{ log('unhandledrejection: ' + (ev.reason && ev.reason.message ? ev.reason.message : JSON.stringify(ev.reason))); });
+
+      // Expose a global hook for apps to hide the preloader manually when they're ready
+      window.__hidePreloader = function(reason){ log('manual hide called'); hidePreloader('manual: ' + (reason || 'app')) };
+
+      // Accessibility: if user presses Esc, allow hiding
+      window.addEventListener('keydown', (e)=>{ if(e.key === 'Escape'){ log('escape key pressed'); hidePreloader('escape'); } });
+
+      // Final log so devs see startup state
+      log('initialized — waiting for load or fallback in ' + FALLBACK_MS + 'ms');
+
+    })();
+  </script>
+</body>
+</html>
