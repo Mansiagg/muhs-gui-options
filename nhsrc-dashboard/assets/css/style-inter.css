@@ -1,12 +1,67 @@
 @charset "UTF-8";
 /* Miscellanoeous */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-body,
-html {
+/* Fonts */
+/* ============================
+   Custom Inter Font Setup
+   ============================ */
+
+/* Light (300) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Inter/Inter_18pt-Light.woff2") format("woff2"),
+       url("../fonts/Inter/Inter_18pt-Light.woff") format("woff"),
+       url("../fonts/Inter/Inter_18pt-Light.ttf") format("truetype");
+}
+
+/* Regular (400) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Inter/Inter_18pt-Regular.woff2") format("woff2"),
+       url("../fonts/Inter/Inter_18pt-Regular.woff") format("woff"),
+       url("../fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
+}
+
+/* Medium (500) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Inter/Inter_18pt-Medium.woff2") format("woff2"),
+       url("../fonts/Inter/Inter_18pt-Medium.woff") format("woff"),
+       url("../fonts/Inter/Inter_18pt-Medium.ttf") format("truetype");
+}
+
+/* SemiBold (600) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Inter/Inter_18pt-SemiBold.woff2") format("woff2"),
+       url("../fonts/Inter/Inter_18pt-SemiBold.woff") format("woff"),
+       url("../fonts/Inter/Inter_18pt-SemiBold.ttf") format("truetype");
+}
+
+/* Bold (700) */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Inter/Inter_24pt-Bold.woff2") format("woff2"),
+       url("../fonts/Inter/Inter_24pt-Bold.woff") format("woff"),
+       url("../fonts/Inter/Inter_24pt-Bold.ttf") format("truetype");
+}
+
+
+/* Global default */
+html, body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
   overflow-x: hidden;
   padding-right: 0 !important;
-   font-family: "Inter", sans-serif;font-weight: 300;
 }
 
 *:-moz-full-screen,
