@@ -335,8 +335,12 @@ font-size: 0.93rem;
 }
 
 .carousel-indicators {
-	bottom: 64px;
-    z-index: 9999;
+    bottom: 64px;
+    z-index: 9999999999;
+    right: 62%;
+    margin-left: 5%;
+    justify-content: start;
+
   
 }
 
