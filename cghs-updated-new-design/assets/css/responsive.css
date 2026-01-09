@@ -9,8 +9,23 @@
         font-size: 14px;
     }
 
+
 }
+
+@media (min-width:1366px) and (max-width:1499px) {  ul.pdflist .pdfname a {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.85rem;}}
+
+
+
+
 @media (min-width:1200px) and (max-width:1280px) {
+
+ ul.pdflist .pdfname a {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.8rem;}
+   
+
     ul.ruby-menu > li > a {
         display: block;
         color: rgba(0, 0, 0, 0.75);

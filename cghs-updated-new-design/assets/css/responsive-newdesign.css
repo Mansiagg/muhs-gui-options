@@ -1,55 +1,81 @@
-
-
 @media (min-width: 1919px) {
 
-  .scroll {
-        height: 574px;
-    }
-    
-    .searchempanneled {
-    min-height: 284px;
-}
-.online-support {
-    min-height: 387px;
-}
-.online-support .item p{    font-size: 0.95rem;}
-    .scanner h4 {
-    font-size: 0.8rem;
-    line-height: 20px;
-    margin-top: 25px !important;
-}
-.scanner .box-1 img:first-child, .scanner .box-2 img:first-child{ margin-top:50px !important}
-.scanner .box-1 img:nth-child(2), .scanner .box-2 img:nth-child(2){ margin-bottom:40px !important}
-.searchempanneled   form {margin-top:30px !important}
-.searchempanneled h2 {
-    font-size: 1rem;
-    padding-top: 40px !important;
-}
+	.scroll {
+		height: 574px;
+	}
+
+	.searchempanneled {
+		min-height: 284px;
+	}
+
+	.online-support {
+		min-height: 387px;
+	}
+
+	.online-support .item p {
+		font-size: 0.95rem;
+	}
+
+	.scanner h4 {
+		font-size: 0.8rem;
+		line-height: 20px;
+		margin-top: 25px !important;
+	}
+
+	.scanner .box-1 img:first-child,
+	.scanner .box-2 img:first-child {
+		margin-top: 50px !important
+	}
+
+	.scanner .box-1 img:nth-child(2),
+	.scanner .box-2 img:nth-child(2) {
+		margin-bottom: 40px !important
+	}
+
+	.searchempanneled form {
+		margin-top: 30px !important
+	}
+
+	.searchempanneled h2 {
+		font-size: 1rem;
+		padding-top: 40px !important;
+	}
 
 
 }
 
-@media (min-width: 1601px) and (max-width:1918px) {
-.scroll {
-    height: 491px;
-}
+@media (min-width: 1601px) and (max-width:1950px) {
 
-.searchempanneled {
-    min-height: 250px;
+	.searchempanneled{
+    min-height: 260px; padding: 42px  0!important; background-size: cover !important;
 }
-.online-support {
-    min-height: 337px;
-}
-.searchempanneled   form {margin-top:40px !important}
-.searchempanneled h2 {
-    font-size: 1rem;
-    padding-top: 30px !important;
-}
+	.scroll {
+		height: 491px;
+	}
+
+
+	.online-support {
+		min-height: 337px;
+	}
+
+	.searchempanneled form {
+		margin-top: 40px !important
+	}
+
+	.searchempanneled h2 {
+		font-size: 1rem;
+		padding-top: 30px !important;
+	}
 
 }
 
 
 @media (min-width:1500px) and (max-width:1800px) {
+
+		.searchempanneled{
+    min-height: 260px; padding-top: 44px !important;
+   
+}
 	.navbar-nav .nav-item>a span {
 		font-size: 24px;
 
@@ -57,27 +83,34 @@
 
 }
 
-@media (min-width: 1400px) and (max-width:1440px){
-	
-	.online-support {
-    min-height: 292px;
-}
-	
+@media (min-width: 1400px) and (max-width:1440px) {
 
-	
+	.online-support {
+		min-height: 292px;
+	}
+
+
+
 }
 
 @media (min-width:1281px) and (max-width:1450px) {
-	
 
-		.scroll {height: 382px; overflow-y: auto;}
-		.searchempanneled {
-    background: #34c38f;
-    min-height: 211px;
-}
+	ul.pdflist .pdfname a {
+		color: rgba(0, 0, 0, 0.8);
+		font-size: 0.85rem;
+	}
 
-	
-	.pdfcon {width:65% !important; }
+	.scroll {
+		height: 382px;
+		overflow-y: auto;
+	}
+
+
+
+
+	.pdfcon {
+		width: 65% !important;
+	}
 
 	header .all-logins a>p {
 		font-size: 0.7rem;
@@ -86,9 +119,10 @@
 	.navbar-nav .nav-item>a {
 		font-size: 0.8rem;
 	}
-	.navbar-expand-lg .navbar-nav > .nav-item > .nav-link {
-    padding: 0px 14px;
-  }
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		padding: 0px 12px;
+	}
 
 	.owl-prev {
 		right: 30px;
@@ -111,31 +145,45 @@
 	}
 
 }
-@media (min-width:1280px) and (max-width:1366px) {
-	.online-support .item p, .online-support .item a{ font-size:0.8rem}
-	.online-support>p{ font-size:0.76rem}
-	.online-support {  min-height: 265px; }
- }
-@media (min-width:1200px) and (max-width:1280px) {
-	
-		.scroll {
-    height: 342px;
-  }
 
-.searchempanneled {
-       min-height: 192px;
+@media (min-width:1280px) and (max-width:1366px) {
+
+	.online-support .item p,
+	.online-support .item a {
+		font-size: 0.8rem
+	}
+
+	.online-support>p {
+		font-size: 0.76rem
+	}
+
+	.online-support {
+		min-height: 265px;
+	}
 }
-	
-	.pdfcon {width:65% !important; }
+
+@media (min-width:1200px) and (max-width:1280px) {
+
+	.scroll {
+		height: 342px;
+	}
+
+	.searchempanneled {
+		min-height: 192px;
+	}
+
+	.pdfcon {
+		width: 65% !important;
+	}
 
 	.loginbuttton {
 		padding: 3px 2px;
 		font-size: 11px;
 	}
 
-	.navbar-expand-lg .navbar-nav > .nav-item > .nav-link  {
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
 		font-size: 0.8rem;
-		padding: 0px 10px !important;
+		padding: 0px 9px !important;
 
 	}
 
@@ -177,36 +225,43 @@
 
 @media (min-width:992px) and (max-width:1199px) {
 	.scroll {
-    height: 267px;
-    overflow-y: auto;
-}
-	#pdfsection .nav-link {
-    font-size: 14px;
-}
-	
-	.pdfcon {width:75% !important; }
-	.searchempanneled h2 {
-    font-size: 0.84rem;
-}
-.searchempanneled {
-    min-height: 140px;
-}
+		height: 267px;
+		overflow-y: auto;
+	}
 
-.navbar-expand-lg .navbar-nav > .nav-item > .nav-link {
-        font-size: 0.78rem;
-        padding: 0px 3px !important;
-    }
+	#pdfsection .nav-link {
+		font-size: 14px;
+	}
+
+	.pdfcon {
+		width: 75% !important;
+	}
+
+	.searchempanneled h2 {
+		font-size: 0.84rem;
+	}
+
+	.searchempanneled {
+		min-height: 140px;
+	}
+
+	.navbar-expand-lg .navbar-nav>.nav-item>.nav-link {
+		font-size: 0.78rem;
+		padding: 0px 3px !important;
+	}
 
 	header .all-logins a>p {
 		font-size: 11px;
 	}
-    .all-logins span {
-        display: none;
-    }
+
+	.all-logins span {
+		display: none;
+	}
+
 	.loginbuttton {
-	padding: 2px 4px;
+		padding: 2px 4px;
 		font-size: 11px;
-	
+
 	}
 
 
@@ -244,18 +299,25 @@
 }
 
 @media (max-width: 991px) {
-	
-	.handlingdivwidth .col{ flex:none !important}
-	
-	.navbar {     position: absolute !important;
-    top: 58px;
-    right: 6px;}
-    header .main-menu {
-    background-color: transparent;
-}
-	
-	.pdfcon {width:86% !important; }
-	
+
+	.handlingdivwidth .col {
+		flex: none !important
+	}
+
+	.navbar {
+		position: absolute !important;
+		top: 58px;
+		right: 6px;
+	}
+
+	header .main-menu {
+		background-color: transparent;
+	}
+
+	.pdfcon {
+		width: 86% !important;
+	}
+
 	.navbar-toggler .close-icon {
 		display: none;
 	}
@@ -283,7 +345,8 @@
 	}
 
 	.navbar-collapse {
-		position: fixed; display: block !important;
+		position: fixed;
+		display: block !important;
 		top: 0;
 		right: 0;
 		height: 100%;
@@ -306,10 +369,10 @@
 		padding: 10px 14px;
 
 	}
-	.navbar-expand-lg .navbar-nav .nav-link
- {
-    padding: 10px 18px;
-}
+
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding: 10px 18px;
+	}
 
 	.navbar-nav .nav-link.active,
 	.navbar-nav .show>.nav-link {
@@ -356,7 +419,8 @@
 	}
 
 	.loginbuttton {
-		padding:2px 2px; text-align: center;
+		padding: 2px 2px;
+		text-align: center;
 	}
 
 }
@@ -364,13 +428,20 @@
 
 @media (max-width: 768px) {
 	.online-support {
-    min-height: 239px;
-}
-	.pdfcon {width:86% !important; }
-	
-	.training-button { position:relative !important}
-	 .bannerlogo {
-    width: 130px;   }
+		min-height: 239px;
+	}
+
+	.pdfcon {
+		width: 86% !important;
+	}
+
+	.training-button {
+		position: relative !important
+	}
+
+	.bannerlogo {
+		width: 130px;
+	}
 
 	.header-carousel .carousel-caption .bannerlogo {
 		margin-top: -57px;
@@ -437,24 +508,27 @@
 }
 
 @media (max-width: 500px) {
-		.pdfcon {width: 96% !important; }
-	
+	.pdfcon {
+		width: 96% !important;
+	}
+
 	.notice.modal .modal-dialog {
-    width: 356px;
-}
+		width: 356px;
+	}
+
 	.notice.modal .modal-body p {
-    font-size: 13px;
-   line-height: 18px;
-}
-	
-	  .bannerlogo {
-    width:100px; 
-  }
-	
-	    #topbar .language select {
-        padding: 5px 26px 6px 10px;
-        font-size: 12px;
-    }
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.bannerlogo {
+		width: 100px;
+	}
+
+	#topbar .language select {
+		padding: 5px 26px 6px 10px;
+		font-size: 12px;
+	}
 
 
 	.loginbuttton {
